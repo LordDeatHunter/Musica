@@ -1,0 +1,6 @@
+{
+    "parent": "minecraft:item/generated",
+    "textures": {
+        "layer0": "musica:item/music_disc_rick_astley_never_gonna_give_you_up"
+    }
+}

@@ -1,0 +1,179 @@
+{
+  "music_disc.dire_straits_money_for_nothing": {
+    "sounds": [
+      "musica:dire_straits_money_for_nothing"
+    ]
+  },
+  "music_disc.naps_the_block_omen": {
+    "sounds": [
+      "musica:naps_the_block_omen"
+    ]
+  },
+  "music_disc.naps_the_block_dimensions": {
+    "sounds": [
+      "musica:naps_the_block_dimensions"
+    ]
+  },
+  "music_disc.naps_the_block_silence": {
+    "sounds": [
+      "musica:naps_the_block_silence"
+    ]
+  },
+  "music_disc.naps_the_block_tall": {
+    "sounds": [
+      "musica:naps_the_block_tall"
+    ]
+  },
+  "music_disc.edevegie_world": {
+    "sounds": [
+      "musica:edevegie_world"
+    ]
+  },
+  "music_disc.genius_james_because": {
+    "sounds": [
+      "musica:genius_james_because"
+    ]
+  },
+  "music_disc.john_denver_take_me_home_country_roads": {
+    "sounds": [
+      "musica:john_denver_take_me_home_country_roads"
+    ]
+  },
+  "music_disc.rick_astley_never_gonna_give_you_up": {
+    "sounds": [
+      "musica:rick_astley_never_gonna_give_you_up"
+    ]
+  },
+  "music_disc.toto_africa": {
+    "sounds": [
+      "musica:toto_africa"
+    ]
+  },
+  "music_disc.lost_angel_souls": {
+    "sounds": [
+      "musica:lost_angel_souls"
+    ]
+  },
+  "music_disc.lost_angel_ice_shards": {
+    "sounds": [
+      "musica:lost_angel_ice_shards"
+    ]
+  },
+  "music_disc.lost_angel_chemistry": {
+    "sounds": [
+      "musica:lost_angel_chemistry"
+    ]
+  },
+  "music_disc.carrot_and_co_hue": {
+    "sounds": [
+      "musica:carrot_and_co_hue"
+    ]
+  },
+  "music_disc.gwyd_waves": {
+    "sounds": [
+      "musica:gwyd_waves"
+    ]
+  },
+  "music_disc.gwyd_charr": {
+    "sounds": [
+      "musica:gwyd_charr"
+    ]
+  },
+  "music_disc.gwyd_bricks": {
+    "sounds": [
+      "musica:gwyd_bricks"
+    ]
+  },
+  "music_disc.gwyd_tricks": {
+    "sounds": [
+      "musica:gwyd_tricks"
+    ]
+  },
+  "music_disc.lost_angel_bastion": {
+    "sounds": [
+      "musica:lost_angel_bastion"
+    ]
+  },
+  "music_disc.lost_angel_cheese": {
+    "sounds": [
+      "musica:lost_angel_cheese"
+    ]
+  },
+  "music_disc.lost_angel_drifter": {
+    "sounds": [
+      "musica:lost_angel_drifter"
+    ]
+  },
+  "music_disc.lost_angel_eyes": {
+    "sounds": [
+      "musica:lost_angel_eyes"
+    ]
+  },
+  "music_disc.lost_angel_face": {
+    "sounds": [
+      "musica:lost_angel_face"
+    ]
+  },
+  "music_disc.lost_angel_haunted": {
+    "sounds": [
+      "musica:lost_angel_haunted"
+    ]
+  },
+  "music_disc.lost_angel_heartless": {
+    "sounds": [
+      "musica:lost_angel_heartless"
+    ]
+  },
+  "music_disc.lost_angel_lost": {
+    "sounds": [
+      "musica:lost_angel_lost"
+    ]
+  },
+  "music_disc.lost_angel_neoncity": {
+    "sounds": [
+      "musica:lost_angel_neoncity"
+    ]
+  },
+  "music_disc.lost_angel_past": {
+    "sounds": [
+      "musica:lost_angel_past"
+    ]
+  },
+  "music_disc.lost_angel_sepulcrum": {
+    "sounds": [
+      "musica:lost_angel_sepulcrum"
+    ]
+  },
+  "music_disc.lost_angel_skylines": {
+    "sounds": [
+      "musica:lost_angel_skylines"
+    ]
+  },
+  "music_disc.lost_angel_wilds": {
+    "sounds": [
+      "musica:lost_angel_wilds"
+    ]
+  },
+  "music_disc.kaz_rain": {
+    "sounds": [
+      "musica:kaz_rain"
+    ]
+  },
+  "music_disc.kaz_shroom": {
+    "sounds": [
+      "musica:kaz_shroom"
+    ]
+  },
+  "music_disc.kaz_activate": {
+    "sounds": [
+      "musica:kaz_activate"
+    ]
+  },
+  "ambient.record_scratch": {
+    "sounds": [
+      "musica:scratch/record_scratch_1",
+      "musica:scratch/record_scratch_2",
+      "musica:scratch/record_scratch_3"
+    ]
+  }
+}

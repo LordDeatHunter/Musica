@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "musica",
+  "version": "${version}",
+
+  "name": "Musica",
+  "description": "Liven up the world in your ears!",
+  "authors": [
+    "LordDeatHunter"
+  ],
+  "contact": {
+    "homepage": "",
+    "sources": ""
+  },
+
+  "license": "MIT License",
+  "icon": "assets/musica.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "wraith.musica.Musica"
+    ],
+    "client": [
+      "wraith.musica.MusicaClient"
+    ],
+    "rei_plugins": [
+      "wraith.musica.compat.rei.MusicaREIPlugin"
+    ]
+  },
+  "mixins": [
+    "musica.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.7.4",
+    "fabric": "*",
+    "minecraft": "1.16.x"
+  }
+}

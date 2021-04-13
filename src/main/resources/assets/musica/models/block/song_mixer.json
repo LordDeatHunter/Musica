@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "particle": "musica:block/song_mixer_side",
+    "north": "musica:block/song_mixer_side",
+    "south": "musica:block/song_mixer_side",
+    "east": "musica:block/song_mixer_side",
+    "west": "musica:block/song_mixer_side",
+    "up": "musica:block/song_mixer_top",
+    "down": "musica:block/song_mixer_bottom"
+  }
+}

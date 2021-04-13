@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "musica:block/song_mixer"
+    }
+  }
+}
