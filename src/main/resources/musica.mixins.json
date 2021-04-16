@@ -4,6 +4,9 @@
   "package": "wraith.musica.mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
+    "AbstractBlockMixin",
+    "BlockMixin",
+    "CraftingScreenHandlerMixin"
   ],
   "client": [
   ],

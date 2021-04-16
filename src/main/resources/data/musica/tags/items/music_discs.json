@@ -1,0 +1,99 @@
+{
+  "replace": false,
+  "values": [
+    "musica:music_disc_dire_straits_money_for_nothing",
+    "musica:music_disc_john_denver_take_me_home_country_roads",
+    "musica:music_disc_rick_astley_never_gonna_give_you_up",
+    "musica:music_disc_toto_africa",
+    "musica:music_disc_yes_roundabout",
+    "musica:music_disc_daft_punk_around_the_world",
+
+    "musica:music_disc_naps_the_block_omen",
+    "musica:music_disc_naps_the_block_dimensions",
+    "musica:music_disc_naps_the_block_silence",
+    "musica:music_disc_naps_the_block_tall",
+
+    "musica:music_disc_genius_james_because",
+
+    "musica:music_disc_edevegie_world",
+
+    "musica:music_disc_carrot_and_co_hue",
+
+    "musica:music_disc_gwyd_waves",
+    "musica:music_disc_gwyd_charr",
+    "musica:music_disc_gwyd_bricks",
+    "musica:music_disc_gwyd_tricks",
+
+    "musica:music_disc_lost_angel_bastion",
+    "musica:music_disc_lost_angel_cheese",
+    "musica:music_disc_lost_angel_drifter",
+    "musica:music_disc_lost_angel_eyes",
+    "musica:music_disc_lost_angel_face",
+    "musica:music_disc_lost_angel_haunted",
+    "musica:music_disc_lost_angel_heartless",
+    "musica:music_disc_lost_angel_lost",
+    "musica:music_disc_lost_angel_neoncity",
+    "musica:music_disc_lost_angel_past",
+    "musica:music_disc_lost_angel_sepulcrum",
+    "musica:music_disc_lost_angel_skylines",
+    "musica:music_disc_lost_angel_wilds",
+    "musica:music_disc_lost_angel_ice_shards",
+    "musica:music_disc_lost_angel_chemistry",
+    "musica:music_disc_lost_angel_souls",
+
+    "musica:music_disc_kaz_shroom",
+    "musica:music_disc_kaz_rain",
+    "musica:music_disc_kaz_activate",
+
+    "musica:music_disc_firch_anti",
+    "musica:music_disc_firch_range",
+    "musica:music_disc_firch_chop",
+
+    "musica:music_disc_twockx_eternal_dream",
+
+    "musica:music_disc_yekonaip_plains",
+    "musica:music_disc_yekonaip_ocean",
+    "musica:music_disc_yekonaip_savanna",
+    "musica:music_disc_yekonaip_swampland",
+    "musica:music_disc_yekonaip_mesa",
+    "musica:music_disc_yekonaip_extreme_hills",
+    "musica:music_disc_yekonaip_taiga",
+    "musica:music_disc_yekonaip_jungle",
+    "musica:music_disc_yekonaip_desert",
+
+    "musica:music_disc_jamiesname_18",
+    "musica:music_disc_jamiesname_shulk",
+    "musica:music_disc_jamiesname_pillaged",
+
+    "musica:music_disc_bling_cheese_birch_bop",
+    "musica:music_disc_bling_cheese_charlie",
+    "musica:music_disc_bling_cheese_chicken",
+    "musica:music_disc_bling_cheese_fort_stress",
+    "musica:music_disc_bling_cheese_ic_5",
+    "musica:music_disc_bling_cheese_neon",
+    "musica:music_disc_bling_cheese_skulk",
+    "musica:music_disc_bling_cheese_strall",
+    "musica:music_disc_bling_cheese_surviving",
+    "musica:music_disc_bling_cheese_time",
+
+    "musica:music_disc_terraainn_moonset",
+    "musica:music_disc_terraainn_insomnia",
+    "musica:music_disc_terraainn_tweet",
+    "musica:music_disc_terraainn_crimson_columns",
+    "musica:music_disc_terraainn_wind",
+    "musica:music_disc_terraainn_close",
+    "musica:music_disc_terraainn_rgb",
+    "musica:music_disc_terraainn_disc_20",
+    "musica:music_disc_terraainn_disc_15",
+    "musica:music_disc_terraainn_storm",
+    "musica:music_disc_terraainn_illager_raid",
+    "musica:music_disc_terraainn_100",
+    "musica:music_disc_terraainn_lush",
+    "musica:music_disc_terraainn_remnant",
+
+    "musica:music_disc_tandem_music_over",
+
+    "musica:music_disc_hearken_music_warped",
+    "musica:music_disc_hearken_music_first_night"
+  ]
+}

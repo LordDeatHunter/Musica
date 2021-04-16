@@ -238,7 +238,6 @@ public class SongMixerScreenHandler extends ScreenHandler {
         return canUse(this.context, player, BlockRegistry.get("song_mixer"));
     }
 
-    @Environment(EnvType.CLIENT)
     public boolean canCraft() {
         return this.inputSlot.hasStack() && this.dyeSlot.hasStack() && !availableDiscs.isEmpty();
     }

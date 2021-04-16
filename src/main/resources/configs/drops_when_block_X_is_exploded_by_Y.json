@@ -1,0 +1,146 @@
+{
+  "minecraft:ice": {
+    "charged_creeper": {
+      "music_disc_lost_angel_ice_shards": 5
+    }
+  },
+  "minecraft:birch_log": {
+    "tnt": {
+      "music_disc_bling_cheese_birch_bop": 15
+    },
+    "charged_creeper": {
+      "music_disc_edevegie_world": 15
+    }
+  },
+  "minecraft:oak_log": {
+    "charged_creeper": {
+      "music_disc_yekonaip_plains": 15,
+      "music_disc_edevegie_world": 15
+    }
+  },
+  "minecraft:spruce_log": {
+    "charged_creeper": {
+      "music_disc_yekonaip_taiga": 15,
+      "music_disc_edevegie_world": 15
+    }
+  },
+  "minecraft:acacia_log": {
+    "charged_creeper": {
+      "music_disc_yekonaip_savanna": 15,
+      "music_disc_edevegie_world": 15
+    }
+  },
+  "minecraft:jungle_log": {
+    "charged_creeper": {
+      "music_disc_yekonaip_jungle": 15,
+      "music_disc_edevegie_world": 15
+    }
+  },
+  "minecraft:red_sand": {
+    "charged_creeper": {
+      "music_disc_yekonaip_mesa": 15,
+      "music_disc_edevegie_world": 15
+    }
+  },
+  "minecraft:sand": {
+    "charged_creeper": {
+      "music_disc_yekonaip_desert": 15,
+      "music_disc_edevegie_world": 15
+    }
+  },
+  "minecraft:bricks": {
+    "charged_creeper": {
+      "music_disc_gwyd_bricks": 5
+    }
+  },
+  "minecraft:stone": {
+    "charged_creeper": {
+      "music_disc_yekonaip_extreme_hills": 5
+    }
+  },
+  "minecraft:crimson_stem": {
+    "any": {
+      "music_disc_terraainn_crimson_columns": 10
+    }
+  },
+  "minecraft:white_bed": {
+    "any": {
+      "music_disc_terraainn_insomnia": 5
+    }
+  },
+  "minecraft:light_gray_bed": {
+    "any": {
+      "music_disc_terraainn_insomnia": 5
+    }
+  },
+  "minecraft:gray_bed": {
+    "any": {
+      "music_disc_terraainn_insomnia": 5
+    }
+  },
+  "minecraft:black_bed": {
+    "any": {
+      "music_disc_terraainn_insomnia": 5
+    }
+  },
+  "minecraft:blue_bed": {
+    "any": {
+      "music_disc_terraainn_insomnia": 5
+    }
+  },
+  "minecraft:light_blue_bed": {
+    "any": {
+      "music_disc_terraainn_insomnia": 5
+    }
+  },
+  "minecraft:cyan_bed": {
+    "any": {
+      "music_disc_terraainn_insomnia": 5
+    }
+  },
+  "minecraft:magenta_bed": {
+    "any": {
+      "music_disc_terraainn_insomnia": 5
+    }
+  },
+  "minecraft:pink_bed": {
+    "any": {
+      "music_disc_terraainn_insomnia": 5
+    }
+  },
+  "minecraft:purple_bed": {
+    "any": {
+      "music_disc_terraainn_insomnia": 5
+    }
+  },
+  "minecraft:red_bed": {
+    "any": {
+      "music_disc_terraainn_insomnia": 5
+    }
+  },
+  "minecraft:yellow_bed": {
+    "any": {
+      "music_disc_terraainn_insomnia": 5
+    }
+  },
+  "minecraft:orange_bed": {
+    "any": {
+      "music_disc_terraainn_insomnia": 5
+    }
+  },
+  "minecraft:brown_bed": {
+    "any": {
+      "music_disc_terraainn_insomnia": 5
+    }
+  },
+  "minecraft:green_bed": {
+    "any": {
+      "music_disc_terraainn_insomnia": 5
+    }
+  },
+  "minecraft:lime_bed": {
+    "any": {
+      "music_disc_terraainn_insomnia": 5
+    }
+  }
+}

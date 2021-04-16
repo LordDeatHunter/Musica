@@ -1,112 +1,216 @@
 {
+
   "item.musica.music_disc_dire_straits_money_for_nothing": "Music Disc",
+  "item.musica.music_disc_john_denver_take_me_home_country_roads": "Music Disc",
+  "item.musica.music_disc_toto_africa": "Music Disc",
+  "item.musica.music_disc_rick_astley_never_gonna_give_you_up": "Music Disc",
+  "item.musica.music_disc_yes_roundabout": "Music Disc",
+  "item.musica.music_disc_daft_punk_around_the_world": "Music Disc",
+
   "item.musica.music_disc_dire_straits_money_for_nothing.desc": "Dire Straits - Money For Nothing",
+  "item.musica.music_disc_john_denver_take_me_home_country_roads.desc": "John Denver - Take Me Home, Country Roads",
+  "item.musica.music_disc_toto_africa.desc": "Toto - Africa",
+  "item.musica.music_disc_rick_astley_never_gonna_give_you_up.desc": "Rick Astley - Never Gonna Give You Up",
+  "item.musica.music_disc_yes_roundabout.desc": "Yes - Roundabout",
+  "item.musica.music_disc_daft_punk_around_the_world.desc": "Daft Punk - Around The World",
+
 
   "item.musica.music_disc_naps_the_block_omen": "Music Disc",
-  "item.musica.music_disc_naps_the_block_omen.desc": "Naps The Block - Omen",
-
   "item.musica.music_disc_naps_the_block_dimensions": "Music Disc",
-  "item.musica.music_disc_naps_the_block_dimensions.desc": "Naps The Block - Dimensions",
-
   "item.musica.music_disc_naps_the_block_silence": "Music Disc",
-  "item.musica.music_disc_naps_the_block_silence.desc": "Naps The Block - Silence",
-
   "item.musica.music_disc_naps_the_block_tall": "Music Disc",
+
+  "item.musica.music_disc_naps_the_block_omen.desc": "Naps The Block - Omen",
+  "item.musica.music_disc_naps_the_block_dimensions.desc": "Naps The Block - Dimensions",
+  "item.musica.music_disc_naps_the_block_silence.desc": "Naps The Block - Silence",
   "item.musica.music_disc_naps_the_block_tall.desc": "Naps The Block - Tall",
 
-  "item.musica.music_disc_john_denver_take_me_home_country_roads": "Music Disc",
-  "item.musica.music_disc_john_denver_take_me_home_country_roads.desc": "John Denver - Take Me Home, Country Roads",
-
-  "item.musica.music_disc_toto_africa": "Music Disc",
-  "item.musica.music_disc_toto_africa.desc": "Toto - Africa",
-
-  "item.musica.music_disc_rick_astley_never_gonna_give_you_up": "Music Disc",
-  "item.musica.music_disc_rick_astley_never_gonna_give_you_up.desc": "Rick Astley - Never Gonna Give You Up",
-
-  "item.musica.music_disc_lost_angel_ice_shards": "Music Disc",
-  "item.musica.music_disc_lost_angel_ice_shards.desc": "Lost Angel - Ice Shards",
-
-  "item.musica.music_disc_lost_angel_chemistry": "Music Disc",
-  "item.musica.music_disc_lost_angel_chemistry.desc": "Lost Angel - Chemistry",
-
-  "item.musica.music_disc_lost_angel_souls": "Music Disc",
-  "item.musica.music_disc_lost_angel_souls.desc": "Lost Angel - Souls",
 
   "item.musica.music_disc_edevegie_world": "Music Disc",
+
   "item.musica.music_disc_edevegie_world.desc": "Edevegie - W O R L D",
 
+
   "item.musica.music_disc_genius_james_because": "Music Disc",
+
   "item.musica.music_disc_genius_james_because.desc": "Genius James - Because",
 
+
   "item.musica.music_disc_carrot_and_co_hue": "Music Disc",
+
   "item.musica.music_disc_carrot_and_co_hue.desc": "Carrot And Co. - Hue",
 
+
   "item.musica.music_disc_gwyd_waves": "Music Disc",
-  "item.musica.music_disc_gwyd_waves.desc": "Gwyd - Waves",
-
   "item.musica.music_disc_gwyd_charr": "Music Disc",
-  "item.musica.music_disc_gwyd_charr.desc": "Gwyd - Charr",
-
   "item.musica.music_disc_gwyd_bricks": "Music Disc",
-  "item.musica.music_disc_gwyd_bricks.desc": "Gwyd - Bricks",
-
   "item.musica.music_disc_gwyd_tricks": "Music Disc",
+
+  "item.musica.music_disc_gwyd_waves.desc": "Gwyd - Waves",
+  "item.musica.music_disc_gwyd_charr.desc": "Gwyd - Charr",
+  "item.musica.music_disc_gwyd_bricks.desc": "Gwyd - Bricks",
   "item.musica.music_disc_gwyd_tricks.desc": "Gwyd - Tricks",
 
+
   "item.musica.music_disc_lost_angel_bastion": "Music Disc",
-  "item.musica.music_disc_lost_angel_bastion.desc": "Lost Angel - Bastion",
-
   "item.musica.music_disc_lost_angel_cheese": "Music Disc",
-  "item.musica.music_disc_lost_angel_cheese.desc": "Lost Angel - Cheese",
-
+  "item.musica.music_disc_lost_angel_chemistry": "Music Disc",
   "item.musica.music_disc_lost_angel_drifter": "Music Disc",
-  "item.musica.music_disc_lost_angel_drifter.desc": "Lost Angel - Drifter",
-
   "item.musica.music_disc_lost_angel_eyes": "Music Disc",
-  "item.musica.music_disc_lost_angel_eyes.desc": "Lost Angel - Eyes",
-
   "item.musica.music_disc_lost_angel_face": "Music Disc",
-  "item.musica.music_disc_lost_angel_face.desc": "Lost Angel - Face",
-
   "item.musica.music_disc_lost_angel_haunted": "Music Disc",
-  "item.musica.music_disc_lost_angel_haunted.desc": "Lost Angel - Haunted",
-
   "item.musica.music_disc_lost_angel_heartless": "Music Disc",
-  "item.musica.music_disc_lost_angel_heartless.desc": "Lost Angel - Heartless",
-
+  "item.musica.music_disc_lost_angel_ice_shards": "Music Disc",
   "item.musica.music_disc_lost_angel_lost": "Music Disc",
-  "item.musica.music_disc_lost_angel_lost.desc": "Lost Angel - Lost",
-
   "item.musica.music_disc_lost_angel_neoncity": "Music Disc",
-  "item.musica.music_disc_lost_angel_neoncity.desc": "Lost Angel - Neoncity",
-
   "item.musica.music_disc_lost_angel_past": "Music Disc",
-  "item.musica.music_disc_lost_angel_past.desc": "Lost Angel - Past",
-
   "item.musica.music_disc_lost_angel_sepulcrum": "Music Disc",
-  "item.musica.music_disc_lost_angel_sepulcrum.desc": "Lost Angel - Sepulcrum",
-
   "item.musica.music_disc_lost_angel_skylines": "Music Disc",
-  "item.musica.music_disc_lost_angel_skylines.desc": "Lost Angel - Skylines",
-
+  "item.musica.music_disc_lost_angel_souls": "Music Disc",
   "item.musica.music_disc_lost_angel_wilds": "Music Disc",
+
+  "item.musica.music_disc_lost_angel_bastion.desc": "Lost Angel - Bastion",
+  "item.musica.music_disc_lost_angel_cheese.desc": "Lost Angel - Cheese",
+  "item.musica.music_disc_lost_angel_chemistry.desc": "Lost Angel - Chemistry",
+  "item.musica.music_disc_lost_angel_drifter.desc": "Lost Angel - Drifter",
+  "item.musica.music_disc_lost_angel_eyes.desc": "Lost Angel - Eyes",
+  "item.musica.music_disc_lost_angel_face.desc": "Lost Angel - Face",
+  "item.musica.music_disc_lost_angel_haunted.desc": "Lost Angel - Haunted",
+  "item.musica.music_disc_lost_angel_heartless.desc": "Lost Angel - Heartless",
+  "item.musica.music_disc_lost_angel_ice_shards.desc": "Lost Angel - Ice Shards",
+  "item.musica.music_disc_lost_angel_lost.desc": "Lost Angel - Lost",
+  "item.musica.music_disc_lost_angel_neoncity.desc": "Lost Angel - Neoncity",
+  "item.musica.music_disc_lost_angel_past.desc": "Lost Angel - Past",
+  "item.musica.music_disc_lost_angel_sepulcrum.desc": "Lost Angel - Sepulcrum",
+  "item.musica.music_disc_lost_angel_skylines.desc": "Lost Angel - Skylines",
+  "item.musica.music_disc_lost_angel_souls.desc": "Lost Angel - Souls",
   "item.musica.music_disc_lost_angel_wilds.desc": "Lost Angel - Wilds",
 
-  "item.musica.music_disc_kaz_shroom": "Music Disc",
-  "item.musica.music_disc_kaz_shroom.desc": "Kaz - Shroom",
 
   "item.musica.music_disc_kaz_rain": "Music Disc",
-  "item.musica.music_disc_kaz_rain.desc": "Kaz - Rain",
-
   "item.musica.music_disc_kaz_activate": "Music Disc",
+  "item.musica.music_disc_kaz_shroom": "Music Disc",
+
+  "item.musica.music_disc_kaz_rain.desc": "Kaz - Rain",
   "item.musica.music_disc_kaz_activate.desc": "Kaz - Activate",
+  "item.musica.music_disc_kaz_shroom.desc": "Kaz - Shroom",
+
+
+  "item.musica.music_disc_firch_anti": "Music Disc",
+  "item.musica.music_disc_firch_range": "Music Disc",
+  "item.musica.music_disc_firch_chop": "Music Disc",
+
+  "item.musica.music_disc_firch_anti.desc": "Firch - Anti",
+  "item.musica.music_disc_firch_range.desc": "Firch - Range",
+  "item.musica.music_disc_firch_chop.desc": "Firch - Chop",
+
+
+  "item.musica.music_disc_twockx_eternal_dream": "Music Disc",
+
+  "item.musica.music_disc_twockx_eternal_dream.desc": "Twockx - Eternal Dream",
+
+
+  "item.musica.music_disc_yekonaip_plains": "Music Disc",
+  "item.musica.music_disc_yekonaip_ocean": "Music Disc",
+  "item.musica.music_disc_yekonaip_savanna": "Music Disc",
+  "item.musica.music_disc_yekonaip_swampland": "Music Disc",
+  "item.musica.music_disc_yekonaip_mesa": "Music Disc",
+  "item.musica.music_disc_yekonaip_extreme_hills": "Music Disc",
+  "item.musica.music_disc_yekonaip_taiga": "Music Disc",
+  "item.musica.music_disc_yekonaip_jungle": "Music Disc",
+  "item.musica.music_disc_yekonaip_desert": "Music Disc",
+
+  "item.musica.music_disc_yekonaip_plains.desc": "Yekonaip - Plains",
+  "item.musica.music_disc_yekonaip_ocean.desc": "Yekonaip - Ocean",
+  "item.musica.music_disc_yekonaip_savanna.desc": "Yekonaip - Savanna",
+  "item.musica.music_disc_yekonaip_swampland.desc": "Yekonaip - Swampland",
+  "item.musica.music_disc_yekonaip_mesa.desc": "Yekonaip - Mesa",
+  "item.musica.music_disc_yekonaip_extreme_hills.desc": "Yekonaip - Extreme Hills",
+  "item.musica.music_disc_yekonaip_taiga.desc": "Yekonaip - Taiga",
+  "item.musica.music_disc_yekonaip_jungle.desc": "Yekonaip - Jungle",
+  "item.musica.music_disc_yekonaip_desert.desc": "Yekonaip - Desert",
+
+
+  "item.musica.music_disc_jamiesname_18": "Music Disc",
+  "item.musica.music_disc_jamiesname_shulk": "Music Disc",
+  "item.musica.music_disc_jamiesname_pillaged": "Music Disc",
+
+  "item.musica.music_disc_jamiesname_18.desc": "JamiesName - 18",
+  "item.musica.music_disc_jamiesname_shulk.desc": "JamiesName - Shulk",
+  "item.musica.music_disc_jamiesname_pillaged.desc": "JamiesName - Pillaged",
+
+
+  "item.musica.music_disc_bling_cheese_birch_bop": "Music Disc",
+  "item.musica.music_disc_bling_cheese_charlie": "Music Disc",
+  "item.musica.music_disc_bling_cheese_chicken": "Music Disc",
+  "item.musica.music_disc_bling_cheese_fort_stress": "Music Disc",
+  "item.musica.music_disc_bling_cheese_ic_5": "Music Disc",
+  "item.musica.music_disc_bling_cheese_neon": "Music Disc",
+  "item.musica.music_disc_bling_cheese_skulk": "Music Disc",
+  "item.musica.music_disc_bling_cheese_strall": "Music Disc",
+  "item.musica.music_disc_bling_cheese_surviving": "Music Disc",
+  "item.musica.music_disc_bling_cheese_time": "Music Disc",
+
+  "item.musica.music_disc_bling_cheese_birch_bop.desc": "Bling Cheese - Birch Bop",
+  "item.musica.music_disc_bling_cheese_charlie.desc": "Bling Cheese - Charlie",
+  "item.musica.music_disc_bling_cheese_chicken.desc": "Bling Cheese - Chicken",
+  "item.musica.music_disc_bling_cheese_fort_stress.desc": "Bling Cheese - Fort-Stress",
+  "item.musica.music_disc_bling_cheese_ic_5.desc": "Bling Cheese - Đįč 5",
+  "item.musica.music_disc_bling_cheese_neon.desc": "Bling Cheese - Neon",
+  "item.musica.music_disc_bling_cheese_skulk.desc": "Bling Cheese - Skulk",
+  "item.musica.music_disc_bling_cheese_strall.desc": "Bling Cheese - Strall",
+  "item.musica.music_disc_bling_cheese_surviving.desc": "Bling Cheese - Surviving",
+  "item.musica.music_disc_bling_cheese_time.desc": "Bling Cheese - Time",
+
+
+  "item.musica.music_disc_terraainn_moonset": "Music Disc",
+  "item.musica.music_disc_terraainn_insomnia": "Music Disc",
+  "item.musica.music_disc_terraainn_tweet": "Music Disc",
+  "item.musica.music_disc_terraainn_crimson_columns": "Music Disc",
+  "item.musica.music_disc_terraainn_wind": "Music Disc",
+  "item.musica.music_disc_terraainn_close": "Music Disc",
+  "item.musica.music_disc_terraainn_rgb": "Music Disc",
+  "item.musica.music_disc_terraainn_disc_20": "Music Disc",
+  "item.musica.music_disc_terraainn_disc_15": "Music Disc",
+  "item.musica.music_disc_terraainn_storm": "Music Disc",
+  "item.musica.music_disc_terraainn_illager_raid": "Music Disc",
+  "item.musica.music_disc_terraainn_100": "Music Disc",
+  "item.musica.music_disc_terraainn_lush": "Music Disc",
+  "item.musica.music_disc_terraainn_remnant": "Music Disc",
+
+  "item.musica.music_disc_terraainn_moonset.desc": "Terraainn - Moonset",
+  "item.musica.music_disc_terraainn_insomnia.desc": "Terraainn - Insomnia",
+  "item.musica.music_disc_terraainn_tweet.desc": "Terraainn - Tweet",
+  "item.musica.music_disc_terraainn_crimson_columns.desc": "Terraainn - Crimson Columns",
+  "item.musica.music_disc_terraainn_wind.desc": "Terraainn - Wind",
+  "item.musica.music_disc_terraainn_close.desc": "Terraainn - Close",
+  "item.musica.music_disc_terraainn_rgb.desc": "Terraainn - RGB",
+  "item.musica.music_disc_terraainn_disc_20.desc": "Terraainn - Disc 20",
+  "item.musica.music_disc_terraainn_disc_15.desc": "Terraainn - Disc 15",
+  "item.musica.music_disc_terraainn_storm.desc": "Terraainn - Storm",
+  "item.musica.music_disc_terraainn_illager_raid.desc": "Terraainn - Illager Raid",
+  "item.musica.music_disc_terraainn_100.desc": "Terraainn - 100",
+  "item.musica.music_disc_terraainn_lush.desc": "Terraainn - Lush",
+  "item.musica.music_disc_terraainn_remnant.desc": "Terraainn - Remnant",
+
+
+  "item.musica.music_disc_tandem_music_over": "Music Disc",
+
+  "item.musica.music_disc_tandem_music_over.desc": "Tandem Music - Over",
+
+
+  "item.musica.music_disc_hearken_music_warped": "Music Disc",
+  "item.musica.music_disc_hearken_music_first_night": "Music Disc",
+
+  "item.musica.music_disc_hearken_music_warped.desc": "Hearken Music - Warped",
+  "item.musica.music_disc_hearken_music_first_night.desc": "Hearken Music - First Night",
+
 
   "item.musica.sticky_disc": "Sticky Disc",
   "item.musica.blank_disc": "Blank Disc",
 
   "item.musica.song_mixer": "Song Mixer",
   "block.musica.song_mixer": "Song Mixer",
-  "container.musica.song_mixer": "Song Mixer",
   "container.musica.song_mixer": "Song Mixer",
   "container.musica.song_mixer.rei.title": "Song Mixing",
 

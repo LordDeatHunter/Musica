@@ -8,7 +8,6 @@ import wraith.musica.CustomItemGroup;
 import wraith.musica.CustomMusicDiscItem;
 import wraith.musica.Utils;
 
-import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -51,6 +50,58 @@ public class ItemRegistry {
         put("music_disc_kaz_shroom", new CustomMusicDiscItem(10, SoundEventsRegistry.get("kaz_shroom"), (new Item.Settings()).maxCount(1).group(CustomItemGroup.MUSICA).rarity(Rarity.RARE)));
         put("music_disc_kaz_rain", new CustomMusicDiscItem(10, SoundEventsRegistry.get("kaz_rain"), (new Item.Settings()).maxCount(1).group(CustomItemGroup.MUSICA).rarity(Rarity.RARE)));
         put("music_disc_kaz_activate", new CustomMusicDiscItem(10, SoundEventsRegistry.get("kaz_activate"), (new Item.Settings()).maxCount(1).group(CustomItemGroup.MUSICA).rarity(Rarity.RARE)));
+        put("music_disc_firch_anti", new CustomMusicDiscItem(10, SoundEventsRegistry.get("firch_anti"), (new Item.Settings()).maxCount(1).group(CustomItemGroup.MUSICA).rarity(Rarity.RARE)));
+        put("music_disc_firch_range", new CustomMusicDiscItem(10, SoundEventsRegistry.get("firch_range"), (new Item.Settings()).maxCount(1).group(CustomItemGroup.MUSICA).rarity(Rarity.RARE)));
+        put("music_disc_firch_chop", new CustomMusicDiscItem(10, SoundEventsRegistry.get("firch_chop"), (new Item.Settings()).maxCount(1).group(CustomItemGroup.MUSICA).rarity(Rarity.RARE)));
+        put("music_disc_yes_roundabout", new CustomMusicDiscItem(10, SoundEventsRegistry.get("yes_roundabout"), (new Item.Settings()).maxCount(1).group(CustomItemGroup.MUSICA).rarity(Rarity.RARE)));
+        put("music_disc_twockx_eternal_dream", new CustomMusicDiscItem(10, SoundEventsRegistry.get("twockx_eternal_dream"), (new Item.Settings()).maxCount(1).group(CustomItemGroup.MUSICA).rarity(Rarity.RARE)));
+        put("music_disc_daft_punk_around_the_world", new CustomMusicDiscItem(10, SoundEventsRegistry.get("daft_punk_around_the_world"), (new Item.Settings()).maxCount(1).group(CustomItemGroup.MUSICA).rarity(Rarity.RARE)));
+
+        put("music_disc_yekonaip_plains", new CustomMusicDiscItem(10, SoundEventsRegistry.get("yekonaip_plains"), (new Item.Settings()).maxCount(1).group(CustomItemGroup.MUSICA).rarity(Rarity.RARE)));
+        put("music_disc_yekonaip_ocean", new CustomMusicDiscItem(10, SoundEventsRegistry.get("yekonaip_ocean"), (new Item.Settings()).maxCount(1).group(CustomItemGroup.MUSICA).rarity(Rarity.RARE)));
+        put("music_disc_yekonaip_savanna", new CustomMusicDiscItem(10, SoundEventsRegistry.get("yekonaip_savanna"), (new Item.Settings()).maxCount(1).group(CustomItemGroup.MUSICA).rarity(Rarity.RARE)));
+        put("music_disc_yekonaip_swampland", new CustomMusicDiscItem(10, SoundEventsRegistry.get("yekonaip_swampland"), (new Item.Settings()).maxCount(1).group(CustomItemGroup.MUSICA).rarity(Rarity.RARE)));
+        put("music_disc_yekonaip_mesa", new CustomMusicDiscItem(10, SoundEventsRegistry.get("yekonaip_mesa"), (new Item.Settings()).maxCount(1).group(CustomItemGroup.MUSICA).rarity(Rarity.RARE)));
+        put("music_disc_yekonaip_extreme_hills", new CustomMusicDiscItem(10, SoundEventsRegistry.get("yekonaip_extreme_hills"), (new Item.Settings()).maxCount(1).group(CustomItemGroup.MUSICA).rarity(Rarity.RARE)));
+        put("music_disc_yekonaip_taiga", new CustomMusicDiscItem(10, SoundEventsRegistry.get("yekonaip_taiga"), (new Item.Settings()).maxCount(1).group(CustomItemGroup.MUSICA).rarity(Rarity.RARE)));
+        put("music_disc_yekonaip_jungle", new CustomMusicDiscItem(10, SoundEventsRegistry.get("yekonaip_jungle"), (new Item.Settings()).maxCount(1).group(CustomItemGroup.MUSICA).rarity(Rarity.RARE)));
+        put("music_disc_yekonaip_desert", new CustomMusicDiscItem(10, SoundEventsRegistry.get("yekonaip_desert"), (new Item.Settings()).maxCount(1).group(CustomItemGroup.MUSICA).rarity(Rarity.RARE)));
+
+        put("music_disc_jamiesname_18", new CustomMusicDiscItem(10, SoundEventsRegistry.get("jamiesname_18"), (new Item.Settings()).maxCount(1).group(CustomItemGroup.MUSICA).rarity(Rarity.RARE)));
+        put("music_disc_jamiesname_shulk", new CustomMusicDiscItem(10, SoundEventsRegistry.get("jamiesname_shulk"), (new Item.Settings()).maxCount(1).group(CustomItemGroup.MUSICA).rarity(Rarity.RARE)));
+        put("music_disc_jamiesname_pillaged", new CustomMusicDiscItem(10, SoundEventsRegistry.get("jamiesname_pillaged"), (new Item.Settings()).maxCount(1).group(CustomItemGroup.MUSICA).rarity(Rarity.RARE)));
+
+        put("music_disc_bling_cheese_birch_bop", new CustomMusicDiscItem(10, SoundEventsRegistry.get("bling_cheese_birch_bop"), (new Item.Settings()).maxCount(1).group(CustomItemGroup.MUSICA).rarity(Rarity.RARE)));
+        put("music_disc_bling_cheese_charlie", new CustomMusicDiscItem(10, SoundEventsRegistry.get("bling_cheese_charlie"), (new Item.Settings()).maxCount(1).group(CustomItemGroup.MUSICA).rarity(Rarity.RARE)));
+        put("music_disc_bling_cheese_chicken", new CustomMusicDiscItem(10, SoundEventsRegistry.get("bling_cheese_chicken"), (new Item.Settings()).maxCount(1).group(CustomItemGroup.MUSICA).rarity(Rarity.RARE)));
+        put("music_disc_bling_cheese_fort_stress", new CustomMusicDiscItem(10, SoundEventsRegistry.get("bling_cheese_fort_stress"), (new Item.Settings()).maxCount(1).group(CustomItemGroup.MUSICA).rarity(Rarity.RARE)));
+        put("music_disc_bling_cheese_ic_5", new CustomMusicDiscItem(10, SoundEventsRegistry.get("bling_cheese_ic_5"), (new Item.Settings()).maxCount(1).group(CustomItemGroup.MUSICA).rarity(Rarity.RARE)));
+        put("music_disc_bling_cheese_neon", new CustomMusicDiscItem(10, SoundEventsRegistry.get("bling_cheese_neon"), (new Item.Settings()).maxCount(1).group(CustomItemGroup.MUSICA).rarity(Rarity.RARE)));
+        put("music_disc_bling_cheese_skulk", new CustomMusicDiscItem(10, SoundEventsRegistry.get("bling_cheese_skulk"), (new Item.Settings()).maxCount(1).group(CustomItemGroup.MUSICA).rarity(Rarity.RARE)));
+        put("music_disc_bling_cheese_strall", new CustomMusicDiscItem(10, SoundEventsRegistry.get("bling_cheese_strall"), (new Item.Settings()).maxCount(1).group(CustomItemGroup.MUSICA).rarity(Rarity.RARE)));
+        put("music_disc_bling_cheese_surviving", new CustomMusicDiscItem(10, SoundEventsRegistry.get("bling_cheese_surviving"), (new Item.Settings()).maxCount(1).group(CustomItemGroup.MUSICA).rarity(Rarity.RARE)));
+        put("music_disc_bling_cheese_time", new CustomMusicDiscItem(10, SoundEventsRegistry.get("bling_cheese_time"), (new Item.Settings()).maxCount(1).group(CustomItemGroup.MUSICA).rarity(Rarity.RARE)));
+        
+        put("music_disc_terraainn_moonset", new CustomMusicDiscItem(10, SoundEventsRegistry.get("terraainn_moonset"), (new Item.Settings()).maxCount(1).group(CustomItemGroup.MUSICA).rarity(Rarity.RARE)));
+        put("music_disc_terraainn_insomnia", new CustomMusicDiscItem(10, SoundEventsRegistry.get("terraainn_insomnia"), (new Item.Settings()).maxCount(1).group(CustomItemGroup.MUSICA).rarity(Rarity.RARE)));
+        put("music_disc_terraainn_tweet", new CustomMusicDiscItem(10, SoundEventsRegistry.get("terraainn_tweet"), (new Item.Settings()).maxCount(1).group(CustomItemGroup.MUSICA).rarity(Rarity.RARE)));
+        put("music_disc_terraainn_crimson_columns", new CustomMusicDiscItem(10, SoundEventsRegistry.get("terraainn_crimson_columns"), (new Item.Settings()).maxCount(1).group(CustomItemGroup.MUSICA).rarity(Rarity.RARE)));
+        put("music_disc_terraainn_wind", new CustomMusicDiscItem(10, SoundEventsRegistry.get("terraainn_wind"), (new Item.Settings()).maxCount(1).group(CustomItemGroup.MUSICA).rarity(Rarity.RARE)));
+        put("music_disc_terraainn_close", new CustomMusicDiscItem(10, SoundEventsRegistry.get("terraainn_close"), (new Item.Settings()).maxCount(1).group(CustomItemGroup.MUSICA).rarity(Rarity.RARE)));
+        put("music_disc_terraainn_rgb", new CustomMusicDiscItem(10, SoundEventsRegistry.get("terraainn_rgb"), (new Item.Settings()).maxCount(1).group(CustomItemGroup.MUSICA).rarity(Rarity.RARE)));
+        put("music_disc_terraainn_disc_20", new CustomMusicDiscItem(10, SoundEventsRegistry.get("terraainn_disc_20"), (new Item.Settings()).maxCount(1).group(CustomItemGroup.MUSICA).rarity(Rarity.RARE)));
+        put("music_disc_terraainn_disc_15", new CustomMusicDiscItem(10, SoundEventsRegistry.get("terraainn_disc_15"), (new Item.Settings()).maxCount(1).group(CustomItemGroup.MUSICA).rarity(Rarity.RARE)));
+        put("music_disc_terraainn_storm", new CustomMusicDiscItem(10, SoundEventsRegistry.get("terraainn_storm"), (new Item.Settings()).maxCount(1).group(CustomItemGroup.MUSICA).rarity(Rarity.RARE)));
+        put("music_disc_terraainn_illager_raid", new CustomMusicDiscItem(10, SoundEventsRegistry.get("terraainn_illager_raid"), (new Item.Settings()).maxCount(1).group(CustomItemGroup.MUSICA).rarity(Rarity.RARE)));
+        put("music_disc_terraainn_100", new CustomMusicDiscItem(10, SoundEventsRegistry.get("terraainn_100"), (new Item.Settings()).maxCount(1).group(CustomItemGroup.MUSICA).rarity(Rarity.RARE)));
+        put("music_disc_terraainn_lush", new CustomMusicDiscItem(10, SoundEventsRegistry.get("terraainn_lush"), (new Item.Settings()).maxCount(1).group(CustomItemGroup.MUSICA).rarity(Rarity.RARE)));
+        put("music_disc_terraainn_remnant", new CustomMusicDiscItem(10, SoundEventsRegistry.get("terraainn_remnant"), (new Item.Settings()).maxCount(1).group(CustomItemGroup.MUSICA).rarity(Rarity.RARE)));
+
+        put("music_disc_tandem_music_over", new CustomMusicDiscItem(10, SoundEventsRegistry.get("tandem_music_over"), (new Item.Settings()).maxCount(1).group(CustomItemGroup.MUSICA).rarity(Rarity.RARE)));
+
+        put("music_disc_hearken_music_warped", new CustomMusicDiscItem(10, SoundEventsRegistry.get("hearken_music_warped"), (new Item.Settings()).maxCount(1).group(CustomItemGroup.MUSICA).rarity(Rarity.RARE)));
+        put("music_disc_hearken_music_first_night", new CustomMusicDiscItem(10, SoundEventsRegistry.get("hearken_music_first_night"), (new Item.Settings()).maxCount(1).group(CustomItemGroup.MUSICA).rarity(Rarity.RARE)));
+
 
         put("sticky_disc", new Item(new Item.Settings().group(CustomItemGroup.MUSICA)));
         put("blank_disc", new Item(new Item.Settings().group(CustomItemGroup.MUSICA)));
@@ -67,4 +118,7 @@ public class ItemRegistry {
         return ITEMS.get(key);
     }
 
+    public static boolean contains(String item) {
+        return ITEMS.containsKey(item);
+    }
 }

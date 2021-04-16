@@ -1,0 +1,191 @@
+{
+  "minecraft:creeper": {
+    "#minecraft:skeletons": {
+      "music_disc_dire_straits_money_for_nothing": 100,
+      "music_disc_toto_africa": 100,
+      "music_disc_rick_astley_never_gonna_give_you_up": 100,
+      "music_disc_john_denver_take_me_home_country_roads": 100,
+
+      "music_disc_naps_the_block_dimensions": 100,
+      "music_disc_naps_the_block_silence": 100,
+
+      "music_disc_genius_james_because": 100,
+
+      "music_disc_lost_angel_cheese": 100,
+      "music_disc_lost_angel_haunted": 100,
+      "music_disc_lost_angel_heartless": 100,
+      "music_disc_lost_angel_lost": 100,
+      "music_disc_lost_angel_neoncity": 100,
+      "music_disc_lost_angel_past": 100,
+      "music_disc_lost_angel_skylines": 100,
+      "music_disc_lost_angel_chemistry": 100,
+
+      "music_disc_firch_range": 100,
+
+      "music_disc_yekonaip_swampland": 100,
+
+      "music_disc_jamiesname_18": 100,
+
+      "music_disc_bling_cheese_charlie": 100,
+      "music_disc_bling_cheese_ic_5": 100,
+
+      "music_disc_terraainn_moonset": 100,
+      "music_disc_terraainn_wind": 100,
+      "music_disc_terraainn_close": 100,
+      "music_disc_terraainn_rgb": 100,
+      "music_disc_terraainn_disc_20": 100,
+      "music_disc_terraainn_disc_15": 100,
+      "music_disc_terraainn_storm": 100,
+      "music_disc_terraainn_100": 100,
+      "music_disc_terraainn_lush": 100,
+      "music_disc_terraainn_remnant": 100,
+      "music_disc_tandem_music_over": 100,
+      "music_disc_hearken_music_warped": 100,
+      "music_disc_hearken_music_first_night": 100
+    }
+  },
+  "minecraft:chicken": {
+    "minecraft:creeper": {
+      "music_disc_terraainn_illager_raid": 100
+    }
+  },
+  "minecraft:parrot": {
+    "minecraft:creeper": {
+      "music_disc_terraainn_tweet": 80
+    }
+  },
+  "minecraft:panda": {
+    "any": {
+      "music_disc_lost_angel_wilds": 20
+    }
+  },
+  "minecraft:mooshroom": {
+    "minecraft:creeper": {
+      "music_disc_kaz_shroom": 100
+    }
+  },
+  "minecraft:ravager": {
+    "any": {
+      "music_disc_bling_cheese_chicken": 20
+    }
+  },
+  "minecraft:pillager": {
+    "minecraft:pillager": {
+      "music_disc_jamiesname_pillaged": 100,
+      "music_disc_naps_the_block_omen": 100
+    }
+  },
+  "minecraft:iron_golem": {
+    "minecraft:any": {
+      "music_disc_bling_cheese_neon": 1
+    }
+  },
+  "minecraft:wither": {
+    "minecraft:any": {
+      "music_disc_bling_cheese_time": 20
+    }
+  },
+  "minecraft:wandering_trader": {
+    "minecraft:llama": {
+      "music_disc_bling_cheese_surviving": 100
+    }
+  },
+  "minecraft:ender_dragon": {
+    "any": {
+      "music_disc_bling_cheese_surviving": 100
+    }
+  },
+  "minecraft:cod": {
+    "any": {
+      "music_disc_yekonaip_ocean": 100,
+      "music_disc_gwyd_waves": 5
+    }
+  },
+  "minecraft:salmon": {
+    "any": {
+      "music_disc_yekonaip_ocean": 100,
+      "music_disc_gwyd_waves": 5
+    }
+  },
+  "minecraft:dolphin": {
+    "any": {
+      "music_disc_yekonaip_ocean": 100,
+      "music_disc_gwyd_waves": 100
+    }
+  },
+  "minecraft:blaze": {
+    "any": {
+      "music_disc_gwyd_charr": 100
+    }
+  },
+  "minecraft:enderman": {
+    "any": {
+      "music_disc_naps_the_block_tall": 10,
+      "music_disc_lost_angel_eyes": 10
+    },
+    "creeper": {
+      "music_disc_firch_anti": 100
+    }
+  },
+  "minecraft:witch": {
+    "any": {
+      "music_disc_gwyd_tricks": 1
+    }
+  },
+  "minecraft:shulker": {
+    "any": {
+      "music_disc_lost_angel_face": 10,
+      "music_disc_jamiesname_shulk": 10
+    }
+  },
+  "minecraft:skeleton": {
+    "any": {
+      "music_disc_lost_angel_souls": 5
+    }
+  },
+  "minecraft:zombie": {
+    "any": {
+      "music_disc_lost_angel_souls": 5
+    }
+  },
+  "minecraft:wither_skeleton": {
+    "any": {
+      "music_disc_lost_angel_souls": 5
+    }
+  },
+  "minecraft:drowned": {
+    "any": {
+      "music_disc_lost_angel_souls": 5
+    }
+  },
+  "minecraft:phantom": {
+    "any": {
+      "music_disc_lost_angel_souls": 5
+    }
+  },
+  "minecraft:husk": {
+    "any": {
+      "music_disc_lost_angel_souls": 5
+    }
+  },
+  "minecraft:zoglin": {
+    "any": {
+      "music_disc_lost_angel_souls": 5
+    }
+  },
+  "minecraft:zombified_piglin": {
+    "any": {
+      "music_disc_lost_angel_souls": 5
+    }
+  },
+  "minecraft:stray": {
+    "any": {
+      "music_disc_lost_angel_souls": 5
+    }
+  },
+  "minecraft:rabbit": {
+    "any": {
+      "music_disc_carrot_and_co_hue": 1
+    }
+  }
+}
