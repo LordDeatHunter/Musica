@@ -78,6 +78,11 @@
     "": {
       "music_disc_twockx_eternal_dream": 0.5
     }
+  },
+  "minecraft:jukebox": {
+    "": {
+      "music_disc_gwyd_click": 0.5
+    }
   }
 
 }

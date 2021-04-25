@@ -27,7 +27,7 @@ public class Config {
     private boolean musicMixerCrafting = true;
 
     private static Config instance = null;
-    private boolean overrideConfigs = false;
+    private boolean overrideConfigs = true;
 
     private Config(){}
 

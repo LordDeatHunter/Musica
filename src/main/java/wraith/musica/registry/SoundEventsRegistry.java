@@ -34,6 +34,7 @@ public class SoundEventsRegistry {
         put("gwyd_charr", new SoundEvent(Utils.ID("music_disc.gwyd_charr")));
         put("gwyd_bricks", new SoundEvent(Utils.ID("music_disc.gwyd_bricks")));
         put("gwyd_tricks", new SoundEvent(Utils.ID("music_disc.gwyd_tricks")));
+        put("gwyd_click", new SoundEvent(Utils.ID("music_disc.gwyd_click")));
 
         put("lost_angel_bastion", new SoundEvent(Utils.ID("music_disc.lost_angel_bastion")));
         put("lost_angel_cheese", new SoundEvent(Utils.ID("music_disc.lost_angel_cheese")));
@@ -59,6 +60,7 @@ public class SoundEventsRegistry {
         put("firch_anti", new SoundEvent(Utils.ID("music_disc.firch_anti")));
         put("firch_range", new SoundEvent(Utils.ID("music_disc.firch_range")));
         put("firch_chop", new SoundEvent(Utils.ID("music_disc.firch_chop")));
+        put("firch_prophet", new SoundEvent(Utils.ID("music_disc.firch_prophet")));
 
         put("twockx_eternal_dream", new SoundEvent(Utils.ID("music_disc.twockx_eternal_dream")));
 
@@ -101,12 +103,55 @@ public class SoundEventsRegistry {
         put("terraainn_100", new SoundEvent(Utils.ID("music_disc.terraainn_100")));
         put("terraainn_lush", new SoundEvent(Utils.ID("music_disc.terraainn_lush")));
         put("terraainn_remnant", new SoundEvent(Utils.ID("music_disc.terraainn_remnant")));
+        put("terraainn_finale", new SoundEvent(Utils.ID("music_disc.terraainn_finale")));
+        put("terraainn_glow", new SoundEvent(Utils.ID("music_disc.terraainn_glow")));
+        put("terraainn_looking_backward", new SoundEvent(Utils.ID("music_disc.terraainn_looking_backward")));
+        put("terraainn_proto", new SoundEvent(Utils.ID("music_disc.terraainn_proto")));
+        put("terraainn_sussy", new SoundEvent(Utils.ID("music_disc.terraainn_sussy")));
+        put("terraainn_terrain", new SoundEvent(Utils.ID("music_disc.terraainn_terrain")));
+        put("terraainn_ultima", new SoundEvent(Utils.ID("music_disc.terraainn_ultima")));
 
         put("tandem_music_over", new SoundEvent(Utils.ID("music_disc.tandem_music_over")));
 
         put("hearken_music_warped", new SoundEvent(Utils.ID("music_disc.hearken_music_warped")));
         put("hearken_music_first_night", new SoundEvent(Utils.ID("music_disc.hearken_music_first_night")));
 
+        put("error_404_music_ender_disc", new SoundEvent(Utils.ID("music_disc.error_404_music_ender_disc")));
+
+        put("medlek_stew", new SoundEvent(Utils.ID("music_disc.medlek_stew")));
+
+        put("4pointzx_12", new SoundEvent(Utils.ID("music_disc.4pointzx_12")));
+        put("4pointzx_anthem", new SoundEvent(Utils.ID("music_disc.4pointzx_anthem")));
+        put("4pointzx_dust", new SoundEvent(Utils.ID("music_disc.4pointzx_dust")));
+        put("4pointzx_levitate", new SoundEvent(Utils.ID("music_disc.4pointzx_levitate")));
+        put("4pointzx_prism", new SoundEvent(Utils.ID("music_disc.4pointzx_prism")));
+        put("4pointzx_seaside", new SoundEvent(Utils.ID("music_disc.4pointzx_seaside")));
+        put("4pointzx_sensor", new SoundEvent(Utils.ID("music_disc.4pointzx_sensor")));
+        put("4pointzx_shine", new SoundEvent(Utils.ID("music_disc.4pointzx_shine")));
+        put("4pointzx_warm", new SoundEvent(Utils.ID("music_disc.4pointzx_warm")));
+        put("4pointzx_watcher", new SoundEvent(Utils.ID("music_disc.4pointzx_watcher")));
+        put("4pointzx_flame", new SoundEvent(Utils.ID("music_disc.4pointzx_flame")));
+        put("4pointzx_scorch", new SoundEvent(Utils.ID("music_disc.4pointzx_scorch")));
+
+        put("a_peace_of_pie_chorus", new SoundEvent(Utils.ID("music_disc.a_peace_of_pie_chorus")));
+        put("a_peace_of_pie_flutermo", new SoundEvent(Utils.ID("music_disc.a_peace_of_pie_flutermo")));
+        put("a_peace_of_pie_roots", new SoundEvent(Utils.ID("music_disc.a_peace_of_pie_roots")));
+        put("a_peace_of_pie_pumpking", new SoundEvent(Utils.ID("music_disc.a_peace_of_pie_pumpking")));
+        put("a_peace_of_pie_drockstone", new SoundEvent(Utils.ID("music_disc.a_peace_of_pie_drockstone")));
+        put("a_peace_of_pie_sculktronic", new SoundEvent(Utils.ID("music_disc.a_peace_of_pie_sculktronic")));
+
+        put("k620_aqua", new SoundEvent(Utils.ID("music_disc.k620_aqua")));
+        put("k620_run", new SoundEvent(Utils.ID("music_disc.k620_run")));
+        put("k620_midnight", new SoundEvent(Utils.ID("music_disc.k620_midnight")));
+        put("k620_speedrunner", new SoundEvent(Utils.ID("music_disc.k620_speedrunner")));
+        put("k620_paradise_land", new SoundEvent(Utils.ID("music_disc.k620_paradise_land")));
+        put("k620_feelin_poggers", new SoundEvent(Utils.ID("music_disc.k620_feelin_poggers")));
+        put("k620_ingenuity", new SoundEvent(Utils.ID("music_disc.k620_ingenuity")));
+        put("k620_past_the_far_lands", new SoundEvent(Utils.ID("music_disc.k620_past_the_far_lands")));
+        put("k620_forgot", new SoundEvent(Utils.ID("music_disc.k620_forgot")));
+        put("k620_extreme_intensity", new SoundEvent(Utils.ID("music_disc.k620_extreme_intensity")));
+        put("k620_deep_beyond_the_end", new SoundEvent(Utils.ID("music_disc.k620_deep_beyond_the_end")));
+        put("k620_ender_chaos", new SoundEvent(Utils.ID("music_disc.k620_ender_chaos")));
 
         put("record_scratch", new SoundEvent(Utils.ID("ambient.record_scratch")));
     }};

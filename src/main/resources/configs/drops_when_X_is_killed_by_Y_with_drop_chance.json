@@ -39,9 +39,47 @@
       "music_disc_terraainn_100": 100,
       "music_disc_terraainn_lush": 100,
       "music_disc_terraainn_remnant": 100,
+
       "music_disc_tandem_music_over": 100,
       "music_disc_hearken_music_warped": 100,
-      "music_disc_hearken_music_first_night": 100
+      "music_disc_hearken_music_first_night": 100,
+
+      "music_disc_gwyd_click": 100,
+      "music_disc_firch_prophet": 100,
+      "music_disc_medlek_stew": 100,
+      "music_disc_4pointzx_12": 100,
+      "music_disc_4pointzx_anthem": 100,
+      "music_disc_4pointzx_dust": 100,
+      "music_disc_4pointzx_levitate": 100,
+      "music_disc_4pointzx_prism": 100,
+      "music_disc_4pointzx_seaside": 100,
+      "music_disc_4pointzx_sensor": 100,
+      "music_disc_4pointzx_shine": 100,
+      "music_disc_4pointzx_warm": 100,
+      "music_disc_4pointzx_watcher": 100,
+      "music_disc_4pointzx_flame": 100,
+      "music_disc_4pointzx_scorch": 100,
+      "music_disc_a_peace_of_pie_drockstone": 100,
+      "music_disc_a_peace_of_pie_sculktronic": 100,
+      "music_disc_k620_aqua": 100,
+      "music_disc_k620_run": 100,
+      "music_disc_k620_midnight": 100,
+      "music_disc_k620_speedrunner": 100,
+      "music_disc_k620_paradise_land": 100,
+      "music_disc_k620_feelin_poggers": 100,
+      "music_disc_k620_ingenuity": 100,
+      "music_disc_k620_past_the_far_lands": 100,
+      "music_disc_k620_forgot": 100,
+      "music_disc_k620_extreme_intensity": 100,
+      "music_disc_k620_deep_beyond_the_end": 100,
+      "music_disc_k620_ender_chaos": 100,
+      "music_disc_terraainn_finale": 100,
+      "music_disc_terraainn_glow": 100,
+      "music_disc_terraainn_looking_backward": 100,
+      "music_disc_terraainn_proto": 100,
+      "music_disc_terraainn_sussy": 100,
+      "music_disc_terraainn_terrain": 100,
+      "music_disc_terraainn_ultima": 100
     }
   },
   "minecraft:chicken": {
@@ -92,7 +130,8 @@
   },
   "minecraft:ender_dragon": {
     "any": {
-      "music_disc_bling_cheese_surviving": 100
+      "music_disc_bling_cheese_surviving": 100,
+      "music_disc_error_404_music_ender_disc": 100
     }
   },
   "minecraft:cod": {

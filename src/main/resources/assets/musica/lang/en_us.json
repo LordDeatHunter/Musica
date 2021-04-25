@@ -45,11 +45,13 @@
   "item.musica.music_disc_gwyd_charr": "Music Disc",
   "item.musica.music_disc_gwyd_bricks": "Music Disc",
   "item.musica.music_disc_gwyd_tricks": "Music Disc",
+  "item.musica.music_disc_gwyd_click": "Music Disc",
 
   "item.musica.music_disc_gwyd_waves.desc": "Gwyd - Waves",
   "item.musica.music_disc_gwyd_charr.desc": "Gwyd - Charr",
   "item.musica.music_disc_gwyd_bricks.desc": "Gwyd - Bricks",
   "item.musica.music_disc_gwyd_tricks.desc": "Gwyd - Tricks",
+  "item.musica.music_disc_gwyd_click.desc": "Gwyd - Click",
 
 
   "item.musica.music_disc_lost_angel_bastion": "Music Disc",
@@ -99,10 +101,12 @@
   "item.musica.music_disc_firch_anti": "Music Disc",
   "item.musica.music_disc_firch_range": "Music Disc",
   "item.musica.music_disc_firch_chop": "Music Disc",
+  "item.musica.music_disc_firch_prophet": "Music Disc",
 
   "item.musica.music_disc_firch_anti.desc": "Firch - Anti",
   "item.musica.music_disc_firch_range.desc": "Firch - Range",
   "item.musica.music_disc_firch_chop.desc": "Firch - Chop",
+  "item.musica.music_disc_firch_prophet.desc": "Firch - Prophet",
 
 
   "item.musica.music_disc_twockx_eternal_dream": "Music Disc",
@@ -177,6 +181,13 @@
   "item.musica.music_disc_terraainn_100": "Music Disc",
   "item.musica.music_disc_terraainn_lush": "Music Disc",
   "item.musica.music_disc_terraainn_remnant": "Music Disc",
+  "item.musica.music_disc_terraainn_finale": "Music Disc",
+  "item.musica.music_disc_terraainn_glow": "Music Disc",
+  "item.musica.music_disc_terraainn_looking_backward": "Music Disc",
+  "item.musica.music_disc_terraainn_proto": "Music Disc",
+  "item.musica.music_disc_terraainn_sussy": "Music Disc",
+  "item.musica.music_disc_terraainn_terrain": "Music Disc",
+  "item.musica.music_disc_terraainn_ultima": "Music Disc",
 
   "item.musica.music_disc_terraainn_moonset.desc": "Terraainn - Moonset",
   "item.musica.music_disc_terraainn_insomnia.desc": "Terraainn - Insomnia",
@@ -192,6 +203,13 @@
   "item.musica.music_disc_terraainn_100.desc": "Terraainn - 100",
   "item.musica.music_disc_terraainn_lush.desc": "Terraainn - Lush",
   "item.musica.music_disc_terraainn_remnant.desc": "Terraainn - Remnant",
+  "item.musica.music_disc_terraainn_finale.desc": "Terraainn - Finale",
+  "item.musica.music_disc_terraainn_glow.desc": "Terraainn - Glow",
+  "item.musica.music_disc_terraainn_looking_backward.desc": "Terraainn - Looking Backward",
+  "item.musica.music_disc_terraainn_proto.desc": "Terraainn - Proto",
+  "item.musica.music_disc_terraainn_sussy.desc": "Terraainn - Sussy",
+  "item.musica.music_disc_terraainn_terrain.desc": "Terraainn - Terrain",
+  "item.musica.music_disc_terraainn_ultima.desc": "Terraainn - Ultima",
 
 
   "item.musica.music_disc_tandem_music_over": "Music Disc",
@@ -206,6 +224,72 @@
   "item.musica.music_disc_hearken_music_first_night.desc": "Hearken Music - First Night",
 
 
+  "item.musica.music_disc_error_404_music": "Music Disc",
+
+  "item.musica.music_disc_error_404_music.desc": "Error 404 Music - Ender Disc",
+
+
+  "item.musica.music_disc_4pointzx_12": "Music Disc",
+  "item.musica.music_disc_4pointzx_anthem": "Music Disc",
+  "item.musica.music_disc_4pointzx_dust": "Music Disc",
+  "item.musica.music_disc_4pointzx_levitate": "Music Disc",
+  "item.musica.music_disc_4pointzx_prism": "Music Disc",
+  "item.musica.music_disc_4pointzx_seaside": "Music Disc",
+  "item.musica.music_disc_4pointzx_sensor": "Music Disc",
+  "item.musica.music_disc_4pointzx_shine": "Music Disc",
+  "item.musica.music_disc_4pointzx_warm": "Music Disc",
+  "item.musica.music_disc_4pointzx_watcher": "Music Disc",
+  "item.musica.music_disc_4pointzx_flame": "Music Disc",
+  "item.musica.music_disc_4pointzx_scorch": "Music Disc",
+
+  "item.musica.music_disc_4pointzx_12.desc": "4PointzX Music - 12",
+  "item.musica.music_disc_4pointzx_anthem.desc": "4PointzX Music - Anthem",
+  "item.musica.music_disc_4pointzx_dust.desc": "4PointzX Music - Dust",
+  "item.musica.music_disc_4pointzx_levitate.desc": "4PointzX Music - Levitate",
+  "item.musica.music_disc_4pointzx_prism.desc": "4PointzX Music - Prism",
+  "item.musica.music_disc_4pointzx_seaside.desc": "4PointzX Music - Seaside",
+  "item.musica.music_disc_4pointzx_sensor.desc": "4PointzX Music - Sensor",
+  "item.musica.music_disc_4pointzx_shine.desc": "4PointzX Music - Shine",
+  "item.musica.music_disc_4pointzx_warm.desc": "4PointzX Music - Warm",
+  "item.musica.music_disc_4pointzx_watcher.desc": "4PointzX Music - Watcher",
+  "item.musica.music_disc_4pointzx_flame.desc": "4PointzX Music - Flame",
+  "item.musica.music_disc_4pointzx_scorch.desc": "4PointzX Music - Scorch",
+
+
+  "item.musica.music_disc_medlek_stew": "Music Disc",
+
+  "item.musica.music_disc_medlek_stew.desc": "Medlek - Stew",
+
+
+  "item.musica.music_disc_a_peace_of_pie_chorus": "Music Disc",
+  "item.musica.music_disc_a_peace_of_pie_flutermo": "Music Disc",
+  "item.musica.music_disc_a_peace_of_pie_roots": "Music Disc",
+  "item.musica.music_disc_a_peace_of_pie_pumpking": "Music Disc",
+  "item.musica.music_disc_a_peace_of_pie_drockstone": "Music Disc",
+  "item.musica.music_disc_a_peace_of_pie_sculktronic": "Music Disc",
+
+  "item.musica.music_disc_a_peace_of_pie_chorus.desc": "A Peace of Pie - Chorus",
+  "item.musica.music_disc_a_peace_of_pie_flutermo.desc": "A Peace of Pie - Flutermo",
+  "item.musica.music_disc_a_peace_of_pie_roots.desc": "A Peace of Pie - Roots",
+  "item.musica.music_disc_a_peace_of_pie_pumpking.desc": "A Peace of Pie - Pumpking",
+  "item.musica.music_disc_a_peace_of_pie_drockstone.desc": "A Peace of Pie - Drockstone",
+  "item.musica.music_disc_a_peace_of_pie_sculktronic.desc": "A Peace of Pie - Sculktronic",
+
+
+  "item.musica.music_disc_k620_aqua":  "K620 - Aqua",
+  "item.musica.music_disc_k620_run":  "K620 - Run",
+  "item.musica.music_disc_k620_midnight":  "K620 - Midnight",
+  "item.musica.music_disc_k620_speedrunner":  "K620 - Speedrunner",
+  "item.musica.music_disc_k620_paradise_land":  "K620 - Paradise Land",
+  "item.musica.music_disc_k620_feelin_poggers":  "K620 - Feelin' Poggers",
+  "item.musica.music_disc_k620_ingenuity":  "K620 - Ingenuity",
+  "item.musica.music_disc_k620_past_the_far_lands":  "K620 - Past The Far Lands",
+  "item.musica.music_disc_k620_forgot":  "K620 - Forgot",
+  "item.musica.music_disc_k620_extreme_intensity":  "K620 - Extreme Intensity",
+  "item.musica.music_disc_k620_deep_beyond_the_end":  "K620 - Deep Beyond The End",
+  "item.musica.music_disc_k620_ender_chaos":  "K620 - Ender Chaos",
+
+
   "item.musica.sticky_disc": "Sticky Disc",
   "item.musica.blank_disc": "Blank Disc",
 
@@ -215,4 +299,5 @@
   "container.musica.song_mixer.rei.title": "Song Mixing",
 
   "itemGroup.musica.musica": "Musica"
+
 }

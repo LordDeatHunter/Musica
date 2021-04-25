@@ -142,5 +142,10 @@
     "any": {
       "music_disc_terraainn_insomnia": 5
     }
+  },
+  "minecraft:warped_stem": {
+    "charged_creeper": {
+      "music_disc_firch_prophet": 15
+    }
   }
 }

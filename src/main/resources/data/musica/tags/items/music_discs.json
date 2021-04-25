@@ -23,6 +23,7 @@
     "musica:music_disc_gwyd_charr",
     "musica:music_disc_gwyd_bricks",
     "musica:music_disc_gwyd_tricks",
+    "musica:music_disc_gwyd_click",
 
     "musica:music_disc_lost_angel_bastion",
     "musica:music_disc_lost_angel_cheese",
@@ -48,6 +49,7 @@
     "musica:music_disc_firch_anti",
     "musica:music_disc_firch_range",
     "musica:music_disc_firch_chop",
+    "musica:music_disc_firch_prophet",
 
     "musica:music_disc_twockx_eternal_dream",
 
@@ -90,10 +92,54 @@
     "musica:music_disc_terraainn_100",
     "musica:music_disc_terraainn_lush",
     "musica:music_disc_terraainn_remnant",
+    "musica:music_disc_terraainn_finale",
+    "musica:music_disc_terraainn_glow",
+    "musica:music_disc_terraainn_looking_backward",
+    "musica:music_disc_terraainn_proto",
+    "musica:music_disc_terraainn_sussy",
+    "musica:music_disc_terraainn_terrain",
+    "musica:music_disc_terraainn_ultima",
 
     "musica:music_disc_tandem_music_over",
 
     "musica:music_disc_hearken_music_warped",
-    "musica:music_disc_hearken_music_first_night"
+    "musica:music_disc_hearken_music_first_night",
+
+    "musica:music_disc_error_404_music_ender_disc",
+
+    "musica:music_disc_medlek_stew",
+
+    "musica:music_disc_4pointzx_12",
+    "musica:music_disc_4pointzx_anthem",
+    "musica:music_disc_4pointzx_dust",
+    "musica:music_disc_4pointzx_levitate",
+    "musica:music_disc_4pointzx_prism",
+    "musica:music_disc_4pointzx_seaside",
+    "musica:music_disc_4pointzx_sensor",
+    "musica:music_disc_4pointzx_shine",
+    "musica:music_disc_4pointzx_warm",
+    "musica:music_disc_4pointzx_watcher",
+    "musica:music_disc_4pointzx_flame",
+    "musica:music_disc_4pointzx_scorch",
+
+    "musica:music_disc_a_peace_of_pie_chorus",
+    "musica:music_disc_a_peace_of_pie_flutermo",
+    "musica:music_disc_a_peace_of_pie_roots",
+    "musica:music_disc_a_peace_of_pie_pumpking",
+    "musica:music_disc_a_peace_of_pie_drockstone",
+    "musica:music_disc_a_peace_of_pie_sculktronic",
+
+    "musica:music_disc_k620_aqua",
+    "musica:music_disc_k620_run",
+    "musica:music_disc_k620_midnight",
+    "musica:music_disc_k620_speedrunner",
+    "musica:music_disc_k620_paradise_land",
+    "musica:music_disc_k620_feelin_poggers",
+    "musica:music_disc_k620_ingenuity",
+    "musica:music_disc_k620_past_the_far_lands",
+    "musica:music_disc_k620_forgot",
+    "musica:music_disc_k620_extreme_intensity",
+    "musica:music_disc_k620_deep_beyond_the_end",
+    "musica:music_disc_k620_ender_chaos"
   ]
 }

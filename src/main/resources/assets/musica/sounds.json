@@ -89,6 +89,11 @@
       "musica:gwyd_tricks"
     ]
   },
+  "music_disc.gwyd_click": {
+    "sounds": [
+      "musica:gwyd_click"
+    ]
+  },
   "music_disc.lost_angel_bastion": {
     "sounds": [
       "musica:lost_angel_bastion"
@@ -182,6 +187,11 @@
   "music_disc.firch_chop": {
     "sounds": [
       "musica:firch_chop"
+    ]
+  },
+  "music_disc.firch_prophet": {
+    "sounds": [
+      "musica:firch_prophet"
     ]
   },
   "music_disc.yes_roundabout": {
@@ -379,6 +389,41 @@
       "musica:terraainn_remnant"
     ]
   },
+  "music_disc.terraainn_finale": {
+    "sounds": [
+      "musica:terraainn_finale"
+    ]
+  },
+  "music_disc.terraainn_glow": {
+    "sounds": [
+      "musica:terraainn_glow"
+    ]
+  },
+  "music_disc.terraainn_looking_backward": {
+    "sounds": [
+      "musica:terraainn_looking_backward"
+    ]
+  },
+  "music_disc.terraainn_proto": {
+    "sounds": [
+      "musica:terraainn_proto"
+    ]
+  },
+  "music_disc.terraainn_sussy": {
+    "sounds": [
+      "musica:terraainn_sussy"
+    ]
+  },
+  "music_disc.terraainn_terrain": {
+    "sounds": [
+      "musica:terraainn_terrain"
+    ]
+  },
+  "music_disc.terraainn_ultima": {
+    "sounds": [
+      "musica:terraainn_ultima"
+    ]
+  },
   "music_disc.tandem_music_over": {
     "sounds": [
       "musica:tandem_music_over"
@@ -392,6 +437,166 @@
   "music_disc.hearken_music_warped": {
     "sounds": [
       "musica:hearken_music_warped"
+    ]
+  },
+  "music_disc.error_404_music_ender_disc": {
+    "sounds": [
+      "musica:error_404_music_ender_disc"
+    ]
+  },
+  "music_disc.medlek_stew": {
+    "sounds": [
+      "musica:medlek_stew"
+    ]
+  },
+  "music_disc.4pointzx_12": {
+    "sounds": [
+      "musica:4pointzx_12"
+    ]
+  },
+  "music_disc.4pointzx_anthem": {
+    "sounds": [
+      "musica:4pointzx_anthem"
+    ]
+  },
+  "music_disc.4pointzx_dust": {
+    "sounds": [
+      "musica:4pointzx_dust"
+    ]
+  },
+  "music_disc.4pointzx_levitate": {
+    "sounds": [
+      "musica:4pointzx_levitate"
+    ]
+  },
+  "music_disc.4pointzx_prism": {
+    "sounds": [
+      "musica:4pointzx_prism"
+    ]
+  },
+  "music_disc.4pointzx_seaside": {
+    "sounds": [
+      "musica:4pointzx_seaside"
+    ]
+  },
+  "music_disc.4pointzx_sensor": {
+    "sounds": [
+      "musica:4pointzx_sensor"
+    ]
+  },
+  "music_disc.4pointzx_shine": {
+    "sounds": [
+      "musica:4pointzx_shine"
+    ]
+  },
+  "music_disc.4pointzx_warm": {
+    "sounds": [
+      "musica:4pointzx_warm"
+    ]
+  },
+  "music_disc.4pointzx_watcher": {
+    "sounds": [
+      "musica:4pointzx_watcher"
+    ]
+  },
+  "music_disc.4pointzx_flame": {
+    "sounds": [
+      "musica:4pointzx_flame"
+    ]
+  },
+  "music_disc.4pointzx_scorch": {
+    "sounds": [
+      "musica:4pointzx_scorch"
+    ]
+  },
+  "music_disc.a_peace_of_pie_chorus": {
+    "sounds": [
+      "musica:a_peace_of_pie_chorus"
+    ]
+  },
+  "music_disc.a_peace_of_pie_flutermo": {
+    "sounds": [
+      "musica:a_peace_of_pie_flutermo"
+    ]
+  },
+  "music_disc.a_peace_of_pie_roots": {
+    "sounds": [
+      "musica:a_peace_of_pie_roots"
+    ]
+  },
+  "music_disc.a_peace_of_pie_pumpking": {
+    "sounds": [
+      "musica:a_peace_of_pie_pumpking"
+    ]
+  },
+  "music_disc.a_peace_of_pie_drockstone": {
+    "sounds": [
+      "musica:a_peace_of_pie_drockstone"
+    ]
+  },
+  "music_disc.a_peace_of_pie_sculktronic": {
+    "sounds": [
+      "musica:a_peace_of_pie_sculktronic"
+    ]
+  },
+  "music_disc.k620_aqua": {
+    "sounds": [
+      "musica:k620_aqua"
+    ]
+  },
+  "music_disc.k620_run": {
+    "sounds": [
+      "musica:k620_run"
+    ]
+  },
+  "music_disc.k620_midnight": {
+    "sounds": [
+      "musica:k620_midnight"
+    ]
+  },
+  "music_disc.k620_speedrunner": {
+    "sounds": [
+      "musica:k620_speedrunner"
+    ]
+  },
+  "music_disc.k620_paradise_land": {
+    "sounds": [
+      "musica:k620_paradise_land"
+    ]
+  },
+  "music_disc.k620_feelin_poggers": {
+    "sounds": [
+      "musica:k620_feelin_poggers"
+    ]
+  },
+  "music_disc.k620_ingenuity": {
+    "sounds": [
+      "musica:k620_ingenuity"
+    ]
+  },
+  "music_disc.k620_past_the_far_lands": {
+    "sounds": [
+      "musica:k620_past_the_far_lands"
+    ]
+  },
+  "music_disc.k620_forgot": {
+    "sounds": [
+      "musica:k620_forgot"
+    ]
+  },
+  "music_disc.k620_extreme_intensity": {
+    "sounds": [
+      "musica:k620_extreme_intensity"
+    ]
+  },
+  "music_disc.k620_deep_beyond_the_end": {
+    "sounds": [
+      "musica:k620_deep_beyond_the_end"
+    ]
+  },
+  "music_disc.k620_ender_chaos": {
+    "sounds": [
+      "musica:k620_ender_chaos"
     ]
   },
   "ambient.record_scratch": {

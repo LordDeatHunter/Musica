@@ -42,7 +42,7 @@ public abstract class BlockMixin {
             cause = "tnt";
         } else if (explosion.getCausingEntity() instanceof CreeperEntity) {
             CreeperEntity creeper = (CreeperEntity) explosion.getCausingEntity();
-            if (creeper.shouldRenderOverlay() && explosionDrops.containsKey("charged_creeper")) {
+            if (((EntityAccessor)creeper).getDataTracker().get(((CreeperEntityAccessor)creeper).getCharged()) && explosionDrops.containsKey("charged_creeper")) {
                 cause = "charged_creeper";
             } else if (!creeper.shouldRenderOverlay() && explosionDrops.containsKey("uncharged_creeper")) {
                 cause = "uncharged_creeper";

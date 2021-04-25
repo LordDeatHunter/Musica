@@ -13,11 +13,23 @@
     "Music Artist: Edevegie",
     "Music Artist: Genius_James",
     "Music Artist: Lost Angel",
-    "Music Artist: Kaz Yumayui"
+    "Music Artist: Kaz Yumayui",
+    "Music Artist: JamiesName",
+    "Music Artist: Yekonaip",
+    "Music Artist: Terraainn",
+    "Music Artist: Bling Cheese",
+    "Music Artist: Twockx",
+    "Music Artist: Tandem Music",
+    "Music Artist: Hearken Music",
+    "Music Artist: Error 404 Music",
+    "Music Artist: 4PointzX Music",
+    "Music Artist: Medlek",
+    "Music Artist: A Peace of Pie",
+    "Music Artist: K620"
   ],
   "contact": {
-    "homepage": "",
-    "sources": ""
+    "homepage": "https://www.curseforge.com/minecraft/mc-mods/fabric-musica",
+    "sources": "https://github.com/LordDeatHunter/Musica"
   },
 
   "license": "MIT License",

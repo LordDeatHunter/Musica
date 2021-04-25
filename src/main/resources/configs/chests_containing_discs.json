@@ -24,10 +24,8 @@
   "minecraft:shipwreck_treasure": {
     "music_disc_lost_angel_drifter": 60
   },
-  "minecraft:village/village_temple": {
-    "music_disc_bling_cheese_strall": 60
-  },
   "minecraft:nether_bridge": {
+    "music_disc_a_peace_of_pie_flutermo": 10,
     "music_disc_bling_cheese_fort_stress": 30
   },
   "minecraft:jungle_temple": {
@@ -38,5 +36,58 @@
   },
   "minecraft:woodland_mansion": {
     "music_disc_firch_chop": 30
+  },
+  "minecraft:end_city_treasure": {
+    "music_disc_a_peace_of_pie_chorus": 35
+  },
+  "minecraft:chests/village/village_armorer": {
+    "music_disc_a_peace_of_pie_roots": 10
+  },
+  "minecraft:chests/village/village_butcher": {
+    "music_disc_a_peace_of_pie_roots": 10,
+    "music_disc_a_peace_of_pie_pumpking": 10
+  },
+  "minecraft:chests/village/village_cartographer": {
+    "music_disc_a_peace_of_pie_roots": 10
+  },
+  "minecraft:chests/village/village_desert_house": {
+    "music_disc_a_peace_of_pie_roots": 10
+  },
+  "minecraft:chests/village/village_fisher": {
+    "music_disc_a_peace_of_pie_roots": 10
+  },
+  "minecraft:chests/village/village_fletcher": {
+    "music_disc_a_peace_of_pie_roots": 10
+  },
+  "minecraft:chests/village/village_mason": {
+    "music_disc_a_peace_of_pie_roots": 10
+  },
+  "minecraft:chests/village/village_plains_house": {
+    "music_disc_a_peace_of_pie_roots": 10
+  },
+  "minecraft:chests/village/village_savanna_house": {
+    "music_disc_a_peace_of_pie_roots": 10
+  },
+  "minecraft:chests/village/village_shepherd": {
+    "music_disc_a_peace_of_pie_roots": 10
+  },
+  "minecraft:chests/village/village_snowy_house": {
+    "music_disc_a_peace_of_pie_roots": 10
+  },
+  "minecraft:chests/village/village_taiga_house": {
+    "music_disc_a_peace_of_pie_roots": 10
+  },
+  "minecraft:chests/village/village_tannery": {
+    "music_disc_a_peace_of_pie_roots": 10
+  },
+  "minecraft:chests/village/village_temple": {
+    "music_disc_a_peace_of_pie_roots": 10,
+    "music_disc_bling_cheese_strall": 60
+  },
+  "minecraft:chests/village/village_toolsmith": {
+    "music_disc_a_peace_of_pie_roots": 10
+  },
+  "minecraft:chests/village/village_weaponsmith": {
+    "music_disc_a_peace_of_pie_roots": 10
   }
 }

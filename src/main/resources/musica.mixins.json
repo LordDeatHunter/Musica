@@ -6,7 +6,9 @@
   "mixins": [
     "AbstractBlockMixin",
     "BlockMixin",
-    "CraftingScreenHandlerMixin"
+    "CraftingScreenHandlerMixin",
+    "CreeperEntityAccessor",
+    "EntityAccessor"
   ],
   "client": [
   ],
