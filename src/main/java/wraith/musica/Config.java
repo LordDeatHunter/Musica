@@ -1,6 +1,5 @@
 package wraith.musica;
 
-import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
@@ -12,17 +11,20 @@ import org.apache.commons.io.FileUtils;
 import java.io.*;
 import java.net.URISyntaxException;
 import java.nio.charset.StandardCharsets;
-import java.nio.file.Files;
-import java.util.*;
+import java.util.Enumeration;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Scanner;
 import java.util.jar.JarEntry;
 import java.util.jar.JarFile;
 
 public class Config {
 
-    public HashMap<String, HashMap<String, HashMap<String, Integer>>> MOB_DROPS = new HashMap<>();
-    public HashMap<String, HashMap<String, HashMap<String, Integer>>> EXPLOSION_DROPS = new HashMap<>();
-    public HashMap<String, HashMap<String, HashMap<String, Integer>>> BLOCK_DROPS = new HashMap<>();
-    public HashMap<String, HashMap<String, Integer>> TREASURES = new HashMap<>();
+    public HashMap<String, HashMap<String, HashMap<String, Float>>> MOB_DROPS = new HashMap<>();
+    public HashMap<String, HashMap<String, HashMap<String, Float>>> EXPLOSION_DROPS = new HashMap<>();
+    public HashMap<String, HashMap<String, HashMap<String, Float>>> BLOCK_RIGHTCLICK_DROPS = new HashMap<>();
+    public HashMap<String, HashMap<String, HashMap<String, Float>>> BLOCK_MINE_DROPS = new HashMap<>();
+    public HashMap<String, HashMap<String, Float>> TREASURES = new HashMap<>();
 
     private boolean musicMixerCrafting = true;
 
@@ -67,31 +69,36 @@ public class Config {
 
         json = getJsonObject(Config.readFile(new File("config/musica/drops_on_block_X_rightclicked_with_item_Y.json")));
         if (json != null) {
-            loadDrops(json, BLOCK_DROPS);
+            loadDrops(json, BLOCK_RIGHTCLICK_DROPS);
+        }
+
+        json = getJsonObject(Config.readFile(new File("config/musica/drops_on_block_X_mined_by_item_Y.json")));
+        if (json != null) {
+            loadDrops(json, BLOCK_MINE_DROPS);
         }
 
         json = getJsonObject(Config.readFile(new File("config/musica/chests_containing_discs.json")));
         if (json != null) {
             for (Map.Entry<String, JsonElement> chest : json.entrySet()) {
-                HashMap<String, Integer> discs = new HashMap<>();
+                HashMap<String, Float> discs = new HashMap<>();
                 for (Map.Entry<String, JsonElement> item : chest.getValue().getAsJsonObject().entrySet()) {
-                    discs.put(item.getKey().toLowerCase(), MathHelper.clamp(item.getValue().getAsInt(), 0, 100));
+                    discs.put(item.getKey().toLowerCase(), MathHelper.clamp(item.getValue().getAsFloat(), 0F, 100F));
                 }
                 TREASURES.put(chest.getKey(), discs);
             }
         }
     }
 
-    private static void loadDrops(JsonObject json, HashMap<String, HashMap<String, HashMap<String, Integer>>> map) {
+    private static void loadDrops(JsonObject json, HashMap<String, HashMap<String, HashMap<String, Float>>> map) {
         map.clear();
         for (Map.Entry<String, JsonElement> x : json.entrySet()) {
             JsonObject yList = x.getValue().getAsJsonObject();
-            HashMap<String, HashMap<String, Integer>> explosionSourceMap = new HashMap<>();
+            HashMap<String, HashMap<String, Float>> explosionSourceMap = new HashMap<>();
             for (Map.Entry<String, JsonElement> y : yList.entrySet()) {
                 JsonObject items = y.getValue().getAsJsonObject();
-                HashMap<String, Integer> itemMap = new HashMap<>();
+                HashMap<String, Float> itemMap = new HashMap<>();
                 for (Map.Entry<String, JsonElement> item : items.entrySet()) {
-                    itemMap.put(item.getKey().toLowerCase(), MathHelper.clamp(item.getValue().getAsInt(), 0, 100));
+                    itemMap.put(item.getKey().toLowerCase(), MathHelper.clamp(item.getValue().getAsFloat(), 0F, 100F));
                 }
                 explosionSourceMap.put(y.getKey().toLowerCase(), itemMap);
             }

@@ -70,6 +70,14 @@
   "item.musica.music_disc_lost_angel_skylines": "Music Disc",
   "item.musica.music_disc_lost_angel_souls": "Music Disc",
   "item.musica.music_disc_lost_angel_wilds": "Music Disc",
+  "item.musica.music_disc_lost_angel_crippling_fear": "Music Disc",
+  "item.musica.music_disc_lost_angel_shattered": "Music Disc",
+  "item.musica.music_disc_lost_angel_silva": "Music Disc",
+  "item.musica.music_disc_lost_angel_holger": "Music Disc",
+  "item.musica.music_disc_lost_angel_crush": "Music Disc",
+  "item.musica.music_disc_lost_angel_grit": "Music Disc",
+  "item.musica.music_disc_lost_angel_united": "Music Disc",
+  "item.musica.music_disc_lost_angel_stalker": "Music Disc",
 
   "item.musica.music_disc_lost_angel_bastion.desc": "Lost Angel - Bastion",
   "item.musica.music_disc_lost_angel_cheese.desc": "Lost Angel - Cheese",
@@ -87,6 +95,14 @@
   "item.musica.music_disc_lost_angel_skylines.desc": "Lost Angel - Skylines",
   "item.musica.music_disc_lost_angel_souls.desc": "Lost Angel - Souls",
   "item.musica.music_disc_lost_angel_wilds.desc": "Lost Angel - Wilds",
+  "item.musica.music_disc_lost_angel_crippling_fear.desc": "Lost Angel - Crippling Fear",
+  "item.musica.music_disc_lost_angel_shattered.desc": "Lost Angel - Shattered",
+  "item.musica.music_disc_lost_angel_silva.desc": "Lost Angel - Silva",
+  "item.musica.music_disc_lost_angel_holger.desc": "Lost Angel - Holger",
+  "item.musica.music_disc_lost_angel_crush.desc": "Lost Angel - Crush",
+  "item.musica.music_disc_lost_angel_grit.desc": "Lost Angel - Grit",
+  "item.musica.music_disc_lost_angel_united.desc": "Lost Angel - United",
+  "item.musica.music_disc_lost_angel_stalker.desc": "Lost Angel - Stalker",
 
 
   "item.musica.music_disc_kaz_rain": "Music Disc",
@@ -188,6 +204,11 @@
   "item.musica.music_disc_terraainn_sussy": "Music Disc",
   "item.musica.music_disc_terraainn_terrain": "Music Disc",
   "item.musica.music_disc_terraainn_ultima": "Music Disc",
+  "item.musica.music_disc_terraainn_alex": "Music Disc",
+  "item.musica.music_disc_terraainn_steve": "Music Disc",
+  "item.musica.music_disc_terraainn_2010": "Music Disc",
+  "item.musica.music_disc_terraainn_error": "Music Disc",
+  "item.musica.music_disc_terraainn_deep": "Music Disc",
 
   "item.musica.music_disc_terraainn_moonset.desc": "Terraainn - Moonset",
   "item.musica.music_disc_terraainn_insomnia.desc": "Terraainn - Insomnia",
@@ -210,7 +231,11 @@
   "item.musica.music_disc_terraainn_sussy.desc": "Terraainn - Sussy",
   "item.musica.music_disc_terraainn_terrain.desc": "Terraainn - Terrain",
   "item.musica.music_disc_terraainn_ultima.desc": "Terraainn - Ultima",
-
+  "item.musica.music_disc_terraainn_alex.desc": "Terraainn - Alex",
+  "item.musica.music_disc_terraainn_steve.desc": "Terraainn - Steve",
+  "item.musica.music_disc_terraainn_2010.desc": "Terraainn - 2010",
+  "item.musica.music_disc_terraainn_error.desc": "Terraainn - Error",
+  "item.musica.music_disc_terraainn_deep.desc": "Terraainn - Deep",
 
   "item.musica.music_disc_tandem_music_over": "Music Disc",
 
@@ -224,9 +249,9 @@
   "item.musica.music_disc_hearken_music_first_night.desc": "Hearken Music - First Night",
 
 
-  "item.musica.music_disc_error_404_music": "Music Disc",
+  "item.musica.music_disc_error_404_music_ender_disc": "Music Disc",
 
-  "item.musica.music_disc_error_404_music.desc": "Error 404 Music - Ender Disc",
+  "item.musica.music_disc_error_404_music_ender_disc.desc": "Error 404 Music - Ender Disc",
 
 
   "item.musica.music_disc_4pointzx_12": "Music Disc",
@@ -267,6 +292,10 @@
   "item.musica.music_disc_a_peace_of_pie_pumpking": "Music Disc",
   "item.musica.music_disc_a_peace_of_pie_drockstone": "Music Disc",
   "item.musica.music_disc_a_peace_of_pie_sculktronic": "Music Disc",
+  "item.musica.music_disc_a_peace_of_pie_melone": "Music Disc",
+  "item.musica.music_disc_a_peace_of_pie_toxicoses": "Music Disc",
+  "item.musica.music_disc_a_peace_of_pie_lurkin":"Music Disc",
+  "item.musica.music_disc_a_peace_of_pie_fungus": "Music Disc",
 
   "item.musica.music_disc_a_peace_of_pie_chorus.desc": "A Peace of Pie - Chorus",
   "item.musica.music_disc_a_peace_of_pie_flutermo.desc": "A Peace of Pie - Flutermo",
@@ -274,21 +303,121 @@
   "item.musica.music_disc_a_peace_of_pie_pumpking.desc": "A Peace of Pie - Pumpking",
   "item.musica.music_disc_a_peace_of_pie_drockstone.desc": "A Peace of Pie - Drockstone",
   "item.musica.music_disc_a_peace_of_pie_sculktronic.desc": "A Peace of Pie - Sculktronic",
+  "item.musica.music_disc_a_peace_of_pie_melone.desc": "A Peace of Pie - Melone",
+  "item.musica.music_disc_a_peace_of_pie_toxicoses.desc": "A Peace of Pie - Toxicoses",
+  "item.musica.music_disc_a_peace_of_pie_lurkin.desc": "A Peace of Pie - Lurkin'",
+  "item.musica.music_disc_a_peace_of_pie_fungus.desc": "A Peace of Pie - Fungus",
 
 
-  "item.musica.music_disc_k620_aqua":  "K620 - Aqua",
-  "item.musica.music_disc_k620_run":  "K620 - Run",
-  "item.musica.music_disc_k620_midnight":  "K620 - Midnight",
-  "item.musica.music_disc_k620_speedrunner":  "K620 - Speedrunner",
-  "item.musica.music_disc_k620_paradise_land":  "K620 - Paradise Land",
-  "item.musica.music_disc_k620_feelin_poggers":  "K620 - Feelin' Poggers",
-  "item.musica.music_disc_k620_ingenuity":  "K620 - Ingenuity",
-  "item.musica.music_disc_k620_past_the_far_lands":  "K620 - Past The Far Lands",
-  "item.musica.music_disc_k620_forgot":  "K620 - Forgot",
-  "item.musica.music_disc_k620_extreme_intensity":  "K620 - Extreme Intensity",
-  "item.musica.music_disc_k620_deep_beyond_the_end":  "K620 - Deep Beyond The End",
-  "item.musica.music_disc_k620_ender_chaos":  "K620 - Ender Chaos",
+  "item.musica.music_disc_k620_aqua":  "Music Disc",
+  "item.musica.music_disc_k620_run":  "Music Disc",
+  "item.musica.music_disc_k620_midnight":  "Music Disc",
+  "item.musica.music_disc_k620_speedrunner":  "Music Disc",
+  "item.musica.music_disc_k620_paradise_land":  "Music Disc",
+  "item.musica.music_disc_k620_feelin_poggers":  "Music Disc",
+  "item.musica.music_disc_k620_ingenuity":  "Music Disc",
+  "item.musica.music_disc_k620_past_the_far_lands":  "Music Disc",
+  "item.musica.music_disc_k620_forgot":  "Music Disc",
+  "item.musica.music_disc_k620_extreme_intensity":  "Music Disc",
+  "item.musica.music_disc_k620_deep_beyond_the_end":  "Music Disc",
+  "item.musica.music_disc_k620_ender_chaos":  "Music Disc",
+  "item.musica.music_disc_k620_masterwaves": "Music Disc",
+  "item.musica.music_disc_k620_lemon_tree": "Music Disc",
 
+  "item.musica.music_disc_k620_aqua.desc":  "K620 - Aqua",
+  "item.musica.music_disc_k620_run.desc":  "K620 - Run",
+  "item.musica.music_disc_k620_midnight.desc":  "K620 - Midnight",
+  "item.musica.music_disc_k620_speedrunner.desc":  "K620 - Speedrunner",
+  "item.musica.music_disc_k620_paradise_land.desc":  "K620 - Paradise Land",
+  "item.musica.music_disc_k620_feelin_poggers.desc":  "K620 - Feelin' Poggers",
+  "item.musica.music_disc_k620_ingenuity.desc":  "K620 - Ingenuity",
+  "item.musica.music_disc_k620_past_the_far_lands.desc":  "K620 - Past The Far Lands",
+  "item.musica.music_disc_k620_forgot.desc":  "K620 - Forgot",
+  "item.musica.music_disc_k620_extreme_intensity.desc":  "K620 - Extreme Intensity",
+  "item.musica.music_disc_k620_deep_beyond_the_end.desc":  "K620 - Deep Beyond The End",
+  "item.musica.music_disc_k620_ender_chaos.desc":  "K620 - Ender Chaos",
+  "item.musica.music_disc_k620_masterwaves.desc": "K620 - Masterwaves",
+  "item.musica.music_disc_k620_lemon_tree.desc": "K620 - Lemon Tree",
+
+
+  "item.musica.music_disc_fire_blazer_79_aurora": "Music Disc",
+  "item.musica.music_disc_fire_blazer_79_void": "Music Disc",
+  "item.musica.music_disc_fire_blazer_79_sight": "Music Disc",
+
+  "item.musica.music_disc_fire_blazer_79_aurora.desc": "Fire Blazer 79 - Aurora",
+  "item.musica.music_disc_fire_blazer_79_void.desc": "Fire Blazer 79 - Void",
+  "item.musica.music_disc_fire_blazer_79_sight.desc": "Fire Blazer 79 - Sight",
+
+
+  "item.musica.music_disc_epicuras_deepstate": "Music Disc",
+  "item.musica.music_disc_epicuras_redfunk": "Music Disc",
+  "item.musica.music_disc_epicuras_coldrave": "Music Disc",
+  "item.musica.music_disc_epicuras_cradle": "Music Disc",
+  "item.musica.music_disc_epicuras_ascent": "Music Disc",
+  "item.musica.music_disc_epicuras_jagged": "Music Disc",
+  "item.musica.music_disc_epicuras_submarine": "Music Disc",
+  "item.musica.music_disc_epicuras_beachwave": "Music Disc",
+  "item.musica.music_disc_epicuras_odyssey": "Music Disc",
+
+  "item.musica.music_disc_epicuras_deepstate.desc": "Epicuras - Deepstate",
+  "item.musica.music_disc_epicuras_redfunk.desc": "Epicuras - Redfunk",
+  "item.musica.music_disc_epicuras_coldrave.desc": "Epicuras - Coldrave",
+  "item.musica.music_disc_epicuras_cradle.desc": "Epicuras - Cradle",
+  "item.musica.music_disc_epicuras_ascent.desc": "Epicuras - Ascent",
+  "item.musica.music_disc_epicuras_jagged.desc": "Epicuras - Jagged",
+  "item.musica.music_disc_epicuras_submarine.desc": "Epicuras - Submarine",
+  "item.musica.music_disc_epicuras_beachwave.desc": "Epicuras - Beachwave",
+  "item.musica.music_disc_epicuras_odyssey.desc": "Epicuras - Odyssey",
+
+
+  "item.musica.music_disc_maplemickey_shock": "Music Disc",
+
+  "item.musica.music_disc_maplemickey_shock.desc": "Maplemickey Shock",
+
+
+  "item.musica.music_disc_chefas_wither_dance": "Music Disc",
+  "item.musica.music_disc_chefas_diorite": "Music Disc",
+
+  "item.musica.music_disc_chefas_wither_dance.desc": "Chefas - Wither Dance",
+  "item.musica.music_disc_chefas_diorite.desc": "Chefas - Diorite",
+
+
+  "item.musica.music_disc_doom_on_a_spoon_just_the_beginning": "Music Disc",
+  "item.musica.music_disc_doom_on_a_spoon_tide": "Music Disc",
+  "item.musica.music_disc_doom_on_a_spoon_vengeful": "Music Disc",
+  "item.musica.music_disc_doom_on_a_spoon_seeds": "Music Disc",
+  "item.musica.music_disc_doom_on_a_spoon_ravage": "Music Disc",
+  "item.musica.music_disc_doom_on_a_spoon_warden": "Music Disc",
+  "item.musica.music_disc_doom_on_a_spoon_flight_of_the_voids_ship": "Music Disc",
+
+  "item.musica.music_disc_doom_on_a_spoon_just_the_beginning.desc": "Doom on a Spoon - Just The Beginning",
+  "item.musica.music_disc_doom_on_a_spoon_tide.desc": "Doom on a Spoon - Tide",
+  "item.musica.music_disc_doom_on_a_spoon_vengeful.desc": "Doom on a Spoon - Vengeful",
+  "item.musica.music_disc_doom_on_a_spoon_seeds.desc": "Doom on a Spoon - Seeds",
+  "item.musica.music_disc_doom_on_a_spoon_ravage.desc": "Doom on a Spoon - Ravage",
+  "item.musica.music_disc_doom_on_a_spoon_warden.desc": "Doom on a Spoon - Warden",
+  "item.musica.music_disc_doom_on_a_spoon_flight_of_the_voids_ship.desc": "Doom on a Spoon - Flight of The Voids Ship",
+
+
+  "item.musica.music_disc_zoo937_copper": "Music Disc",
+  "item.musica.music_disc_zoo937_dripstone": "Music Disc",
+  "item.musica.music_disc_zoo937_magma": "Music Disc",
+  "item.musica.music_disc_zoo937_cavern": "Music Disc",
+
+  "item.musica.music_disc_zoo937_copper.desc": "Zoo937 - Copper",
+  "item.musica.music_disc_zoo937_dripstone.desc": "Zoo937 - Dripstone",
+  "item.musica.music_disc_zoo937_magma.desc": "Zoo937 - Magma",
+  "item.musica.music_disc_zoo937_cavern.desc": "Zoo937 - Cavern",
+
+
+  "item.musica.music_disc_libra_glowsquid": "Music Disc",
+  "item.musica.music_disc_libra_panic_attack": "Music Disc",
+
+  "item.musica.music_disc_libra_glowsquid.desc": "Libra - Glowsquid",
+  "item.musica.music_disc_libra_panic_attack.desc": "Libra - Panic Attack",
+
+  "item.musica.music_disc_deesaster_float": "Music Disc",
+  "item.musica.music_disc_deesaster_float.desc": "Deesaster - Float",
 
   "item.musica.sticky_disc": "Sticky Disc",
   "item.musica.blank_disc": "Blank Disc",

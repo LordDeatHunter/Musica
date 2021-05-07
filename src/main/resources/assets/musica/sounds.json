@@ -599,6 +599,246 @@
       "musica:k620_ender_chaos"
     ]
   },
+  "music_disc.terraainn_alex": {
+    "sounds": [
+      "musica:terraainn_alex"
+    ]
+  },
+  "music_disc.terraainn_steve": {
+    "sounds": [
+      "musica:terraainn_steve"
+    ]
+  },
+  "music_disc.terraainn_2010": {
+    "sounds": [
+      "musica:terraainn_2010"
+    ]
+  },
+  "music_disc.terraainn_error": {
+    "sounds": [
+      "musica:terraainn_error"
+    ]
+  },
+  "music_disc.terraainn_deep": {
+    "sounds": [
+      "musica:terraainn_deep"
+    ]
+  },
+  "music_disc.k620_masterwaves": {
+    "sounds": [
+      "musica:k620_masterwaves"
+    ]
+  },
+  "music_disc.k620_lemon_tree": {
+    "sounds": [
+      "musica:k620_lemon_tree"
+    ]
+  },
+  "music_disc.fire_blazer_79_aurora": {
+    "sounds": [
+      "musica:fire_blazer_79_aurora"
+    ]
+  },
+  "music_disc.fire_blazer_79_void": {
+    "sounds": [
+      "musica:fire_blazer_79_void"
+    ]
+  },
+  "music_disc.fire_blazer_79_sight": {
+    "sounds": [
+      "musica:fire_blazer_79_sight"
+    ]
+  },
+  "music_disc.a_peace_of_pie_melone": {
+    "sounds": [
+      "musica:a_peace_of_pie_melone"
+    ]
+  },
+  "music_disc.a_peace_of_pie_toxicoses": {
+    "sounds": [
+      "musica:a_peace_of_pie_toxicoses"
+    ]
+  },
+  "music_disc.a_peace_of_pie_lurkin": {
+    "sounds": [
+      "musica:a_peace_of_pie_lurkin"
+    ]
+  },
+  "music_disc.a_peace_of_pie_fungus": {
+    "sounds": [
+      "musica:a_peace_of_pie_fungus"
+    ]
+  },
+  "music_disc.lost_angel_crippling_fear": {
+    "sounds": [
+      "musica:lost_angel_crippling_fear"
+    ]
+  },
+  "music_disc.lost_angel_shattered": {
+    "sounds": [
+      "musica:lost_angel_shattered"
+    ]
+  },
+  "music_disc.lost_angel_silva": {
+    "sounds": [
+      "musica:lost_angel_silva"
+    ]
+  },
+  "music_disc.lost_angel_holger": {
+    "sounds": [
+      "musica:lost_angel_holger"
+    ]
+  },
+  "music_disc.epicuras_deepstate": {
+    "sounds": [
+      "musica:epicuras_deepstate"
+    ]
+  },
+  "music_disc.epicuras_redfunk": {
+    "sounds": [
+      "musica:epicuras_redfunk"
+    ]
+  },
+  "music_disc.epicuras_coldrave": {
+    "sounds": [
+      "musica:epicuras_coldrave"
+    ]
+  },
+  "music_disc.epicuras_cradle": {
+    "sounds": [
+      "musica:epicuras_cradle"
+    ]
+  },
+  "music_disc.epicuras_ascent": {
+    "sounds": [
+      "musica:epicuras_ascent"
+    ]
+  },
+  "music_disc.epicuras_jagged": {
+    "sounds": [
+      "musica:epicuras_jagged"
+    ]
+  },
+  "music_disc.epicuras_submarine": {
+    "sounds": [
+      "musica:epicuras_submarine"
+    ]
+  },
+  "music_disc.epicuras_beachwave": {
+    "sounds": [
+      "musica:epicuras_beachwave"
+    ]
+  },
+  "music_disc.epicuras_odyssey": {
+    "sounds": [
+      "musica:epicuras_odyssey"
+    ]
+  },
+  "music_disc.maplemickey_shock": {
+    "sounds": [
+      "musica:maplemickey_shock"
+    ]
+  },
+  "music_disc.lost_angel_grit": {
+    "sounds": [
+      "musica:lost_angel_grit"
+    ]
+  },
+  "music_disc.lost_angel_crush": {
+    "sounds": [
+      "musica:lost_angel_crush"
+    ]
+  },
+  "music_disc.lost_angel_united": {
+    "sounds": [
+      "musica:lost_angel_united"
+    ]
+  },
+  "music_disc.lost_angel_stalker": {
+    "sounds": [
+      "musica:lost_angel_stalker"
+    ]
+  },
+  "music_disc.chefas_wither_dance": {
+    "sounds": [
+      "musica:chefas_wither_dance"
+    ]
+  },
+  "music_disc.chefas_diorite": {
+    "sounds": [
+      "musica:chefas_diorite"
+    ]
+  },
+  "music_disc.doom_on_a_spoon_just_the_beginning": {
+    "sounds": [
+      "musica:doom_on_a_spoon_just_the_beginning"
+    ]
+  },
+  "music_disc.doom_on_a_spoon_tide": {
+    "sounds": [
+      "musica:doom_on_a_spoon_tide"
+    ]
+  },
+  "music_disc.doom_on_a_spoon_vengeful": {
+    "sounds": [
+      "musica:doom_on_a_spoon_vengeful"
+    ]
+  },
+  "music_disc.doom_on_a_spoon_seeds": {
+    "sounds": [
+      "musica:doom_on_a_spoon_seeds"
+    ]
+  },
+  "music_disc.doom_on_a_spoon_ravage": {
+    "sounds": [
+      "musica:doom_on_a_spoon_ravage"
+    ]
+  },
+  "music_disc.doom_on_a_spoon_warden": {
+    "sounds": [
+      "musica:doom_on_a_spoon_warden"
+    ]
+  },
+  "music_disc.doom_on_a_spoon_flight_of_the_voids_ship": {
+    "sounds": [
+      "musica:doom_on_a_spoon_flight_of_the_voids_ship"
+    ]
+  },
+  "music_disc.zoo937_copper": {
+    "sounds": [
+      "musica:zoo937_copper"
+    ]
+  },
+  "music_disc.zoo937_dripstone": {
+    "sounds": [
+      "musica:zoo937_dripstone"
+    ]
+  },
+  "music_disc.zoo937_magma": {
+    "sounds": [
+      "musica:zoo937_magma"
+    ]
+  },
+  "music_disc.zoo937_cavern": {
+    "sounds": [
+      "musica:zoo937_cavern"
+    ]
+  },
+  "music_disc.libra_glowsquid": {
+    "sounds": [
+      "musica:libra_glowsquid"
+    ]
+  },
+  "music_disc.libra_panic_attack": {
+    "sounds": [
+      "musica:libra_panic_attack"
+    ]
+  },
+  "music_disc.deesaster_float": {
+    "sounds": [
+      "musica:deesaster_float"
+    ]
+  },
   "ambient.record_scratch": {
     "sounds": [
       "musica:scratch/record_scratch_1",

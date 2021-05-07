@@ -36,7 +36,7 @@ public class Musica implements ModInitializer {
 
     @Override
     public void onInitialize() {
-        Config.saveFilesFromJar("configs", "", Config.getInstance().shouldOverrideConfigs());
+        Config.saveFilesFromJar("configs", "", false);
         Config.getInstance().parseConfig();
         if (Config.getInstance().shouldOverrideConfigs()) {
             Config.saveFilesFromJar("configs", "", true);
@@ -101,20 +101,20 @@ public class Musica implements ModInitializer {
                 if (!Config.getInstance().MOB_DROPS.containsKey(lootId)) {
                     return;
                 }
-                HashMap<String, HashMap<String, Integer>> killers = Config.getInstance().MOB_DROPS.get(lootId);
+                HashMap<String, HashMap<String, Float>> killers = Config.getInstance().MOB_DROPS.get(lootId);
 
                 FabricLootPoolBuilder poolBuilder = FabricLootPoolBuilder.builder().rolls(ConstantLootTableRange.create(1));
 
-                for (Map.Entry<String, HashMap<String, Integer>> killer : killers.entrySet()) {
+                for (Map.Entry<String, HashMap<String, Float>> killer : killers.entrySet()) {
                     String killerId = killer.getKey();
-                    for (Map.Entry<String, Integer> items : killer.getValue().entrySet()) {
+                    for (Map.Entry<String, Float> items : killer.getValue().entrySet()) {
                         String item = items.getKey();
                         if (item.startsWith("#")) {
                             poolBuilder.withEntry(TagEntry.builder(TagRegistry.item(Utils.ID(item.substring(1)))).build());
                         } else {
                             poolBuilder.withEntry(ItemEntry.builder(ItemRegistry.get(item)).build());
                         }
-                        poolBuilder.withCondition(RandomChanceLootCondition.builder(items.getValue() / 100.0f).build());
+                        poolBuilder.withCondition(RandomChanceLootCondition.builder(items.getValue() / 100.0F).build());
                         if (!"any".equals(killerId)) {
                             if (killerId.startsWith("#")) {
                                 poolBuilder.withCondition(EntityPropertiesLootCondition.builder(LootContext.EntityTarget.KILLER, EntityPredicate.Builder.create().type(TagRegistry.entityType(new Identifier(killerId.substring(1)))).build()).build());
@@ -129,18 +129,18 @@ public class Musica implements ModInitializer {
                 if (!Config.getInstance().TREASURES.containsKey(lootId)) {
                     return;
                 }
-                HashMap<String, Integer> discs = Config.getInstance().TREASURES.get(lootId);
+                HashMap<String, Float> discs = Config.getInstance().TREASURES.get(lootId);
 
                 FabricLootPoolBuilder poolBuilder = FabricLootPoolBuilder.builder().rolls(ConstantLootTableRange.create(1));
 
-                for (Map.Entry<String, Integer> disc : discs.entrySet()) {
+                for (Map.Entry<String, Float> disc : discs.entrySet()) {
                     String item = disc.getKey();
                     if (item.startsWith("#")) {
                         poolBuilder.withEntry(TagEntry.builder(TagRegistry.item(Utils.ID(item.substring(1)))).build());
                     } else {
                         poolBuilder.withEntry(ItemEntry.builder(ItemRegistry.get(item)).build());
                     }
-                    poolBuilder.withCondition(RandomChanceLootCondition.builder(disc.getValue() / 100.0f).build());
+                    poolBuilder.withCondition(RandomChanceLootCondition.builder(disc.getValue() / 100.0F).build());
                 }
                 fabricLootSupplierBuilder.withPool(poolBuilder.build());
             }

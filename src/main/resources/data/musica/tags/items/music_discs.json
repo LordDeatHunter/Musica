@@ -41,6 +41,14 @@
     "musica:music_disc_lost_angel_ice_shards",
     "musica:music_disc_lost_angel_chemistry",
     "musica:music_disc_lost_angel_souls",
+    "musica:music_disc_lost_angel_crippling_fear",
+    "musica:music_disc_lost_angel_shattered",
+    "musica:music_disc_lost_angel_silva",
+    "musica:music_disc_lost_angel_holger",
+    "musica:music_disc_lost_angel_crush",
+    "musica:music_disc_lost_angel_grit",
+    "musica:music_disc_lost_angel_united",
+    "musica:music_disc_lost_angel_stalker",
 
     "musica:music_disc_kaz_shroom",
     "musica:music_disc_kaz_rain",
@@ -99,6 +107,11 @@
     "musica:music_disc_terraainn_sussy",
     "musica:music_disc_terraainn_terrain",
     "musica:music_disc_terraainn_ultima",
+    "musica:music_disc_terraainn_alex",
+    "musica:music_disc_terraainn_steve",
+    "musica:music_disc_terraainn_2010",
+    "musica:music_disc_terraainn_error",
+    "musica:music_disc_terraainn_deep",
 
     "musica:music_disc_tandem_music_over",
 
@@ -108,7 +121,6 @@
     "musica:music_disc_error_404_music_ender_disc",
 
     "musica:music_disc_medlek_stew",
-
     "musica:music_disc_4pointzx_12",
     "musica:music_disc_4pointzx_anthem",
     "musica:music_disc_4pointzx_dust",
@@ -128,6 +140,10 @@
     "musica:music_disc_a_peace_of_pie_pumpking",
     "musica:music_disc_a_peace_of_pie_drockstone",
     "musica:music_disc_a_peace_of_pie_sculktronic",
+    "musica:music_disc_a_peace_of_pie_melone",
+    "musica:music_disc_a_peace_of_pie_toxicoses",
+    "musica:music_disc_a_peace_of_pie_lurkin",
+    "musica:music_disc_a_peace_of_pie_fungus",
 
     "musica:music_disc_k620_aqua",
     "musica:music_disc_k620_run",
@@ -140,6 +156,45 @@
     "musica:music_disc_k620_forgot",
     "musica:music_disc_k620_extreme_intensity",
     "musica:music_disc_k620_deep_beyond_the_end",
-    "musica:music_disc_k620_ender_chaos"
+    "musica:music_disc_k620_ender_chaos",
+    "musica:music_disc_k620_masterwaves",
+    "musica:music_disc_k620_lemon_tree",
+
+    "musica:music_disc_fire_blazer_79_aurora",
+    "musica:music_disc_fire_blazer_79_void",
+    "musica:music_disc_fire_blazer_79_sight",
+
+    "musica:music_disc_epicuras_deepstate",
+    "musica:music_disc_epicuras_redfunk",
+    "musica:music_disc_epicuras_coldrave",
+    "musica:music_disc_epicuras_cradle",
+    "musica:music_disc_epicuras_ascent",
+    "musica:music_disc_epicuras_jagged",
+    "musica:music_disc_epicuras_submarine",
+    "musica:music_disc_epicuras_beachwave",
+    "musica:music_disc_epicuras_odyssey",
+
+    "musica:music_disc_maplemickey_shock",
+
+    "musica:music_disc_chefas_wither_dance",
+    "musica:music_disc_chefas_diorite",
+
+    "musica:music_disc_doom_on_a_spoon_just_the_beginning",
+    "musica:music_disc_doom_on_a_spoon_tide",
+    "musica:music_disc_doom_on_a_spoon_vengeful",
+    "musica:music_disc_doom_on_a_spoon_seeds",
+    "musica:music_disc_doom_on_a_spoon_ravage",
+    "musica:music_disc_doom_on_a_spoon_warden",
+    "musica:music_disc_doom_on_a_spoon_flight_of_the_voids_ship",
+
+    "musica:music_disc_zoo937_copper",
+    "musica:music_disc_zoo937_dripstone",
+    "musica:music_disc_zoo937_magma",
+    "musica:music_disc_zoo937_cavern",
+
+    "musica:music_disc_libra_glowsquid",
+    "musica:music_disc_libra_panic_attack",
+
+    "musica:music_disc_deesaster_float"
   ]
 }

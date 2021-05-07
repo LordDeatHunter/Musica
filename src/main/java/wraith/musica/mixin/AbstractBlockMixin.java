@@ -31,11 +31,11 @@ public abstract class AbstractBlockMixin {
     @Inject(method = "onUse", at = @At("HEAD"))
     public void onUse(World world, PlayerEntity player, Hand hand, BlockHitResult hit, CallbackInfoReturnable<ActionResult> cir) {
         String block = Registry.BLOCK.getId(getBlock()).toString();
-        HashMap<String, HashMap<String, Integer>> items;
-        if (Config.getInstance().BLOCK_DROPS.containsKey(block)) {
-            items = Config.getInstance().BLOCK_DROPS.get(block);
-        } else if (Config.getInstance().BLOCK_DROPS.containsKey("")) {
-            items = Config.getInstance().BLOCK_DROPS.get("");
+        HashMap<String, HashMap<String, Float>> items;
+        if (Config.getInstance().BLOCK_RIGHTCLICK_DROPS.containsKey(block)) {
+            items = Config.getInstance().BLOCK_RIGHTCLICK_DROPS.get(block);
+        } else if (Config.getInstance().BLOCK_RIGHTCLICK_DROPS.containsKey("")) {
+            items = Config.getInstance().BLOCK_RIGHTCLICK_DROPS.get("");
         } else {
             return;
         }
@@ -49,9 +49,12 @@ public abstract class AbstractBlockMixin {
         }
 
         ArrayList<String> discs = new ArrayList<>(items.get(itemId).keySet());
+        if (discs.isEmpty()) {
+            return;
+        }
         String disc = discs.get(Utils.getRandomIntInRange(0, discs.size() - 1));
 
-        int chance = items.get(itemId).get(disc);
+        float chance = items.get(itemId).get(disc);
         if (!Utils.getRandomChance(chance)) {
             return;
         }
@@ -65,7 +68,6 @@ public abstract class AbstractBlockMixin {
             return;
         }
         Block.dropStack(world, player.getBlockPos(), new ItemStack(item));
-
     }
 
 }

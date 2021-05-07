@@ -13,12 +13,15 @@ public class Utils {
     public static int getRandomIntInRange(int min, int max) {
         return min + RANDOM.nextInt(max - min + 1);
     }
+    public static float getRandomFloatInRange(int min, int max) {
+        return min + RANDOM.nextFloat() * max;
+    }
 
-    public static boolean getRandomChance(int chance) {
-        if (chance == 0) {
+    public static boolean getRandomChance(float chance) {
+        if (chance <= 0) {
             return false;
         }
-        return chance >= getRandomIntInRange(0, 100);
+        return chance >= getRandomFloatInRange(0, 100);
     }
 
 }

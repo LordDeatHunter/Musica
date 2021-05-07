@@ -1,7 +1,19 @@
 {
   "variants": {
-    "": {
+    "facing=east": {
+      "model": "musica:block/song_mixer",
+      "y": 90
+    },
+    "facing=north": {
       "model": "musica:block/song_mixer"
+    },
+    "facing=south": {
+      "model": "musica:block/song_mixer",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "musica:block/song_mixer",
+      "y": 270
     }
   }
 }

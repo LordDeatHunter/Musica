@@ -2,6 +2,8 @@ package wraith.musica.mixin;
 
 import net.fabricmc.fabric.api.tag.TagRegistry;
 import net.minecraft.block.Block;
+import net.minecraft.block.BlockState;
+import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.entity.mob.CreeperEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
@@ -34,7 +36,7 @@ public abstract class BlockMixin {
         if (!Config.getInstance().EXPLOSION_DROPS.containsKey(id)) {
             return;
         }
-        HashMap<String, HashMap<String, Integer>> explosionDrops = Config.getInstance().EXPLOSION_DROPS.get(id);
+        HashMap<String, HashMap<String, Float>> explosionDrops = Config.getInstance().EXPLOSION_DROPS.get(id);
         String cause = "";
         if (explosionDrops.containsKey("any")) {
             cause = "any";
@@ -55,9 +57,12 @@ public abstract class BlockMixin {
         }
 
         ArrayList<String> discs = new ArrayList<>(explosionDrops.get(cause).keySet());
+        if (discs.isEmpty()) {
+            return;
+        }
         String disc = discs.get(Utils.getRandomIntInRange(0, discs.size() - 1));
 
-        int chance = explosionDrops.get(cause).get(disc);
+        float chance = explosionDrops.get(cause).get(disc);
         if (!Utils.getRandomChance(chance)) {
             return;
         }
@@ -73,6 +78,44 @@ public abstract class BlockMixin {
 
         dropStack(world, pos, new ItemStack(item));
 
+    }
+
+    @Inject(method = "afterBreak", at = @At("HEAD"))
+    public void afterBreak(World world, PlayerEntity player, BlockPos pos, BlockState state, BlockEntity blockEntity, ItemStack stack, CallbackInfo ci) {
+        String blockID = Registry.BLOCK.getId((Block)(Object)this).toString();
+        if (!Config.getInstance().BLOCK_MINE_DROPS.containsKey(blockID)) {
+            return;
+        }
+        HashMap<String, HashMap<String, Float>> mineDrops = Config.getInstance().BLOCK_MINE_DROPS.get(blockID);
+        String itemID = Registry.ITEM.getId(stack.getItem()).toString();
+        if (!mineDrops.containsKey(itemID) && mineDrops.containsKey("")) {
+            itemID = "";
+        }
+
+        if (!mineDrops.containsKey(itemID)) {
+            return;
+        }
+        ArrayList<String> discs = new ArrayList<>(mineDrops.get(itemID).keySet());
+        if (discs.isEmpty()) {
+            return;
+        }
+        String disc = discs.get(Utils.getRandomIntInRange(0, discs.size() - 1));
+
+        float chance = mineDrops.get(itemID).get(disc);
+        if (!Utils.getRandomChance(chance)) {
+            return;
+        }
+
+        Item item;
+        if (disc.startsWith("#")) {
+            item = TagRegistry.item(Utils.ID(disc.substring(1))).getRandom(Utils.RANDOM);
+        } else if (ItemRegistry.contains(disc)) {
+            item = ItemRegistry.get(disc);
+        } else {
+            return;
+        }
+
+        dropStack(world, pos, new ItemStack(item));
     }
 
 }

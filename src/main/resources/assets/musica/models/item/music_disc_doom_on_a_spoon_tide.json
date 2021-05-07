@@ -1,0 +1,6 @@
+{
+    "parent": "minecraft:item/generated",
+    "textures": {
+        "layer0": "musica:item/music_disc_doom_on_a_spoon_tide"
+    }
+}

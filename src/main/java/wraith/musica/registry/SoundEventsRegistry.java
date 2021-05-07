@@ -52,6 +52,14 @@ public class SoundEventsRegistry {
         put("lost_angel_skylines", new SoundEvent(Utils.ID("music_disc.lost_angel_skylines")));
         put("lost_angel_souls", new SoundEvent(Utils.ID("music_disc.lost_angel_souls")));
         put("lost_angel_wilds", new SoundEvent(Utils.ID("music_disc.lost_angel_wilds")));
+        put("lost_angel_crippling_fear", new SoundEvent(Utils.ID("music_disc.lost_angel_crippling_fear")));
+        put("lost_angel_shattered", new SoundEvent(Utils.ID("music_disc.lost_angel_shattered")));
+        put("lost_angel_silva", new SoundEvent(Utils.ID("music_disc.lost_angel_silva")));
+        put("lost_angel_holger", new SoundEvent(Utils.ID("music_disc.lost_angel_holger")));
+        put("lost_angel_crush", new SoundEvent(Utils.ID("music_disc.lost_angel_crush")));
+        put("lost_angel_grit", new SoundEvent(Utils.ID("music_disc.lost_angel_grit")));
+        put("lost_angel_united", new SoundEvent(Utils.ID("music_disc.lost_angel_united")));
+        put("lost_angel_stalker", new SoundEvent(Utils.ID("music_disc.lost_angel_stalker")));
 
         put("kaz_shroom", new SoundEvent(Utils.ID("music_disc.kaz_shroom")));
         put("kaz_rain", new SoundEvent(Utils.ID("music_disc.kaz_rain")));
@@ -110,6 +118,11 @@ public class SoundEventsRegistry {
         put("terraainn_sussy", new SoundEvent(Utils.ID("music_disc.terraainn_sussy")));
         put("terraainn_terrain", new SoundEvent(Utils.ID("music_disc.terraainn_terrain")));
         put("terraainn_ultima", new SoundEvent(Utils.ID("music_disc.terraainn_ultima")));
+        put("terraainn_alex", new SoundEvent(Utils.ID("music_disc.terraainn_alex")));
+        put("terraainn_steve", new SoundEvent(Utils.ID("music_disc.terraainn_steve")));
+        put("terraainn_2010", new SoundEvent(Utils.ID("music_disc.terraainn_2010")));
+        put("terraainn_error", new SoundEvent(Utils.ID("music_disc.terraainn_error")));
+        put("terraainn_deep", new SoundEvent(Utils.ID("music_disc.terraainn_deep")));
 
         put("tandem_music_over", new SoundEvent(Utils.ID("music_disc.tandem_music_over")));
 
@@ -139,6 +152,10 @@ public class SoundEventsRegistry {
         put("a_peace_of_pie_pumpking", new SoundEvent(Utils.ID("music_disc.a_peace_of_pie_pumpking")));
         put("a_peace_of_pie_drockstone", new SoundEvent(Utils.ID("music_disc.a_peace_of_pie_drockstone")));
         put("a_peace_of_pie_sculktronic", new SoundEvent(Utils.ID("music_disc.a_peace_of_pie_sculktronic")));
+        put("a_peace_of_pie_melone", new SoundEvent(Utils.ID("music_disc.a_peace_of_pie_melone")));
+        put("a_peace_of_pie_toxicoses", new SoundEvent(Utils.ID("music_disc.a_peace_of_pie_toxicoses")));
+        put("a_peace_of_pie_lurkin", new SoundEvent(Utils.ID("music_disc.a_peace_of_pie_lurkin")));
+        put("a_peace_of_pie_fungus", new SoundEvent(Utils.ID("music_disc.a_peace_of_pie_fungus")));
 
         put("k620_aqua", new SoundEvent(Utils.ID("music_disc.k620_aqua")));
         put("k620_run", new SoundEvent(Utils.ID("music_disc.k620_run")));
@@ -152,6 +169,45 @@ public class SoundEventsRegistry {
         put("k620_extreme_intensity", new SoundEvent(Utils.ID("music_disc.k620_extreme_intensity")));
         put("k620_deep_beyond_the_end", new SoundEvent(Utils.ID("music_disc.k620_deep_beyond_the_end")));
         put("k620_ender_chaos", new SoundEvent(Utils.ID("music_disc.k620_ender_chaos")));
+        put("k620_masterwaves", new SoundEvent(Utils.ID("music_disc.k620_masterwaves")));
+        put("k620_lemon_tree", new SoundEvent(Utils.ID("music_disc.k620_lemon_tree")));
+
+        put("fire_blazer_79_void", new SoundEvent(Utils.ID("music_disc.fire_blazer_79_void")));
+        put("fire_blazer_79_sight", new SoundEvent(Utils.ID("music_disc.fire_blazer_79_sight")));
+        put("fire_blazer_79_aurora", new SoundEvent(Utils.ID("music_disc.fire_blazer_79_aurora")));
+
+        put("epicuras_deepstate", new SoundEvent(Utils.ID("music_disc.epicuras_deepstate")));
+        put("epicuras_redfunk", new SoundEvent(Utils.ID("music_disc.epicuras_redfunk")));
+        put("epicuras_coldrave", new SoundEvent(Utils.ID("music_disc.epicuras_coldrave")));
+        put("epicuras_cradle", new SoundEvent(Utils.ID("music_disc.epicuras_cradle")));
+        put("epicuras_ascent", new SoundEvent(Utils.ID("music_disc.epicuras_ascent")));
+        put("epicuras_jagged", new SoundEvent(Utils.ID("music_disc.epicuras_jagged")));
+        put("epicuras_submarine", new SoundEvent(Utils.ID("music_disc.epicuras_submarine")));
+        put("epicuras_beachwave", new SoundEvent(Utils.ID("music_disc.epicuras_beachwave")));
+        put("epicuras_odyssey", new SoundEvent(Utils.ID("music_disc.epicuras_odyssey")));
+
+        put("maplemickey_shock", new SoundEvent(Utils.ID("music_disc.maplemickey_shock")));
+
+        put("chefas_wither_dance", new SoundEvent(Utils.ID("music_disc.chefas_wither_dance")));
+        put("chefas_diorite", new SoundEvent(Utils.ID("music_disc.chefas_diorite")));
+
+        put("doom_on_a_spoon_just_the_beginning", new SoundEvent(Utils.ID("music_disc.doom_on_a_spoon_just_the_beginning")));
+        put("doom_on_a_spoon_tide", new SoundEvent(Utils.ID("music_disc.doom_on_a_spoon_tide")));
+        put("doom_on_a_spoon_vengeful", new SoundEvent(Utils.ID("music_disc.doom_on_a_spoon_vengeful")));
+        put("doom_on_a_spoon_seeds", new SoundEvent(Utils.ID("music_disc.doom_on_a_spoon_seeds")));
+        put("doom_on_a_spoon_ravage", new SoundEvent(Utils.ID("music_disc.doom_on_a_spoon_ravage")));
+        put("doom_on_a_spoon_warden", new SoundEvent(Utils.ID("music_disc.doom_on_a_spoon_warden")));
+        put("doom_on_a_spoon_flight_of_the_voids_ship", new SoundEvent(Utils.ID("music_disc.doom_on_a_spoon_flight_of_the_voids_ship")));
+
+        put("zoo937_copper", new SoundEvent(Utils.ID("music_disc.zoo937_copper")));
+        put("zoo937_dripstone", new SoundEvent(Utils.ID("music_disc.zoo937_dripstone")));
+        put("zoo937_magma", new SoundEvent(Utils.ID("music_disc.zoo937_magma")));
+        put("zoo937_cavern", new SoundEvent(Utils.ID("music_disc.zoo937_cavern")));
+
+        put("libra_glowsquid", new SoundEvent(Utils.ID("music_disc.libra_glowsquid")));
+        put("libra_panic_attack", new SoundEvent(Utils.ID("music_disc.libra_panic_attack")));
+
+        put("deesaster_float", new SoundEvent(Utils.ID("music_disc.deesaster_float")));
 
         put("record_scratch", new SoundEvent(Utils.ID("ambient.record_scratch")));
     }};
