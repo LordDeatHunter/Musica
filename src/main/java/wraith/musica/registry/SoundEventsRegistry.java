@@ -209,6 +209,8 @@ public class SoundEventsRegistry {
 
         put("deesaster_float", new SoundEvent(Utils.ID("music_disc.deesaster_float")));
 
+        put("w7n_disc_16", new SoundEvent(Utils.ID("music_disc.w7n_disc_16")));
+
         put("record_scratch", new SoundEvent(Utils.ID("ambient.record_scratch")));
     }};
 

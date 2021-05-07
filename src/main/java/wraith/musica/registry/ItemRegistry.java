@@ -213,6 +213,8 @@ public class ItemRegistry {
 
         put("music_disc_deesaster_float", new CustomMusicDiscItem(10, SoundEventsRegistry.get("deesaster_float"), (new Item.Settings()).maxCount(1).group(CustomItemGroup.MUSICA).rarity(Rarity.RARE)));
 
+        put("music_disc_w7n_disc_16", new CustomMusicDiscItem(10, SoundEventsRegistry.get("w7n_disc_16"), (new Item.Settings()).maxCount(1).group(CustomItemGroup.MUSICA).rarity(Rarity.RARE)));
+
         put("sticky_disc", new Item(new Item.Settings().group(CustomItemGroup.MUSICA)));
         put("blank_disc", new Item(new Item.Settings().group(CustomItemGroup.MUSICA)));
         put("song_mixer", new BlockItem(BlockRegistry.get("song_mixer"), new Item.Settings().group(CustomItemGroup.MUSICA)));
