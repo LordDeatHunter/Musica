@@ -4,6 +4,7 @@ import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.command.v1.CommandRegistrationCallback;
 import net.fabricmc.fabric.api.loot.v1.FabricLootPoolBuilder;
 import net.fabricmc.fabric.api.loot.v1.event.LootTableLoadingCallback;
+import net.fabricmc.fabric.api.networking.v1.ServerPlayNetworking;
 import net.fabricmc.fabric.api.tag.TagRegistry;
 import net.minecraft.loot.ConstantLootTableRange;
 import net.minecraft.loot.condition.EntityPropertiesLootCondition;
@@ -11,6 +12,7 @@ import net.minecraft.loot.condition.RandomChanceLootCondition;
 import net.minecraft.loot.context.LootContext;
 import net.minecraft.loot.entry.ItemEntry;
 import net.minecraft.loot.entry.TagEntry;
+import net.minecraft.nbt.CompoundTag;
 import net.minecraft.predicate.entity.EntityPredicate;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.server.command.CommandManager;
@@ -24,6 +26,7 @@ import wraith.musica.registry.BlockRegistry;
 import wraith.musica.registry.CustomScreenHandlerRegistry;
 import wraith.musica.registry.ItemRegistry;
 import wraith.musica.registry.SoundEventsRegistry;
+import wraith.musica.screen.SongMixerScreenHandler;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -43,11 +46,25 @@ public class Musica implements ModInitializer {
         }
         registerLootTable();
         registerCommands();
+        registerPacketHandlers();
         SoundEventsRegistry.register();
         BlockRegistry.register();
         ItemRegistry.register();
         CustomScreenHandlerRegistry.register();
         LOGGER.info("[Musica] has successfully been loaded!");
+    }
+
+    private void registerPacketHandlers() {
+        ServerPlayNetworking.registerGlobalReceiver(Utils.ID("song_mixer.click_disc"), (server, player, networkHandler, data, sender) -> {
+            CompoundTag tag = data.readCompoundTag();
+            server.execute(() -> {
+                int syncId = tag.getInt("sync_id");
+                int button = tag.getInt("click_slot");
+                if (player.currentScreenHandler.syncId == syncId) {
+                    player.currentScreenHandler.onButtonClick(player, button);
+                }
+            });
+        });
     }
 
     private void registerCommands() {

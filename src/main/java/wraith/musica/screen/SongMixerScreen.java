@@ -1,6 +1,9 @@
 package wraith.musica.screen;
 
 import com.mojang.blaze3d.systems.RenderSystem;
+import io.netty.buffer.Unpooled;
+import net.fabricmc.fabric.api.client.networking.v1.ClientPlayNetworking;
+import net.fabricmc.fabric.api.networking.v1.ServerPlayNetworking;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.screen.ingame.HandledScreen;
 import net.minecraft.client.sound.PositionedSoundInstance;
@@ -8,6 +11,8 @@ import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.nbt.CompoundTag;
+import net.minecraft.network.PacketByteBuf;
 import net.minecraft.screen.ScreenHandler;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.text.Text;
@@ -127,7 +132,11 @@ public class SongMixerScreen extends HandledScreen<ScreenHandler> {
                 double e = mouseY - (double)(j + m / 4 * 18);
                 if (d >= 0.0D && e >= 0.0D && d < 16.0D && e < 18.0D && this.handler.onButtonClick(this.client.player, l)) {
                     MinecraftClient.getInstance().getSoundManager().play(PositionedSoundInstance.master(SoundEvents.UI_BUTTON_CLICK, 1.0F));
-                    this.client.interactionManager.clickButton(this.handler.syncId, l);
+                    CompoundTag tag = new CompoundTag();
+                    tag.putInt("sync_id", handler.syncId);
+                    tag.putInt("click_slot", l);
+                    PacketByteBuf packet = new PacketByteBuf(Unpooled.buffer()).writeCompoundTag(tag);
+                    ClientPlayNetworking.send(Utils.ID("song_mixer.click_disc"), packet);
                     return true;
                 }
             }
