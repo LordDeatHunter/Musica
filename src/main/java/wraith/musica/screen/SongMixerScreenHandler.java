@@ -74,15 +74,15 @@ public class SongMixerScreenHandler extends ScreenHandler {
             }
 
             @Override
-            public void onStackChanged(ItemStack originalItem, ItemStack itemStack) {
+            public void onQuickTransfer(ItemStack originalItem, ItemStack itemStack) {
                 SongMixerScreenHandler.this.selectedRecipe.set(-1);
-                super.onStackChanged(originalItem, itemStack);
+                super.onQuickTransfer(originalItem, itemStack);
             }
 
             @Override
-            public ItemStack onTakeItem(PlayerEntity player, ItemStack stack) {
+            public void onTakeItem(PlayerEntity player, ItemStack stack) {
                 SongMixerScreenHandler.this.populateResult();
-                return super.onTakeItem(player, stack);
+                super.onTakeItem(player, stack);
             }
         });
         this.dyeSlot = this.addSlot(new Slot(this.input, 1, 20, 48){
@@ -92,15 +92,15 @@ public class SongMixerScreenHandler extends ScreenHandler {
             }
 
             @Override
-            public void onStackChanged(ItemStack originalItem, ItemStack itemStack) {
+            public void onQuickTransfer(ItemStack originalItem, ItemStack itemStack) {
                 SongMixerScreenHandler.this.selectedRecipe.set(-1);
-                super.onStackChanged(originalItem, itemStack);
+                super.onQuickTransfer(originalItem, itemStack);
             }
 
             @Override
-            public ItemStack onTakeItem(PlayerEntity player, ItemStack stack) {
+            public void onTakeItem(PlayerEntity player, ItemStack stack) {
                 SongMixerScreenHandler.this.populateResult();
-                return super.onTakeItem(player, stack);
+                super.onTakeItem(player, stack);
             }
         });
         this.outputSlot = this.addSlot(new Slot(this.output, 2, 143, 33) {
@@ -110,7 +110,7 @@ public class SongMixerScreenHandler extends ScreenHandler {
             }
 
             @Override
-            public ItemStack onTakeItem(PlayerEntity player, ItemStack stack) {
+            public void onTakeItem(PlayerEntity player, ItemStack stack) {
                 stack.onCraft(player.world, player, stack.getCount());
                 ItemStack input = SongMixerScreenHandler.this.inputSlot.takeStack(1);
                 SongMixerScreenHandler.this.dyeSlot.takeStack(1);
@@ -126,7 +126,7 @@ public class SongMixerScreenHandler extends ScreenHandler {
                     }
 
                 });
-                return super.onTakeItem(player, stack);
+                super.onTakeItem(player, stack);
             }
         });
 
@@ -149,7 +149,7 @@ public class SongMixerScreenHandler extends ScreenHandler {
     public ItemStack transferSlot(PlayerEntity player, int invSlot) {
         ItemStack newStack = ItemStack.EMPTY;
         Slot slot = this.slots.get(invSlot);
-        if (slot != null && slot.hasStack()) {
+        if (slot.hasStack()) {
             int invSize = 3;
             ItemStack originalStack = slot.getStack();
             newStack = originalStack.copy();
@@ -228,9 +228,7 @@ public class SongMixerScreenHandler extends ScreenHandler {
     public void close(PlayerEntity player) {
         super.close(player);
         this.output.removeStack(1);
-        this.context.run((world, blockPos) -> {
-            this.dropInventory(player, player.world, this.input);
-        });
+        this.context.run((world, blockPos) -> this.dropInventory(player, this.input));
     }
 
     @Override

@@ -3,7 +3,6 @@ package wraith.musica.screen;
 import com.mojang.blaze3d.systems.RenderSystem;
 import io.netty.buffer.Unpooled;
 import net.fabricmc.fabric.api.client.networking.v1.ClientPlayNetworking;
-import net.fabricmc.fabric.api.networking.v1.ServerPlayNetworking;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.screen.ingame.HandledScreen;
 import net.minecraft.client.sound.PositionedSoundInstance;
@@ -11,7 +10,7 @@ import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraft.nbt.CompoundTag;
+import net.minecraft.nbt.NbtCompound;
 import net.minecraft.network.PacketByteBuf;
 import net.minecraft.screen.ScreenHandler;
 import net.minecraft.sound.SoundEvents;
@@ -46,8 +45,8 @@ public class SongMixerScreen extends HandledScreen<ScreenHandler> {
     @Override
     protected void drawBackground(MatrixStack matrices, float delta, int mouseX, int mouseY) {
         this.renderBackground(matrices);
-        RenderSystem.color4f(1.0F, 1.0F, 1.0F, 1.0F);
-        this.client.getTextureManager().bindTexture(TEXTURE);
+        RenderSystem.setShaderColor(1.0F, 1.0F, 1.0F, 1.0F);
+        RenderSystem.setShaderTexture(0, TEXTURE);
         int i = this.x;
         int j = this.y;
         this.drawTexture(matrices, i, j, 0, 0, this.backgroundWidth, this.backgroundHeight);
@@ -132,10 +131,10 @@ public class SongMixerScreen extends HandledScreen<ScreenHandler> {
                 double e = mouseY - (double)(j + m / 4 * 18);
                 if (d >= 0.0D && e >= 0.0D && d < 16.0D && e < 18.0D && this.handler.onButtonClick(this.client.player, l)) {
                     MinecraftClient.getInstance().getSoundManager().play(PositionedSoundInstance.master(SoundEvents.UI_BUTTON_CLICK, 1.0F));
-                    CompoundTag tag = new CompoundTag();
+                    NbtCompound tag = new NbtCompound();
                     tag.putInt("sync_id", handler.syncId);
                     tag.putInt("click_slot", l);
-                    PacketByteBuf packet = new PacketByteBuf(Unpooled.buffer()).writeCompoundTag(tag);
+                    PacketByteBuf packet = new PacketByteBuf(Unpooled.buffer()).writeNbt(tag);
                     ClientPlayNetworking.send(Utils.ID("song_mixer.click_disc"), packet);
                     return true;
                 }

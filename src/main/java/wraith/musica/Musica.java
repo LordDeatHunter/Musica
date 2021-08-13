@@ -6,13 +6,13 @@ import net.fabricmc.fabric.api.loot.v1.FabricLootPoolBuilder;
 import net.fabricmc.fabric.api.loot.v1.event.LootTableLoadingCallback;
 import net.fabricmc.fabric.api.networking.v1.ServerPlayNetworking;
 import net.fabricmc.fabric.api.tag.TagRegistry;
-import net.minecraft.loot.ConstantLootTableRange;
 import net.minecraft.loot.condition.EntityPropertiesLootCondition;
 import net.minecraft.loot.condition.RandomChanceLootCondition;
 import net.minecraft.loot.context.LootContext;
 import net.minecraft.loot.entry.ItemEntry;
 import net.minecraft.loot.entry.TagEntry;
-import net.minecraft.nbt.CompoundTag;
+import net.minecraft.loot.provider.number.ConstantLootNumberProvider;
+import net.minecraft.nbt.NbtCompound;
 import net.minecraft.predicate.entity.EntityPredicate;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.server.command.CommandManager;
@@ -26,7 +26,6 @@ import wraith.musica.registry.BlockRegistry;
 import wraith.musica.registry.CustomScreenHandlerRegistry;
 import wraith.musica.registry.ItemRegistry;
 import wraith.musica.registry.SoundEventsRegistry;
-import wraith.musica.screen.SongMixerScreenHandler;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -56,14 +55,16 @@ public class Musica implements ModInitializer {
 
     private void registerPacketHandlers() {
         ServerPlayNetworking.registerGlobalReceiver(Utils.ID("song_mixer.click_disc"), (server, player, networkHandler, data, sender) -> {
-            CompoundTag tag = data.readCompoundTag();
-            server.execute(() -> {
-                int syncId = tag.getInt("sync_id");
-                int button = tag.getInt("click_slot");
-                if (player.currentScreenHandler.syncId == syncId) {
-                    player.currentScreenHandler.onButtonClick(player, button);
-                }
-            });
+            NbtCompound tag = data.readNbt();
+            if (tag != null && tag.contains("sync_id") && tag.contains("click_slot")) {
+                server.execute(() -> {
+                    int syncId = tag.getInt("sync_id");
+                    int button = tag.getInt("click_slot");
+                    if (player.currentScreenHandler.syncId == syncId) {
+                        player.currentScreenHandler.onButtonClick(player, button);
+                    }
+                });
+            }
         });
     }
 
@@ -80,7 +81,7 @@ public class Musica implements ModInitializer {
                                         player.sendMessage(new LiteralText("§6[§eMusica§6] §3is being reloaded. §4This might cause some lag!"), false);
                                     }
                                     Config.getInstance().parseConfig();
-                                    MinecraftServer server = context.getSource().getMinecraftServer();
+                                    MinecraftServer server = context.getSource().getServer();
                                     server.reloadResources(server.getDataPackManager().getEnabledNames());
                                     if (player != null) {
                                         player.sendMessage(new LiteralText("§6[§eMusica§6] §3has successfully reloaded!"), false);
@@ -120,7 +121,7 @@ public class Musica implements ModInitializer {
                 }
                 HashMap<String, HashMap<String, Float>> killers = Config.getInstance().MOB_DROPS.get(lootId);
 
-                FabricLootPoolBuilder poolBuilder = FabricLootPoolBuilder.builder().rolls(ConstantLootTableRange.create(1));
+                FabricLootPoolBuilder poolBuilder = FabricLootPoolBuilder.builder().rolls(ConstantLootNumberProvider.create(1));
 
                 for (Map.Entry<String, HashMap<String, Float>> killer : killers.entrySet()) {
                     String killerId = killer.getKey();
@@ -148,7 +149,7 @@ public class Musica implements ModInitializer {
                 }
                 HashMap<String, Float> discs = Config.getInstance().TREASURES.get(lootId);
 
-                FabricLootPoolBuilder poolBuilder = FabricLootPoolBuilder.builder().rolls(ConstantLootTableRange.create(1));
+                FabricLootPoolBuilder poolBuilder = FabricLootPoolBuilder.builder().rolls(ConstantLootNumberProvider.create(1));
 
                 for (Map.Entry<String, Float> disc : discs.entrySet()) {
                     String item = disc.getKey();

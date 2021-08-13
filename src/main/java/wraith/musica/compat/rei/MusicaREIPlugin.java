@@ -1,39 +1,27 @@
 package wraith.musica.compat.rei;
 
-import me.shedaniel.rei.api.EntryStack;
-import me.shedaniel.rei.api.RecipeHelper;
-import me.shedaniel.rei.api.plugins.REIPluginV0;
+import me.shedaniel.rei.api.client.plugins.REIClientPlugin;
+import me.shedaniel.rei.api.client.registry.category.CategoryRegistry;
+import me.shedaniel.rei.api.client.registry.display.DisplayRegistry;
+import me.shedaniel.rei.api.common.category.CategoryIdentifier;
+import me.shedaniel.rei.api.common.util.EntryStacks;
 import net.minecraft.item.ItemStack;
-import net.minecraft.util.Identifier;
 import wraith.musica.Utils;
 import wraith.musica.registry.ItemRegistry;
 
-public class MusicaREIPlugin implements REIPluginV0 {
+public class MusicaREIPlugin implements REIClientPlugin {
 
-    public static final Identifier ID = Utils.ID("rei_plugin");
-    public static final Identifier SONG_MIXER_CATEGORY_ID = Utils.ID("song_mixer");
+    public static final CategoryIdentifier<SongMixerDisplay> SONG_MIXER_CATEGORY_ID = CategoryIdentifier.of(Utils.ID("song_mixer"));
 
     @Override
-    public Identifier getPluginIdentifier() {
-        return ID;
+    public void registerCategories(CategoryRegistry registry) {
+        registry.add(new SongMixerCategory());
+        registry.addWorkstations(SONG_MIXER_CATEGORY_ID, EntryStacks.of(new ItemStack(ItemRegistry.get("song_mixer"))));
     }
 
     @Override
-    public void registerOthers(RecipeHelper recipeHelper) {
-        //recipeHelper.registerAutoCraftingHandler(new SongMixerTransferHandler());
-        recipeHelper.registerWorkingStations(SONG_MIXER_CATEGORY_ID, EntryStack.create(new ItemStack(ItemRegistry.get("song_mixer"))));
+    public void registerDisplays(DisplayRegistry registry) {
+        registry.add(new SongMixerDisplay());
     }
-
-    @Override
-    public void registerPluginCategories(RecipeHelper recipeHelper) {
-        recipeHelper.registerCategories(new SongMixerCategory());
-    }
-
-    @Override
-    public void registerRecipeDisplays(RecipeHelper recipeHelper) {
-        recipeHelper.registerDisplay(new SongMixerDisplay());
-    }
-
-
 
 }
