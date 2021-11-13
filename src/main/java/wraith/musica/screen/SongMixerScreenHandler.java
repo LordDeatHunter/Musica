@@ -2,7 +2,7 @@ package wraith.musica.screen;
 
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
-import net.fabricmc.fabric.api.tag.TagRegistry;
+import net.fabricmc.fabric.api.tag.TagFactory;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.inventory.CraftingResultInventory;
@@ -46,7 +46,7 @@ public class SongMixerScreenHandler extends ScreenHandler {
         super(CustomScreenHandlerRegistry.SONG_MIXER_SCREEN, syncId);
 
         if (availableDiscs == null) {
-            availableDiscs = TagRegistry.item(new Identifier("c:music_discs")).values();
+            availableDiscs = TagFactory.ITEM.create(new Identifier("c:music_discs")).values();
         }
 
         this.contentsChangedListener = () -> {};
@@ -88,7 +88,7 @@ public class SongMixerScreenHandler extends ScreenHandler {
         this.dyeSlot = this.addSlot(new Slot(this.input, 1, 20, 48){
             @Override
             public boolean canInsert(ItemStack stack) {
-                return TagRegistry.item(new Identifier("c:dyes")).contains(stack.getItem());
+                return TagFactory.ITEM.create(new Identifier("c:dyes")).contains(stack.getItem());
             }
 
             @Override
@@ -161,7 +161,7 @@ public class SongMixerScreenHandler extends ScreenHandler {
                 if (!this.insertItem(originalStack, 0, 1, false)) {
                     return ItemStack.EMPTY;
                 }
-            } else if (TagRegistry.item(new Identifier("c:dyes")).contains(originalStack.getItem())) {
+            } else if (TagFactory.ITEM.create(new Identifier("c:dyes")).contains(originalStack.getItem())) {
                 if (!this.insertItem(originalStack, 1, 2, false)) {
                     return ItemStack.EMPTY;
                 }

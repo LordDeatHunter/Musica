@@ -1,6 +1,6 @@
 package wraith.musica.mixin;
 
-import net.fabricmc.fabric.api.tag.TagRegistry;
+import net.fabricmc.fabric.api.tag.TagFactory;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.entity.player.PlayerEntity;
@@ -61,7 +61,7 @@ public abstract class AbstractBlockMixin {
 
         Item item;
         if (disc.startsWith("#")) {
-            item = TagRegistry.item(Utils.ID(disc.substring(1))).getRandom(Utils.RANDOM);
+            item = TagFactory.ITEM.create(Utils.ID(disc.substring(1))).getRandom(Utils.RANDOM);
         } else if (ItemRegistry.contains(disc)) {
             item = ItemRegistry.get(disc);
         } else {

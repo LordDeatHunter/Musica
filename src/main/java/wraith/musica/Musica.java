@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.command.v1.CommandRegistrationCallback;
 import net.fabricmc.fabric.api.loot.v1.FabricLootPoolBuilder;
 import net.fabricmc.fabric.api.loot.v1.event.LootTableLoadingCallback;
 import net.fabricmc.fabric.api.networking.v1.ServerPlayNetworking;
+import net.fabricmc.fabric.api.tag.TagFactory;
 import net.fabricmc.fabric.api.tag.TagRegistry;
 import net.minecraft.loot.condition.EntityPropertiesLootCondition;
 import net.minecraft.loot.condition.RandomChanceLootCondition;
@@ -25,7 +26,6 @@ import org.apache.logging.log4j.Logger;
 import wraith.musica.registry.BlockRegistry;
 import wraith.musica.registry.CustomScreenHandlerRegistry;
 import wraith.musica.registry.ItemRegistry;
-import wraith.musica.registry.SoundEventsRegistry;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -46,9 +46,8 @@ public class Musica implements ModInitializer {
         registerLootTable();
         registerCommands();
         registerPacketHandlers();
-        SoundEventsRegistry.register();
         BlockRegistry.register();
-        ItemRegistry.register();
+        ItemRegistry.init();
         CustomScreenHandlerRegistry.register();
         LOGGER.info("[Musica] has successfully been loaded!");
     }
@@ -128,7 +127,7 @@ public class Musica implements ModInitializer {
                     for (Map.Entry<String, Float> items : killer.getValue().entrySet()) {
                         String item = items.getKey();
                         if (item.startsWith("#")) {
-                            poolBuilder.withEntry(TagEntry.builder(TagRegistry.item(Utils.ID(item.substring(1)))).build());
+                            poolBuilder.withEntry(TagEntry.builder(TagFactory.ITEM.create(Utils.ID(item.substring(1)))).build());
                         } else {
                             poolBuilder.withEntry(ItemEntry.builder(ItemRegistry.get(item)).build());
                         }
@@ -154,7 +153,7 @@ public class Musica implements ModInitializer {
                 for (Map.Entry<String, Float> disc : discs.entrySet()) {
                     String item = disc.getKey();
                     if (item.startsWith("#")) {
-                        poolBuilder.withEntry(TagEntry.builder(TagRegistry.item(Utils.ID(item.substring(1)))).build());
+                        poolBuilder.withEntry(TagEntry.builder(TagFactory.ITEM.create(Utils.ID(item.substring(1)))).build());
                     } else {
                         poolBuilder.withEntry(ItemEntry.builder(ItemRegistry.get(item)).build());
                     }

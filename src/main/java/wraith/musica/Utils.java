@@ -18,10 +18,7 @@ public class Utils {
     }
 
     public static boolean getRandomChance(float chance) {
-        if (chance <= 0) {
-            return false;
-        }
-        return chance >= getRandomFloatInRange(0, 100);
+        return !(chance <= 0) && chance >= getRandomFloatInRange(0, 100);
     }
 
 }

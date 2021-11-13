@@ -21,7 +21,7 @@ import java.util.List;
 
 public class SongMixerCategory implements DisplayCategory<SongMixerDisplay> {
 
-    public static TranslatableText TITLE = new TranslatableText("container.musica.song_mixer.rei.title");
+    public static final TranslatableText TITLE = new TranslatableText("container.musica.song_mixer.rei.title");
 
     @Override
     public Renderer getIcon() {
@@ -37,12 +37,12 @@ public class SongMixerCategory implements DisplayCategory<SongMixerDisplay> {
     public @NotNull List<Widget> setupDisplay(SongMixerDisplay recipeDisplay, Rectangle bounds) {
         Point origin = new Point(bounds.getCenterX() - 58, bounds.getCenterY() - 27);
 
-        List<Widget> widgets = new ArrayList<>();
+        var widgets = new ArrayList<Widget>();
 
         widgets.add(Widgets.createRecipeBase(bounds));
 
-        List<EntryIngredient> inputs = recipeDisplay.getInputEntries();
-        List<Slot> slots = new ArrayList<>();
+        var inputs = recipeDisplay.getInputEntries();
+        var slots = new ArrayList<Slot>();
 
         int y = origin.y + 20;
         slots.add(Widgets.createSlot(new Point(origin.x + 8, y)).markInput());
