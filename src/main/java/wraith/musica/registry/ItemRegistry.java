@@ -232,8 +232,7 @@ public final class ItemRegistry {
 
     public static void createAndRegisterDisc(String id) {
         SoundEventsRegistry.createAndRegister(id);
-        id = "music_disc_" + id;
-        register(id, new CustomMusicDiscItem(10, SoundEventsRegistry.get(id), DISC_SETTINGS));
+        register("music_disc_" + id, new CustomMusicDiscItem(10, SoundEventsRegistry.get(id), DISC_SETTINGS));
     }
 
     public static void register(String id, Item item) {

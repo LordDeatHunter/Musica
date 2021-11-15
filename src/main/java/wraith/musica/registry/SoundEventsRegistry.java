@@ -13,7 +13,7 @@ public final class SoundEventsRegistry {
     private static final HashMap<String, SoundEvent> SOUND_EVENTS = new HashMap<>();
 
     public static void createAndRegister(String id) {
-        register(id, new SoundEvent(Utils.ID(id)));
+        register(id, new SoundEvent(Utils.ID("music_disc." + id)));
     }
 
     public static void register(String id, SoundEvent soundEvent) {
