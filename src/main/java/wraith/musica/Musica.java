@@ -26,6 +26,7 @@ import org.apache.logging.log4j.Logger;
 import wraith.musica.registry.BlockRegistry;
 import wraith.musica.registry.CustomScreenHandlerRegistry;
 import wraith.musica.registry.ItemRegistry;
+import wraith.musica.registry.SoundEventsRegistry;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -48,6 +49,7 @@ public class Musica implements ModInitializer {
         registerPacketHandlers();
         BlockRegistry.register();
         ItemRegistry.init();
+        SoundEventsRegistry.init();
         CustomScreenHandlerRegistry.register();
         LOGGER.info("[Musica] has successfully been loaded!");
     }

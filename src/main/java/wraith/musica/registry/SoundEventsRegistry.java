@@ -23,4 +23,9 @@ public final class SoundEventsRegistry {
     public static SoundEvent get(String key) {
         return SOUND_EVENTS.get(key);
     }
+
+    public static void init() {
+        register("record_scratch", new SoundEvent(Utils.ID("ambient.record_scratch")));
+    }
+
 }

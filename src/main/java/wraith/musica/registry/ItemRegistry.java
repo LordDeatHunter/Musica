@@ -108,7 +108,7 @@ public final class ItemRegistry {
         createAndRegisterDisc("bling_cheese_charlie");
         createAndRegisterDisc("bling_cheese_chicken");
         createAndRegisterDisc("bling_cheese_fort_stress");
-        createAndRegisterDisc("bling_cheese_ic_5");
+        createAndRegisterDisc("bling_cheese_disc_15");
         createAndRegisterDisc("bling_cheese_neon");
         createAndRegisterDisc("bling_cheese_skulk");
         createAndRegisterDisc("bling_cheese_strall");
