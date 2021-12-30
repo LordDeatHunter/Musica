@@ -1,11 +1,11 @@
 package wraith.musica.registry;
 
 import net.devtech.arrp.json.models.JModel;
+import net.devtech.arrp.json.tags.JTag;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.Items;
-import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
 import net.minecraft.util.registry.Registry;
 import wraith.musica.CustomItemGroup;
@@ -16,6 +16,8 @@ import wraith.musica.Utils;
 import java.util.HashMap;
 
 public final class ItemRegistry {
+
+    private static final JTag DISCS_TAG = JTag.tag();
 
     private ItemRegistry(){}
 
@@ -151,6 +153,9 @@ public final class ItemRegistry {
         createAndRegisterDisc("bling_cheese_strall");
         createAndRegisterDisc("bling_cheese_surviving");
         createAndRegisterDisc("bling_cheese_time");
+        createAndRegisterDisc("bling_cheese_brain_sploshed");
+        createAndRegisterDisc("bling_cheese_ever_ending");
+        createAndRegisterDisc("bling_cheese_woodland_wobble");
 
         createAndRegisterDisc("terraainn_moonset");
         createAndRegisterDisc("terraainn_insomnia");
@@ -268,13 +273,16 @@ public final class ItemRegistry {
         createAndRegisterDisc("w7n_disc_8");
         createAndRegisterDisc("w7n_disc_9");
         createAndRegisterDisc("w7n_disc_19");
+
+        Musica.RESOURCE_PACK.addTag(Utils.ID("items/music_discs"), DISCS_TAG);
     }
 
     public static void createAndRegisterDisc(String id) {
         SoundEventsRegistry.createAndRegister(id);
         register("music_disc_" + id, new CustomMusicDiscItem(10, SoundEventsRegistry.get(id), DISC_SETTINGS));
-        var identifier = Utils.ID("item/music_disc_" + id);
-        Musica.RESOURCE_PACK.addModel(JModel.model("minecraft:item/generated").textures(JModel.textures().layer0(identifier.toString())), identifier);
+        var itemIdentifier = Utils.ID("item/music_disc_" + id);
+        Musica.RESOURCE_PACK.addModel(JModel.model("minecraft:item/generated").textures(JModel.textures().layer0(itemIdentifier.toString())), itemIdentifier);
+        DISCS_TAG.add(Utils.ID("music_disc_" + id));
     }
 
     public static void register(String id, Item item) {

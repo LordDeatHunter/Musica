@@ -289,69 +289,84 @@
       "musica:yekonaip_desert"
     ]
   },
-   "music_disc.jamiesname_18": {
+  "music_disc.jamiesname_18": {
     "sounds": [
       "musica:jamiesname_18"
     ]
   },
-   "music_disc.jamiesname_shulk": {
+  "music_disc.jamiesname_shulk": {
     "sounds": [
       "musica:jamiesname_shulk"
     ]
   },
-   "music_disc.jamiesname_pillaged": {
+  "music_disc.jamiesname_pillaged": {
     "sounds": [
       "musica:jamiesname_pillaged"
     ]
   },
-   "music_disc.bling_cheese_strall": {
+  "music_disc.bling_cheese_strall": {
     "sounds": [
       "musica:bling_cheese_strall"
     ]
   },
-   "music_disc.bling_cheese_surviving": {
+  "music_disc.bling_cheese_surviving": {
     "sounds": [
       "musica:bling_cheese_surviving"
     ]
   },
-   "music_disc.bling_cheese_birch_bop": {
+  "music_disc.bling_cheese_birch_bop": {
     "sounds": [
       "musica:bling_cheese_birch_bop"
     ]
   },
-   "music_disc.bling_cheese_charlie": {
+  "music_disc.bling_cheese_charlie": {
     "sounds": [
       "musica:bling_cheese_charlie"
     ]
   },
-   "music_disc.bling_cheese_chicken": {
+  "music_disc.bling_cheese_chicken": {
     "sounds": [
       "musica:bling_cheese_chicken"
     ]
   },
-   "music_disc.bling_cheese_fort_stress": {
+  "music_disc.bling_cheese_fort_stress": {
     "sounds": [
       "musica:bling_cheese_fort_stress"
     ]
   },
-   "music_disc.bling_cheese_disc_15": {
+  "music_disc.bling_cheese_disc_15": {
     "sounds": [
       "musica:bling_cheese_disc_15"
     ]
   },
-   "music_disc.bling_cheese_neon": {
+  "music_disc.bling_cheese_neon": {
     "sounds": [
       "musica:bling_cheese_neon"
     ]
   },
-   "music_disc.bling_cheese_skulk": {
+  "music_disc.bling_cheese_skulk": {
     "sounds": [
       "musica:bling_cheese_skulk"
     ]
   },
-   "music_disc.bling_cheese_time": {
+  "music_disc.bling_cheese_time": {
     "sounds": [
       "musica:bling_cheese_time"
+    ]
+  },
+  "music_disc.bling_cheese_brain_sploshed": {
+    "sounds": [
+      "musica:bling_cheese_brain_sploshed"
+    ]
+  },
+  "music_disc.bling_cheese_ever_ending": {
+    "sounds": [
+      "musica:bling_cheese_ever_ending"
+    ]
+  },
+  "music_disc.bling_cheese_woodland_wobble": {
+    "sounds": [
+      "musica:bling_cheese_woodland_wobble"
     ]
   },
   "music_disc.terraainn_moonset": {
