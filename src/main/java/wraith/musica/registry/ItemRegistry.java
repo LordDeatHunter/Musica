@@ -258,6 +258,9 @@ public final class ItemRegistry {
         createAndRegisterDisc("deesaster_float");
 
         createAndRegisterDisc("w7n_disc_16");
+        createAndRegisterDisc("w7n_disc_8");
+        createAndRegisterDisc("w7n_disc_9");
+        createAndRegisterDisc("w7n_disc_19");
     }
 
     public static void createAndRegisterDisc(String id) {

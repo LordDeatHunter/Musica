@@ -979,6 +979,21 @@
       "musica:w7n_disc_16"
     ]
   },
+  "music_disc.w7n_disc_8": {
+    "sounds": [
+      "musica:w7n_disc_8"
+    ]
+  },
+  "music_disc.w7n_disc_9": {
+    "sounds": [
+      "musica:w7n_disc_9"
+    ]
+  },
+  "music_disc.w7n_disc_19": {
+    "sounds": [
+      "musica:w7n_disc_19"
+    ]
+  },
   "ambient.record_scratch": {
     "sounds": [
       "musica:scratch/record_scratch_1",
