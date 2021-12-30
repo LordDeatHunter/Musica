@@ -112,6 +112,13 @@ public final class ItemRegistry {
         createAndRegisterDisc("kaz_shroom");
         createAndRegisterDisc("kaz_rain");
         createAndRegisterDisc("kaz_activate");
+        createAndRegisterDisc("kaz_chorus");
+        createAndRegisterDisc("kaz_droopy_loves_jean");
+        createAndRegisterDisc("kaz_jungle");
+        createAndRegisterDisc("kaz_low_ki_sailing");
+        createAndRegisterDisc("kaz_noon");
+        createAndRegisterDisc("kaz_soul");
+        createAndRegisterDisc("kaz_tall_remix");
 
         createAndRegisterDisc("firch_anti");
         createAndRegisterDisc("firch_range");

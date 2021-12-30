@@ -174,6 +174,41 @@
       "musica:kaz_activate"
     ]
   },
+  "music_disc.kaz_chorus": {
+    "sounds": [
+      "musica:kaz_chorus"
+    ]
+  },
+  "music_disc.kaz_droopy_loves_jean": {
+    "sounds": [
+      "musica:kaz_droopy_loves_jean"
+    ]
+  },
+  "music_disc.kaz_jungle": {
+    "sounds": [
+      "musica:kaz_jungle"
+    ]
+  },
+  "music_disc.kaz_low_ki_sailing": {
+    "sounds": [
+      "musica:kaz_low_ki_sailing"
+    ]
+  },
+  "music_disc.kaz_noon": {
+    "sounds": [
+      "musica:kaz_noon"
+    ]
+  },
+  "music_disc.kaz_soul": {
+    "sounds": [
+      "musica:kaz_soul"
+    ]
+  },
+  "music_disc.kaz_tall_remix": {
+    "sounds": [
+      "musica:kaz_tall_remix"
+    ]
+  },
   "music_disc.firch_anti": {
     "sounds": [
       "musica:firch_anti"
