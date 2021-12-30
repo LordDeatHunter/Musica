@@ -759,6 +759,141 @@
       "musica:lost_angel_stalker"
     ]
   },
+  "music_disc.lost_angel_amethyst": {
+    "sounds": [
+      "musica:lost_angel_amethyst"
+    ]
+  },
+  "music_disc.lost_angel_archer": {
+    "sounds": [
+      "musica:lost_angel_archer"
+    ]
+  },
+  "music_disc.lost_angel_cheddar": {
+    "sounds": [
+      "musica:lost_angel_cheddar"
+    ]
+  },
+  "music_disc.lost_angel_disc_14": {
+    "sounds": [
+      "musica:lost_angel_disc_14"
+    ]
+  },
+  "music_disc.lost_angel_disc_39": {
+    "sounds": [
+      "musica:lost_angel_disc_39"
+    ]
+  },
+  "music_disc.lost_angel_enderwalk": {
+    "sounds": [
+      "musica:lost_angel_enderwalk"
+    ]
+  },
+  "music_disc.lost_angel_fred": {
+    "sounds": [
+      "musica:lost_angel_fred"
+    ]
+  },
+  "music_disc.lost_angel_galactica": {
+    "sounds": [
+      "musica:lost_angel_galactica"
+    ]
+  },
+  "music_disc.lost_angel_high_rise": {
+    "sounds": [
+      "musica:lost_angel_high_rise"
+    ]
+  },
+  "music_disc.lost_angel_lost_300": {
+    "sounds": [
+      "musica:lost_angel_lost_300"
+    ]
+  },
+  "music_disc.lost_angel_mansion": {
+    "sounds": [
+      "musica:lost_angel_mansion"
+    ]
+  },
+  "music_disc.lost_angel_mellow_fruit": {
+    "sounds": [
+      "musica:lost_angel_mellow_fruit"
+    ]
+  },
+  "music_disc.lost_angel_mozzeralla": {
+    "sounds": [
+      "musica:lost_angel_mozzeralla"
+    ]
+  },
+  "music_disc.lost_angel_nightmare": {
+    "sounds": [
+      "musica:lost_angel_nightmare"
+    ]
+  },
+  "music_disc.lost_angel_odyssey": {
+    "sounds": [
+      "musica:lost_angel_odyssey"
+    ]
+  },
+  "music_disc.lost_angel_pumpkin_patch": {
+    "sounds": [
+      "musica:lost_angel_pumpkin_patch"
+    ]
+  },
+  "music_disc.lost_angel_sea_side": {
+    "sounds": [
+      "musica:lost_angel_sea_side"
+    ]
+  },
+  "music_disc.lost_angel_shrooms": {
+    "sounds": [
+      "musica:lost_angel_shrooms"
+    ]
+  },
+  "music_disc.lost_angel_simple": {
+    "sounds": [
+      "musica:lost_angel_simple"
+    ]
+  },
+  "music_disc.lost_angel_slither": {
+    "sounds": [
+      "musica:lost_angel_slither"
+    ]
+  },
+  "music_disc.lost_angel_strike_them_down": {
+    "sounds": [
+      "musica:lost_angel_strike_them_down"
+    ]
+  },
+  "music_disc.lost_angel_tall_remix": {
+    "sounds": [
+      "musica:lost_angel_tall_remix"
+    ]
+  },
+  "music_disc.lost_angel_tears_of_joy": {
+    "sounds": [
+      "musica:lost_angel_tears_of_joy"
+    ]
+  },
+  "music_disc.lost_angel_the_speedrunner": {
+    "sounds": [
+      "musica:lost_angel_the_speedrunner"
+    ]
+  },
+  "music_disc.lost_angel_the_syndicate": {
+    "sounds": [
+      "musica:lost_angel_the_syndicate"
+    ]
+  },
+  "music_disc.lost_angel_the_tall_ones": {
+    "sounds": [
+      "musica:lost_angel_the_tall_ones"
+    ]
+  },
+  "music_disc.lost_angel_the_unfinished_symphony": {
+    "sounds": [
+      "musica:lost_angel_the_unfinished_symphony"
+    ]
+  },
   "music_disc.chefas_wither_dance": {
     "sounds": [
       "musica:chefas_wither_dance"

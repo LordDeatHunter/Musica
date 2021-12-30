@@ -1,13 +1,16 @@
 package wraith.musica.registry;
 
+import net.devtech.arrp.json.models.JModel;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.Items;
+import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
 import net.minecraft.util.registry.Registry;
 import wraith.musica.CustomItemGroup;
 import wraith.musica.CustomMusicDiscItem;
+import wraith.musica.Musica;
 import wraith.musica.Utils;
 
 import java.util.HashMap;
@@ -78,6 +81,33 @@ public final class ItemRegistry {
         createAndRegisterDisc("lost_angel_grit");
         createAndRegisterDisc("lost_angel_united");
         createAndRegisterDisc("lost_angel_stalker");
+        createAndRegisterDisc("lost_angel_amethyst");
+        createAndRegisterDisc("lost_angel_archer");
+        createAndRegisterDisc("lost_angel_cheddar");
+        createAndRegisterDisc("lost_angel_disc_14");
+        createAndRegisterDisc("lost_angel_disc_39");
+        createAndRegisterDisc("lost_angel_enderwalk");
+        createAndRegisterDisc("lost_angel_fred");
+        createAndRegisterDisc("lost_angel_galactica");
+        createAndRegisterDisc("lost_angel_high_rise");
+        createAndRegisterDisc("lost_angel_lost_300");
+        createAndRegisterDisc("lost_angel_mansion");
+        createAndRegisterDisc("lost_angel_mellow_fruit");
+        createAndRegisterDisc("lost_angel_mozzeralla");
+        createAndRegisterDisc("lost_angel_nightmare");
+        createAndRegisterDisc("lost_angel_odyssey");
+        createAndRegisterDisc("lost_angel_pumpkin_patch");
+        createAndRegisterDisc("lost_angel_sea_side");
+        createAndRegisterDisc("lost_angel_shrooms");
+        createAndRegisterDisc("lost_angel_simple");
+        createAndRegisterDisc("lost_angel_slither");
+        createAndRegisterDisc("lost_angel_strike_them_down");
+        createAndRegisterDisc("lost_angel_tall_remix");
+        createAndRegisterDisc("lost_angel_tears_of_joy");
+        createAndRegisterDisc("lost_angel_the_speedrunner");
+        createAndRegisterDisc("lost_angel_the_syndicate");
+        createAndRegisterDisc("lost_angel_the_tall_ones");
+        createAndRegisterDisc("lost_angel_the_unfinished_symphony");
 
         createAndRegisterDisc("kaz_shroom");
         createAndRegisterDisc("kaz_rain");
@@ -233,6 +263,8 @@ public final class ItemRegistry {
     public static void createAndRegisterDisc(String id) {
         SoundEventsRegistry.createAndRegister(id);
         register("music_disc_" + id, new CustomMusicDiscItem(10, SoundEventsRegistry.get(id), DISC_SETTINGS));
+        var identifier = Utils.ID("item/music_disc_" + id);
+        Musica.RESOURCE_PACK.addModel(JModel.model("minecraft:item/generated").textures(JModel.textures().layer0(identifier.toString())), identifier);
     }
 
     public static void register(String id, Item item) {
