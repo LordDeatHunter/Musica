@@ -49,6 +49,33 @@
     "musica:music_disc_lost_angel_grit",
     "musica:music_disc_lost_angel_united",
     "musica:music_disc_lost_angel_stalker",
+    "musica:music_disc_lost_angel_amethyst",
+    "musica:music_disc_lost_angel_archer",
+    "musica:music_disc_lost_angel_cheddar",
+    "musica:music_disc_lost_angel_disc_14",
+    "musica:music_disc_lost_angel_disc_39",
+    "musica:music_disc_lost_angel_enderwalk",
+    "musica:music_disc_lost_angel_fred",
+    "musica:music_disc_lost_angel_galactica",
+    "musica:music_disc_lost_angel_high_rise",
+    "musica:music_disc_lost_angel_lost_300",
+    "musica:music_disc_lost_angel_mansion",
+    "musica:music_disc_lost_angel_mellow_fruit",
+    "musica:music_disc_lost_angel_mozzeralla",
+    "musica:music_disc_lost_angel_nightmare",
+    "musica:music_disc_lost_angel_odyssey",
+    "musica:music_disc_lost_angel_pumpkin_patch",
+    "musica:music_disc_lost_angel_sea_side",
+    "musica:music_disc_lost_angel_shrooms",
+    "musica:music_disc_lost_angel_simple",
+    "musica:music_disc_lost_angel_slither",
+    "musica:music_disc_lost_angel_strike_them_down",
+    "musica:music_disc_lost_angel_tall_remix",
+    "musica:music_disc_lost_angel_tears_of_joy",
+    "musica:music_disc_lost_angel_the_speedrunner",
+    "musica:music_disc_lost_angel_the_syndicate",
+    "musica:music_disc_lost_angel_the_tall_ones",
+    "musica:music_disc_lost_angel_the_unfinished_symphony",
 
     "musica:music_disc_kaz_shroom",
     "musica:music_disc_kaz_rain",
@@ -197,6 +224,9 @@
 
     "musica:music_disc_deesaster_float",
 
-    "musica:music_disc_w7n_disc_16"
+    "musica:music_disc_w7n_disc_16",
+    "musica:music_disc_w7n_disc_8",
+    "musica:music_disc_w7n_disc_9",
+    "musica:music_disc_w7n_disc_19"
   ]
 }
