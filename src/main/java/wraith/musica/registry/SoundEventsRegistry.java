@@ -1,6 +1,7 @@
 package wraith.musica.registry;
 
 import net.minecraft.sound.SoundEvent;
+import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import wraith.musica.Utils;
 
@@ -13,11 +14,11 @@ public final class SoundEventsRegistry {
     private static final HashMap<String, SoundEvent> SOUND_EVENTS = new HashMap<>();
 
     public static void createAndRegister(String id) {
-        register(id, new SoundEvent(Utils.ID("music_disc." + id)));
+        register(id, Utils.ID("music_disc." + id));
     }
 
-    public static void register(String id, SoundEvent soundEvent) {
-        SOUND_EVENTS.put(id, Registry.register(Registry.SOUND_EVENT, Utils.ID(id), soundEvent));
+    public static void register(String id, Identifier identifier) {
+        SOUND_EVENTS.put(id, Registry.register(Registry.SOUND_EVENT, identifier, new SoundEvent(identifier)));
     }
 
     public static SoundEvent get(String key) {
@@ -25,7 +26,7 @@ public final class SoundEventsRegistry {
     }
 
     public static void init() {
-        register("record_scratch", new SoundEvent(Utils.ID("ambient.record_scratch")));
+        register("record_scratch", Utils.ID("ambient.record_scratch"));
     }
 
 }
