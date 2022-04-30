@@ -119,7 +119,6 @@ public class Config {
         }
         file.setReadable(true);
         file.setWritable(true);
-        file.setExecutable(true);
         if (contents == null || "".equals(contents)) {
             return;
         }
@@ -190,7 +189,7 @@ public class Config {
                 try {
                     Config.createFile(path, FileUtils.readFileToString(file, StandardCharsets.UTF_8), !file.getName().endsWith("config.json") && overwrite);
                 } catch (IOException e) {
-                    Musica.LOGGER.warn("ERROR OCCURRED WHILE REGENERATING " + filename + " TEXTURE");
+                    Musica.LOGGER.warn("ERROR OCCURRED WHILE REGENERATING " + filename);
                     e.printStackTrace();
                 }
             }

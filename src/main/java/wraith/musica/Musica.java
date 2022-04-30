@@ -1,5 +1,7 @@
 package wraith.musica;
 
+import net.devtech.arrp.api.RRPCallback;
+import net.devtech.arrp.api.RuntimeResourcePack;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.command.v1.CommandRegistrationCallback;
 import net.fabricmc.fabric.api.loot.v1.FabricLootPoolBuilder;
@@ -26,6 +28,7 @@ import org.apache.logging.log4j.Logger;
 import wraith.musica.registry.BlockRegistry;
 import wraith.musica.registry.CustomScreenHandlerRegistry;
 import wraith.musica.registry.ItemRegistry;
+import wraith.musica.registry.SoundEventsRegistry;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -35,6 +38,8 @@ public class Musica implements ModInitializer {
     public static final String MOD_ID = "musica";
     public static final Logger LOGGER = LogManager.getLogger();
     public static boolean isReloading = false;
+
+    public static final RuntimeResourcePack RESOURCE_PACK = RuntimeResourcePack.create("musica:pack");
 
     @Override
     public void onInitialize() {
@@ -48,7 +53,9 @@ public class Musica implements ModInitializer {
         registerPacketHandlers();
         BlockRegistry.register();
         ItemRegistry.init();
+        SoundEventsRegistry.init();
         CustomScreenHandlerRegistry.register();
+        RRPCallback.BEFORE_VANILLA.register(a -> a.add(RESOURCE_PACK));
         LOGGER.info("[Musica] has successfully been loaded!");
     }
 
