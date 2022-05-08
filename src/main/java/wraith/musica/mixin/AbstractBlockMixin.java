@@ -1,11 +1,11 @@
 package wraith.musica.mixin;
 
-import net.fabricmc.fabric.api.tag.TagFactory;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.tag.TagKey;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
 import net.minecraft.util.hit.BlockHitResult;
@@ -26,7 +26,8 @@ import java.util.HashMap;
 @Mixin(AbstractBlock.AbstractBlockState.class)
 public abstract class AbstractBlockMixin {
 
-    @Shadow public abstract Block getBlock();
+    @Shadow
+    public abstract Block getBlock();
 
     @Inject(method = "onUse", at = @At("HEAD"))
     public void onUse(World world, PlayerEntity player, Hand hand, BlockHitResult hit, CallbackInfoReturnable<ActionResult> cir) {
@@ -61,7 +62,11 @@ public abstract class AbstractBlockMixin {
 
         Item item;
         if (disc.startsWith("#")) {
-            item = TagFactory.ITEM.create(Utils.ID(disc.substring(1))).getRandom(Utils.RANDOM);
+            var tagItems = Registry.ITEM.getEntryList(TagKey.of(Registry.ITEM_KEY, Utils.ID(disc.substring(1))));
+            if (tagItems.isEmpty()) return;
+            var randomItem = tagItems.get().getRandom(Utils.RANDOM);
+            if (randomItem.isEmpty()) return;
+            item = randomItem.get().value();
         } else if (ItemRegistry.contains(disc)) {
             item = ItemRegistry.get(disc);
         } else {

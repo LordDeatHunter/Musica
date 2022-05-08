@@ -2,7 +2,6 @@ package wraith.musica.screen;
 
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
-import net.fabricmc.fabric.api.tag.TagFactory;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.inventory.CraftingResultInventory;
@@ -15,7 +14,10 @@ import net.minecraft.screen.ScreenHandler;
 import net.minecraft.screen.ScreenHandlerContext;
 import net.minecraft.screen.slot.Slot;
 import net.minecraft.sound.SoundCategory;
+import net.minecraft.tag.TagKey;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.registry.Registry;
+import net.minecraft.util.registry.RegistryEntry;
 import wraith.musica.registry.BlockRegistry;
 import wraith.musica.registry.CustomScreenHandlerRegistry;
 import wraith.musica.registry.ItemRegistry;
@@ -46,10 +48,12 @@ public class SongMixerScreenHandler extends ScreenHandler {
         super(CustomScreenHandlerRegistry.SONG_MIXER_SCREEN, syncId);
 
         if (availableDiscs == null) {
-            availableDiscs = TagFactory.ITEM.create(new Identifier("c:music_discs")).values();
+            var entryList = Registry.ITEM.getEntryList(TagKey.of(Registry.ITEM_KEY, new Identifier("c:music_discs")));
+            availableDiscs = entryList.isEmpty() ? List.of() : entryList.get().stream().map(RegistryEntry::value).toList();
         }
 
-        this.contentsChangedListener = () -> {};
+        this.contentsChangedListener = () -> {
+        };
 
         this.input = new SimpleInventory(2) {
             @Override
@@ -67,7 +71,7 @@ public class SongMixerScreenHandler extends ScreenHandler {
         this.output = new CraftingResultInventory();
         this.context = context;
 
-        this.inputSlot = this.addSlot(new Slot(this.input, 0, 20, 20){
+        this.inputSlot = this.addSlot(new Slot(this.input, 0, 20, 20) {
             @Override
             public boolean canInsert(ItemStack stack) {
                 return stack.getItem() == ItemRegistry.get("blank_disc");
@@ -85,10 +89,12 @@ public class SongMixerScreenHandler extends ScreenHandler {
                 super.onTakeItem(player, stack);
             }
         });
-        this.dyeSlot = this.addSlot(new Slot(this.input, 1, 20, 48){
+        this.dyeSlot = this.addSlot(new Slot(this.input, 1, 20, 48) {
             @Override
             public boolean canInsert(ItemStack stack) {
-                return TagFactory.ITEM.create(new Identifier("c:dyes")).contains(stack.getItem());
+                var entryList = Registry.ITEM.getEntryList(TagKey.of(Registry.ITEM_KEY, new Identifier("c:dyes")));
+                if (entryList.isEmpty()) return false;
+                return entryList.get().stream().map(RegistryEntry::value).anyMatch(dye -> dye == stack.getItem());
             }
 
             @Override
@@ -131,13 +137,13 @@ public class SongMixerScreenHandler extends ScreenHandler {
         });
 
         int k;
-        for(k = 0; k < 3; ++k) {
-            for(int j = 0; j < 9; ++j) {
+        for (k = 0; k < 3; ++k) {
+            for (int j = 0; j < 9; ++j) {
                 this.addSlot(new Slot(playerInventory, j + k * 9 + 9, 8 + j * 18, 84 + k * 18));
             }
         }
 
-        for(k = 0; k < 9; ++k) {
+        for (k = 0; k < 9; ++k) {
             this.addSlot(new Slot(playerInventory, k, 8 + k * 18, 142));
         }
 
@@ -153,6 +159,7 @@ public class SongMixerScreenHandler extends ScreenHandler {
             int invSize = 3;
             ItemStack originalStack = slot.getStack();
             newStack = originalStack.copy();
+            var entryList = Registry.ITEM.getEntryList(TagKey.of(Registry.ITEM_KEY, new Identifier("c:dyes")));
             if (invSlot < invSize) {
                 if (!this.insertItem(originalStack, invSize, this.slots.size(), false)) {
                     return ItemStack.EMPTY;
@@ -161,7 +168,7 @@ public class SongMixerScreenHandler extends ScreenHandler {
                 if (!this.insertItem(originalStack, 0, 1, false)) {
                     return ItemStack.EMPTY;
                 }
-            } else if (TagFactory.ITEM.create(new Identifier("c:dyes")).contains(originalStack.getItem())) {
+            } else if (entryList.isPresent() && entryList.get().stream().map(RegistryEntry::value).anyMatch(item -> item == originalStack.getItem())) {
                 if (!this.insertItem(originalStack, 1, 2, false)) {
                     return ItemStack.EMPTY;
                 }

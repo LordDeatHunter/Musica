@@ -1,6 +1,5 @@
 package wraith.musica.mixin;
 
-import net.fabricmc.fabric.api.tag.TagFactory;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.entity.BlockEntity;
@@ -8,6 +7,7 @@ import net.minecraft.entity.mob.CreeperEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.tag.TagKey;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.registry.Registry;
 import net.minecraft.world.World;
@@ -42,8 +42,7 @@ public abstract class BlockMixin {
             cause = "any";
         } else if (explosion.getCausingEntity() instanceof PlayerEntity && explosionDrops.containsKey("tnt")) {
             cause = "tnt";
-        } else if (explosion.getCausingEntity() instanceof CreeperEntity) {
-            CreeperEntity creeper = (CreeperEntity) explosion.getCausingEntity();
+        } else if (explosion.getCausingEntity() instanceof CreeperEntity creeper) {
             boolean isCharged = ((EntityAccessor)creeper).getDataTracker().get(((CreeperEntityAccessor)creeper).getCharged());
             if (isCharged && explosionDrops.containsKey("charged_creeper")) {
                 cause = "charged_creeper";
@@ -70,7 +69,11 @@ public abstract class BlockMixin {
 
         Item item;
         if (disc.startsWith("#")) {
-            item = TagFactory.ITEM.create(Utils.ID(disc.substring(1))).getRandom(Utils.RANDOM);
+            var tagItems = Registry.ITEM.getEntryList(TagKey.of(Registry.ITEM_KEY, Utils.ID(disc.substring(1))));
+            if (tagItems.isEmpty()) return;
+            var randomItem = tagItems.get().getRandom(Utils.RANDOM);
+            if (randomItem.isEmpty()) return;
+            item = randomItem.get().value();
         } else if (ItemRegistry.contains(disc)) {
             item = ItemRegistry.get(disc);
         } else {
@@ -109,7 +112,11 @@ public abstract class BlockMixin {
 
         Item item;
         if (disc.startsWith("#")) {
-            item = TagFactory.ITEM.create(Utils.ID(disc.substring(1))).getRandom(Utils.RANDOM);
+            var tagItems = Registry.ITEM.getEntryList(TagKey.of(Registry.ITEM_KEY, Utils.ID(disc.substring(1))));
+            if (tagItems.isEmpty()) return;
+            var randomItem = tagItems.get().getRandom(Utils.RANDOM);
+            if (randomItem.isEmpty()) return;
+            item = randomItem.get().value();
         } else if (ItemRegistry.contains(disc)) {
             item = ItemRegistry.get(disc);
         } else {

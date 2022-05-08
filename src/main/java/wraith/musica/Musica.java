@@ -7,8 +7,6 @@ import net.fabricmc.fabric.api.command.v1.CommandRegistrationCallback;
 import net.fabricmc.fabric.api.loot.v1.FabricLootPoolBuilder;
 import net.fabricmc.fabric.api.loot.v1.event.LootTableLoadingCallback;
 import net.fabricmc.fabric.api.networking.v1.ServerPlayNetworking;
-import net.fabricmc.fabric.api.tag.TagFactory;
-import net.fabricmc.fabric.api.tag.TagRegistry;
 import net.minecraft.loot.condition.EntityPropertiesLootCondition;
 import net.minecraft.loot.condition.RandomChanceLootCondition;
 import net.minecraft.loot.context.LootContext;
@@ -20,6 +18,7 @@ import net.minecraft.predicate.entity.EntityPredicate;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.server.command.CommandManager;
 import net.minecraft.server.network.ServerPlayerEntity;
+import net.minecraft.tag.TagKey;
 import net.minecraft.text.LiteralText;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
@@ -134,14 +133,14 @@ public class Musica implements ModInitializer {
                     for (Map.Entry<String, Float> items : killer.getValue().entrySet()) {
                         String item = items.getKey();
                         if (item.startsWith("#")) {
-                            poolBuilder.withEntry(TagEntry.builder(TagFactory.ITEM.create(Utils.ID(item.substring(1)))).build());
+                            poolBuilder.withEntry(TagEntry.builder(TagKey.of(Registry.ITEM_KEY, Utils.ID(item.substring(1)))).build());
                         } else {
                             poolBuilder.withEntry(ItemEntry.builder(ItemRegistry.get(item)).build());
                         }
                         poolBuilder.withCondition(RandomChanceLootCondition.builder(items.getValue() / 100.0F).build());
                         if (!"any".equals(killerId)) {
                             if (killerId.startsWith("#")) {
-                                poolBuilder.withCondition(EntityPropertiesLootCondition.builder(LootContext.EntityTarget.KILLER, EntityPredicate.Builder.create().type(TagRegistry.entityType(new Identifier(killerId.substring(1)))).build()).build());
+                                poolBuilder.withCondition(EntityPropertiesLootCondition.builder(LootContext.EntityTarget.KILLER, EntityPredicate.Builder.create().type(TagKey.of(Registry.ENTITY_TYPE_KEY, (new Identifier(killerId.substring(1))))).build()).build());
                             } else {
                                 poolBuilder.withCondition(EntityPropertiesLootCondition.builder(LootContext.EntityTarget.KILLER, EntityPredicate.Builder.create().type(Registry.ENTITY_TYPE.get(new Identifier(killerId))).build()).build());
                             }
@@ -160,7 +159,7 @@ public class Musica implements ModInitializer {
                 for (Map.Entry<String, Float> disc : discs.entrySet()) {
                     String item = disc.getKey();
                     if (item.startsWith("#")) {
-                        poolBuilder.withEntry(TagEntry.builder(TagFactory.ITEM.create(Utils.ID(item.substring(1)))).build());
+                        poolBuilder.withEntry(TagEntry.builder(TagKey.of(Registry.ITEM_KEY, Utils.ID(item.substring(1)))).build());
                     } else {
                         poolBuilder.withEntry(ItemEntry.builder(ItemRegistry.get(item)).build());
                     }
