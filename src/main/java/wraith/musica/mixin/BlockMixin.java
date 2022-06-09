@@ -32,7 +32,7 @@ public abstract class BlockMixin {
 
     @Inject(method = "onDestroyedByExplosion", at = @At("HEAD"))
     public void onDestroyedByExplosion(World world, BlockPos pos, Explosion explosion, CallbackInfo ci) {
-        String id = Registry.BLOCK.getId((Block)(Object)this).toString();
+        String id = Registry.BLOCK.getId((Block) (Object) this).toString();
         if (!Config.getInstance().EXPLOSION_DROPS.containsKey(id)) {
             return;
         }
@@ -43,7 +43,7 @@ public abstract class BlockMixin {
         } else if (explosion.getCausingEntity() instanceof PlayerEntity && explosionDrops.containsKey("tnt")) {
             cause = "tnt";
         } else if (explosion.getCausingEntity() instanceof CreeperEntity creeper) {
-            boolean isCharged = ((EntityAccessor)creeper).getDataTracker().get(((CreeperEntityAccessor)creeper).getCharged());
+            boolean isCharged = ((EntityAccessor) creeper).getDataTracker().get(((CreeperEntityAccessor) creeper).getCharged());
             if (isCharged && explosionDrops.containsKey("charged_creeper")) {
                 cause = "charged_creeper";
             } else if (!isCharged && explosionDrops.containsKey("uncharged_creeper")) {
@@ -71,7 +71,7 @@ public abstract class BlockMixin {
         if (disc.startsWith("#")) {
             var tagItems = Registry.ITEM.getEntryList(TagKey.of(Registry.ITEM_KEY, Utils.ID(disc.substring(1))));
             if (tagItems.isEmpty()) return;
-            var randomItem = tagItems.get().getRandom(Utils.RANDOM);
+            var randomItem = tagItems.get().getRandom(world.random);
             if (randomItem.isEmpty()) return;
             item = randomItem.get().value();
         } else if (ItemRegistry.contains(disc)) {
@@ -86,7 +86,7 @@ public abstract class BlockMixin {
 
     @Inject(method = "afterBreak", at = @At("HEAD"))
     public void afterBreak(World world, PlayerEntity player, BlockPos pos, BlockState state, BlockEntity blockEntity, ItemStack stack, CallbackInfo ci) {
-        String blockID = Registry.BLOCK.getId((Block)(Object)this).toString();
+        String blockID = Registry.BLOCK.getId((Block) (Object) this).toString();
         if (!Config.getInstance().BLOCK_MINE_DROPS.containsKey(blockID)) {
             return;
         }
@@ -114,7 +114,7 @@ public abstract class BlockMixin {
         if (disc.startsWith("#")) {
             var tagItems = Registry.ITEM.getEntryList(TagKey.of(Registry.ITEM_KEY, Utils.ID(disc.substring(1))));
             if (tagItems.isEmpty()) return;
-            var randomItem = tagItems.get().getRandom(Utils.RANDOM);
+            var randomItem = tagItems.get().getRandom(world.random);
             if (randomItem.isEmpty()) return;
             item = randomItem.get().value();
         } else if (ItemRegistry.contains(disc)) {

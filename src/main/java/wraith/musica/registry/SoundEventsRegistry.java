@@ -9,9 +9,9 @@ import java.util.HashMap;
 
 public final class SoundEventsRegistry {
 
-    private SoundEventsRegistry(){}
-
     private static final HashMap<String, SoundEvent> SOUND_EVENTS = new HashMap<>();
+
+    private SoundEventsRegistry() {}
 
     public static void createAndRegister(String id) {
         register(id, Utils.ID("music_disc." + id));

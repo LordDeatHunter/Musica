@@ -20,73 +20,22 @@ import java.util.jar.JarFile;
 
 public class Config {
 
+    private static Config instance = null;
     public HashMap<String, HashMap<String, HashMap<String, Float>>> MOB_DROPS = new HashMap<>();
     public HashMap<String, HashMap<String, HashMap<String, Float>>> EXPLOSION_DROPS = new HashMap<>();
     public HashMap<String, HashMap<String, HashMap<String, Float>>> BLOCK_RIGHTCLICK_DROPS = new HashMap<>();
     public HashMap<String, HashMap<String, HashMap<String, Float>>> BLOCK_MINE_DROPS = new HashMap<>();
     public HashMap<String, HashMap<String, Float>> TREASURES = new HashMap<>();
-
     private boolean musicMixerCrafting = true;
-
-    private static Config instance = null;
     private boolean overrideConfigs = true;
 
-    private Config(){}
+    private Config() {}
 
     public static Config getInstance() {
         if (instance == null) {
             instance = new Config();
         }
         return instance;
-    }
-
-    public boolean shouldOverrideConfigs() {
-        return this.overrideConfigs;
-    }
-
-    public boolean canCraftDiscs() {
-        return this.musicMixerCrafting;
-    }
-
-    public void parseConfig() {
-        JsonObject json = getJsonObject(Config.readFile(new File("config/musica/config.json")));
-        if (json != null && json.has("enable_music_disc_crafting")) {
-            this.musicMixerCrafting = json.get("enable_music_disc_crafting").getAsBoolean();
-        }
-        if (json != null && json.has("use_default_drop_configs")) {
-            this.overrideConfigs = json.get("use_default_drop_configs").getAsBoolean();
-        }
-
-        json = getJsonObject(Config.readFile(new File("config/musica/drops_when_X_is_killed_by_Y_with_drop_chance.json")));
-        if (json != null) {
-            loadDrops(json, MOB_DROPS);
-        }
-
-        json = getJsonObject(Config.readFile(new File("config/musica/drops_when_block_X_is_exploded_by_Y.json")));
-        if (json != null) {
-            loadDrops(json, EXPLOSION_DROPS);
-        }
-
-        json = getJsonObject(Config.readFile(new File("config/musica/drops_on_block_X_rightclicked_with_item_Y.json")));
-        if (json != null) {
-            loadDrops(json, BLOCK_RIGHTCLICK_DROPS);
-        }
-
-        json = getJsonObject(Config.readFile(new File("config/musica/drops_on_block_X_mined_by_item_Y.json")));
-        if (json != null) {
-            loadDrops(json, BLOCK_MINE_DROPS);
-        }
-
-        json = getJsonObject(Config.readFile(new File("config/musica/chests_containing_discs.json")));
-        if (json != null) {
-            for (Map.Entry<String, JsonElement> chest : json.entrySet()) {
-                HashMap<String, Float> discs = new HashMap<>();
-                for (Map.Entry<String, JsonElement> item : chest.getValue().getAsJsonObject().entrySet()) {
-                    discs.put(item.getKey().toLowerCase(), MathHelper.clamp(item.getValue().getAsFloat(), 0F, 100F));
-                }
-                TREASURES.put(chest.getKey(), discs);
-            }
-        }
     }
 
     private static void loadDrops(JsonObject json, HashMap<String, HashMap<String, HashMap<String, Float>>> map) {
@@ -158,7 +107,7 @@ public class Config {
 
         if (jar != null) {
             Enumeration<JarEntry> entries = jar.entries();
-            while(entries.hasMoreElements()) {
+            while (entries.hasMoreElements()) {
                 JarEntry entry = entries.nextElement();
                 if (!entry.getName().startsWith(dir) || (!entry.getName().endsWith(".json"))) {
                     continue;
@@ -179,7 +128,7 @@ public class Config {
         } else {
             System.out.println("Launched from IDE.");
             File[] files = FabricLoader.getInstance().getModContainer(Musica.MOD_ID).get().getPath(dir).toFile().listFiles();
-            for(File file : files) {
+            for (File file : files) {
                 if (file.isDirectory()) {
                     continue;
                 }
@@ -209,6 +158,55 @@ public class Config {
             e.printStackTrace();
             Musica.LOGGER.error("Error while parsing following json:\n\n" + json);
             return null;
+        }
+    }
+
+    public boolean shouldOverrideConfigs() {
+        return this.overrideConfigs;
+    }
+
+    public boolean canCraftDiscs() {
+        return this.musicMixerCrafting;
+    }
+
+    public void parseConfig() {
+        JsonObject json = getJsonObject(Config.readFile(new File("config/musica/config.json")));
+        if (json != null && json.has("enable_music_disc_crafting")) {
+            this.musicMixerCrafting = json.get("enable_music_disc_crafting").getAsBoolean();
+        }
+        if (json != null && json.has("use_default_drop_configs")) {
+            this.overrideConfigs = json.get("use_default_drop_configs").getAsBoolean();
+        }
+
+        json = getJsonObject(Config.readFile(new File("config/musica/drops_when_X_is_killed_by_Y_with_drop_chance.json")));
+        if (json != null) {
+            loadDrops(json, MOB_DROPS);
+        }
+
+        json = getJsonObject(Config.readFile(new File("config/musica/drops_when_block_X_is_exploded_by_Y.json")));
+        if (json != null) {
+            loadDrops(json, EXPLOSION_DROPS);
+        }
+
+        json = getJsonObject(Config.readFile(new File("config/musica/drops_on_block_X_rightclicked_with_item_Y.json")));
+        if (json != null) {
+            loadDrops(json, BLOCK_RIGHTCLICK_DROPS);
+        }
+
+        json = getJsonObject(Config.readFile(new File("config/musica/drops_on_block_X_mined_by_item_Y.json")));
+        if (json != null) {
+            loadDrops(json, BLOCK_MINE_DROPS);
+        }
+
+        json = getJsonObject(Config.readFile(new File("config/musica/chests_containing_discs.json")));
+        if (json != null) {
+            for (Map.Entry<String, JsonElement> chest : json.entrySet()) {
+                HashMap<String, Float> discs = new HashMap<>();
+                for (Map.Entry<String, JsonElement> item : chest.getValue().getAsJsonObject().entrySet()) {
+                    discs.put(item.getKey().toLowerCase(), MathHelper.clamp(item.getValue().getAsFloat(), 0F, 100F));
+                }
+                TREASURES.put(chest.getKey(), discs);
+            }
         }
     }
 

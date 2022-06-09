@@ -11,7 +11,6 @@ import me.shedaniel.rei.api.common.category.CategoryIdentifier;
 import me.shedaniel.rei.api.common.util.EntryStacks;
 import net.minecraft.item.ItemStack;
 import net.minecraft.text.Text;
-import net.minecraft.text.TranslatableText;
 import org.jetbrains.annotations.NotNull;
 import wraith.musica.registry.ItemRegistry;
 
@@ -20,7 +19,7 @@ import java.util.List;
 
 public class SongMixerCategory implements DisplayCategory<SongMixerDisplay> {
 
-    public static final TranslatableText TITLE = new TranslatableText("container.musica.song_mixer.rei.title");
+    public static final Text TITLE = Text.translatable("container.musica.song_mixer.rei.title");
 
     @Override
     public Renderer getIcon() {

@@ -50,7 +50,7 @@
     "client": [
       "wraith.musica.MusicaClient"
     ],
-    "rei_plugins": [
+    "rei_common": [
       "wraith.musica.compat.rei.MusicaREIPlugin"
     ]
   },
@@ -59,9 +59,9 @@
   ],
 
   "depends": {
-    "fabricloader": ">=0.13.3",
+    "fabricloader": ">=0.14.6",
     "fabric": "*",
     "java": ">=17",
-    "minecraft": "~1.18.2"
+    "minecraft": "1.19.x"
   }
 }

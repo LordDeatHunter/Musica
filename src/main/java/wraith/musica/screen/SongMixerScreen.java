@@ -33,7 +33,7 @@ public class SongMixerScreen extends HandledScreen<ScreenHandler> {
         super(handler, inventory, title);
         this.backgroundWidth = 176;
         this.backgroundHeight = 166;
-        ((SongMixerScreenHandler)handler).setContentsChangedListener(this::onInventoryChange);
+        ((SongMixerScreenHandler) handler).setContentsChangedListener(this::onInventoryChange);
     }
 
     @Override
@@ -50,7 +50,7 @@ public class SongMixerScreen extends HandledScreen<ScreenHandler> {
         int i = this.x;
         int j = this.y;
         this.drawTexture(matrices, i, j, 0, 0, this.backgroundWidth, this.backgroundHeight);
-        int k = (int)(41.0F * this.scrollAmount);
+        int k = (int) (41.0F * this.scrollAmount);
         this.drawTexture(matrices, i + 119, j + 15 + k, 176 + (this.shouldScroll() ? 0 : 12), 0, 12, 15);
         int l = this.x + 52;
         int m = this.y + 14;
@@ -68,7 +68,7 @@ public class SongMixerScreen extends HandledScreen<ScreenHandler> {
             int k = this.scrollOffset + 12;
             List<Item> list = SongMixerScreenHandler.availableDiscs;
 
-            for(int l = this.scrollOffset; l < k && l < SongMixerScreenHandler.availableDiscs.size(); ++l) {
+            for (int l = this.scrollOffset; l < k && l < SongMixerScreenHandler.availableDiscs.size(); ++l) {
                 int m = l - this.scrollOffset;
                 int n = i + m % 4 * 16;
                 int o = j + m / 4 * 18 + 2;
@@ -81,16 +81,16 @@ public class SongMixerScreen extends HandledScreen<ScreenHandler> {
     }
 
     private void renderRecipeBackground(MatrixStack matrixStack, int i, int j, int k, int l, int m) {
-        if (!((SongMixerScreenHandler)handler).canCraft()) {
+        if (!((SongMixerScreenHandler) handler).canCraft()) {
             return;
         }
-        for(int n = this.scrollOffset; n < m && n < SongMixerScreenHandler.availableDiscs.size(); ++n) {
+        for (int n = this.scrollOffset; n < m && n < SongMixerScreenHandler.availableDiscs.size(); ++n) {
             int o = n - this.scrollOffset;
             int p = k + o % 4 * 16;
             int q = o / 4;
             int r = l + q * 18 + 2;
             int s = this.backgroundHeight;
-            if (n == ((SongMixerScreenHandler)this.handler).getSelectedRecipe()) {
+            if (n == ((SongMixerScreenHandler) this.handler).getSelectedRecipe()) {
                 s += 18;
             } else if (i >= p && j >= r && i < p + 16 && j < r + 18) {
                 s += 36;
@@ -102,12 +102,12 @@ public class SongMixerScreen extends HandledScreen<ScreenHandler> {
     }
 
     private void renderRecipeIcons(int x, int y, int scrollOffset) {
-        if (!((SongMixerScreenHandler)handler).canCraft()) {
+        if (!((SongMixerScreenHandler) handler).canCraft()) {
             return;
         }
         List<Item> list = SongMixerScreenHandler.availableDiscs;
 
-        for(int i = this.scrollOffset; i < scrollOffset && i < list.size(); ++i) {
+        for (int i = this.scrollOffset; i < scrollOffset && i < list.size(); ++i) {
             int j = i - this.scrollOffset;
             int k = x + j % 4 * 16;
             int l = j / 4;
@@ -125,10 +125,10 @@ public class SongMixerScreen extends HandledScreen<ScreenHandler> {
             int j = this.y + 14;
             int k = this.scrollOffset + 12;
 
-            for(int l = this.scrollOffset; l < k; ++l) {
+            for (int l = this.scrollOffset; l < k; ++l) {
                 int m = l - this.scrollOffset;
-                double d = mouseX - (double)(i + m % 4 * 16);
-                double e = mouseY - (double)(j + m / 4 * 18);
+                double d = mouseX - (double) (i + m % 4 * 16);
+                double e = mouseY - (double) (j + m / 4 * 18);
                 if (d >= 0.0D && e >= 0.0D && d < 16.0D && e < 18.0D && this.handler.onButtonClick(this.client.player, l)) {
                     MinecraftClient.getInstance().getSoundManager().play(PositionedSoundInstance.master(SoundEvents.UI_BUTTON_CLICK, 1.0F));
                     NbtCompound tag = new NbtCompound();
@@ -142,7 +142,7 @@ public class SongMixerScreen extends HandledScreen<ScreenHandler> {
 
             i = this.x + 119;
             j = this.y + 9;
-            if (mouseX >= (double)i && mouseX < (double)(i + 12) && mouseY >= (double)j && mouseY < (double)(j + 54)) {
+            if (mouseX >= (double) i && mouseX < (double) (i + 12) && mouseY >= (double) j && mouseY < (double) (j + 54)) {
                 this.mouseClicked = true;
             }
         }
@@ -155,9 +155,9 @@ public class SongMixerScreen extends HandledScreen<ScreenHandler> {
         if (this.mouseClicked && this.shouldScroll()) {
             int i = this.y + 14;
             int j = i + 54;
-            this.scrollAmount = ((float)mouseY - (float)i - 7.5F) / ((float)(j - i) - 15.0F);
+            this.scrollAmount = ((float) mouseY - (float) i - 7.5F) / ((float) (j - i) - 15.0F);
             this.scrollAmount = MathHelper.clamp(this.scrollAmount, 0.0F, 1.0F);
-            this.scrollOffset = (int)((double)(this.scrollAmount * (float)this.getMaxScroll()) + 0.5D) * 4;
+            this.scrollOffset = (int) ((double) (this.scrollAmount * (float) this.getMaxScroll()) + 0.5D) * 4;
             return true;
         } else {
             return super.mouseDragged(mouseX, mouseY, button, deltaX, deltaY);
@@ -168,9 +168,9 @@ public class SongMixerScreen extends HandledScreen<ScreenHandler> {
     public boolean mouseScrolled(double mouseX, double mouseY, double amount) {
         if (this.shouldScroll()) {
             int i = this.getMaxScroll();
-            this.scrollAmount = (float)((double)this.scrollAmount - amount / (double)i);
+            this.scrollAmount = (float) ((double) this.scrollAmount - amount / (double) i);
             this.scrollAmount = MathHelper.clamp(this.scrollAmount, 0.0F, 1.0F);
-            this.scrollOffset = (int)((double)(this.scrollAmount * (float)i) + 0.5D) * 4;
+            this.scrollOffset = (int) ((double) (this.scrollAmount * (float) i) + 0.5D) * 4;
         }
 
         return true;
@@ -185,7 +185,7 @@ public class SongMixerScreen extends HandledScreen<ScreenHandler> {
     }
 
     private void onInventoryChange() {
-        this.canCraft = ((SongMixerScreenHandler)this.handler).canCraft();
+        this.canCraft = ((SongMixerScreenHandler) this.handler).canCraft();
         if (!this.canCraft) {
             this.scrollAmount = 0.0F;
             this.scrollOffset = 0;

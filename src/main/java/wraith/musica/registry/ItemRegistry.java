@@ -1,7 +1,5 @@
 package wraith.musica.registry;
 
-import net.devtech.arrp.json.models.JModel;
-import net.devtech.arrp.json.tags.JTag;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -10,22 +8,19 @@ import net.minecraft.util.Rarity;
 import net.minecraft.util.registry.Registry;
 import wraith.musica.CustomItemGroup;
 import wraith.musica.CustomMusicDiscItem;
-import wraith.musica.Musica;
 import wraith.musica.Utils;
 
 import java.util.HashMap;
 
 public final class ItemRegistry {
 
-    private static final JTag DISCS_TAG = JTag.tag();
-
-    private ItemRegistry(){}
 
     private static final HashMap<String, Item> ITEMS = new HashMap<>();
     private static final FabricItemSettings DISC_SETTINGS = new FabricItemSettings()
-                                                        .maxCount(1)
-                                                        .group(CustomItemGroup.MUSICA)
-                                                        .rarity(Rarity.RARE);
+        .maxCount(1)
+        .group(CustomItemGroup.MUSICA)
+        .rarity(Rarity.RARE);
+    private ItemRegistry() {}
 
     public static void init() {
         if (!ITEMS.isEmpty()) {
@@ -273,16 +268,11 @@ public final class ItemRegistry {
         createAndRegisterDisc("w7n_disc_8");
         createAndRegisterDisc("w7n_disc_9");
         createAndRegisterDisc("w7n_disc_19");
-
-        Musica.RESOURCE_PACK.addTag(Utils.ID("items/music_discs"), DISCS_TAG);
     }
 
     public static void createAndRegisterDisc(String id) {
         SoundEventsRegistry.createAndRegister(id);
         register("music_disc_" + id, new CustomMusicDiscItem(10, SoundEventsRegistry.get(id), DISC_SETTINGS));
-        var itemIdentifier = Utils.ID("item/music_disc_" + id);
-        Musica.RESOURCE_PACK.addModel(JModel.model("minecraft:item/generated").textures(JModel.textures().layer0(itemIdentifier.toString())), itemIdentifier);
-        DISCS_TAG.add(Utils.ID("music_disc_" + id));
     }
 
     public static void register(String id, Item item) {

@@ -13,11 +13,11 @@ import java.util.Map;
 
 public class BlockRegistry {
 
-    private BlockRegistry(){}
-
     private static final HashMap<String, Block> BLOCKS = new HashMap<>() {{
         put("song_mixer", new SongMixerBlock(FabricBlockSettings.of(Material.WOOD, MapColor.DIRT_BROWN).strength(2.0F, 6.0F)));
     }};
+
+    private BlockRegistry() {}
 
     public static void register() {
         for (Map.Entry<String, Block> block : BLOCKS.entrySet()) {

@@ -1,12 +1,10 @@
 package wraith.musica;
 
-import net.devtech.arrp.api.RRPCallback;
-import net.devtech.arrp.api.RuntimeResourcePack;
 import net.fabricmc.api.ModInitializer;
-import net.fabricmc.fabric.api.command.v1.CommandRegistrationCallback;
-import net.fabricmc.fabric.api.loot.v1.FabricLootPoolBuilder;
-import net.fabricmc.fabric.api.loot.v1.event.LootTableLoadingCallback;
+import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
+import net.fabricmc.fabric.api.loot.v2.LootTableEvents;
 import net.fabricmc.fabric.api.networking.v1.ServerPlayNetworking;
+import net.minecraft.loot.LootPool;
 import net.minecraft.loot.condition.EntityPropertiesLootCondition;
 import net.minecraft.loot.condition.RandomChanceLootCondition;
 import net.minecraft.loot.context.LootContext;
@@ -19,7 +17,7 @@ import net.minecraft.server.MinecraftServer;
 import net.minecraft.server.command.CommandManager;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.tag.TagKey;
-import net.minecraft.text.LiteralText;
+import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import org.apache.logging.log4j.LogManager;
@@ -38,7 +36,6 @@ public class Musica implements ModInitializer {
     public static final Logger LOGGER = LogManager.getLogger();
     public static boolean isReloading = false;
 
-    public static final RuntimeResourcePack RESOURCE_PACK = RuntimeResourcePack.create("musica:pack");
 
     @Override
     public void onInitialize() {
@@ -54,7 +51,6 @@ public class Musica implements ModInitializer {
         ItemRegistry.init();
         SoundEventsRegistry.init();
         CustomScreenHandlerRegistry.register();
-        RRPCallback.BEFORE_VANILLA.register(a -> a.add(RESOURCE_PACK));
         LOGGER.info("[Musica] has successfully been loaded!");
     }
 
@@ -74,38 +70,37 @@ public class Musica implements ModInitializer {
     }
 
     private void registerCommands() {
-        CommandRegistrationCallback.EVENT.register((dispatcher, dedicated) -> {
+        CommandRegistrationCallback.EVENT.register((dispatcher, registryAccess, environment) -> 
             dispatcher.register(CommandManager.literal("musica")
-                    .then(CommandManager.literal("reload")
-                            .requires(source -> source.hasPermissionLevel(2))
-                            .executes(context -> {
-                                ServerPlayerEntity player = context.getSource().getPlayer();
-                                if (!isReloading) {
-                                    isReloading = true;
-                                    if (player != null) {
-                                        player.sendMessage(new LiteralText("§6[§eMusica§6] §3is being reloaded. §4This might cause some lag!"), false);
-                                    }
-                                    Config.getInstance().parseConfig();
-                                    MinecraftServer server = context.getSource().getServer();
-                                    server.reloadResources(server.getDataPackManager().getEnabledNames());
-                                    if (player != null) {
-                                        player.sendMessage(new LiteralText("§6[§eMusica§6] §3has successfully reloaded!"), false);
-                                    }
-                                    isReloading = false;
-                                } else {
-                                    if (player != null) {
-                                        player.sendMessage(new LiteralText("§6[§eMusica§6] §3is already being reloaded. Please be patient."), false);
-                                    }
+                .then(CommandManager.literal("reload")
+                        .requires(source -> source.hasPermissionLevel(2))
+                        .executes(context -> {
+                            ServerPlayerEntity player = context.getSource().getPlayer();
+                            if (!isReloading) {
+                                isReloading = true;
+                                if (player != null) {
+                                    player.sendMessage(Text.literal("§6[§eMusica§6] §3is being reloaded. §4This might cause some lag!"), false);
                                 }
-                                return 1;
-                            })
-                    )
-            );
-        });
+                                Config.getInstance().parseConfig();
+                                MinecraftServer server = context.getSource().getServer();
+                                server.reloadResources(server.getDataPackManager().getEnabledNames());
+                                if (player != null) {
+                                    player.sendMessage(Text.literal("§6[§eMusica§6] §3has successfully reloaded!"), false);
+                                }
+                                isReloading = false;
+                            } else {
+                                if (player != null) {
+                                    player.sendMessage(Text.literal("§6[§eMusica§6] §3is already being reloaded. Please be patient."), false);
+                                }
+                            }
+                            return 1;
+                        })
+                )
+        ));
     }
 
     private void registerLootTable() {
-        LootTableLoadingCallback.EVENT.register((resourceManager, lootManager, id, fabricLootSupplierBuilder, lootTableSetter) -> {
+        LootTableEvents.MODIFY.register((resourceManager, lootManager, id, fabricLootSupplierBuilder, lootTableSetter) -> {
             String[] segments = id.toString().split(":");
             if (segments.length < 2) {
                 return;
@@ -126,46 +121,46 @@ public class Musica implements ModInitializer {
                 }
                 HashMap<String, HashMap<String, Float>> killers = Config.getInstance().MOB_DROPS.get(lootId);
 
-                FabricLootPoolBuilder poolBuilder = FabricLootPoolBuilder.builder().rolls(ConstantLootNumberProvider.create(1));
+                LootPool.Builder poolBuilder = LootPool.builder().rolls(ConstantLootNumberProvider.create(1));
 
                 for (Map.Entry<String, HashMap<String, Float>> killer : killers.entrySet()) {
                     String killerId = killer.getKey();
                     for (Map.Entry<String, Float> items : killer.getValue().entrySet()) {
                         String item = items.getKey();
                         if (item.startsWith("#")) {
-                            poolBuilder.withEntry(TagEntry.builder(TagKey.of(Registry.ITEM_KEY, Utils.ID(item.substring(1)))).build());
+                            poolBuilder.with(TagEntry.builder(TagKey.of(Registry.ITEM_KEY, Utils.ID(item.substring(1)))).build());
                         } else {
-                            poolBuilder.withEntry(ItemEntry.builder(ItemRegistry.get(item)).build());
+                            poolBuilder.with(ItemEntry.builder(ItemRegistry.get(item)).build());
                         }
-                        poolBuilder.withCondition(RandomChanceLootCondition.builder(items.getValue() / 100.0F).build());
+                        poolBuilder.conditionally(RandomChanceLootCondition.builder(items.getValue() / 100.0F).build());
                         if (!"any".equals(killerId)) {
                             if (killerId.startsWith("#")) {
-                                poolBuilder.withCondition(EntityPropertiesLootCondition.builder(LootContext.EntityTarget.KILLER, EntityPredicate.Builder.create().type(TagKey.of(Registry.ENTITY_TYPE_KEY, (new Identifier(killerId.substring(1))))).build()).build());
+                                poolBuilder.conditionally(EntityPropertiesLootCondition.builder(LootContext.EntityTarget.KILLER, EntityPredicate.Builder.create().type(TagKey.of(Registry.ENTITY_TYPE_KEY, (new Identifier(killerId.substring(1))))).build()).build());
                             } else {
-                                poolBuilder.withCondition(EntityPropertiesLootCondition.builder(LootContext.EntityTarget.KILLER, EntityPredicate.Builder.create().type(Registry.ENTITY_TYPE.get(new Identifier(killerId))).build()).build());
+                                poolBuilder.conditionally(EntityPropertiesLootCondition.builder(LootContext.EntityTarget.KILLER, EntityPredicate.Builder.create().type(Registry.ENTITY_TYPE.get(new Identifier(killerId))).build()).build());
                             }
                         }
                     }
                 }
-                fabricLootSupplierBuilder.withPool(poolBuilder.build());
+                fabricLootSupplierBuilder.pool(poolBuilder.build());
             } else {
                 if (!Config.getInstance().TREASURES.containsKey(lootId)) {
                     return;
                 }
                 HashMap<String, Float> discs = Config.getInstance().TREASURES.get(lootId);
 
-                FabricLootPoolBuilder poolBuilder = FabricLootPoolBuilder.builder().rolls(ConstantLootNumberProvider.create(1));
+                LootPool.Builder poolBuilder = LootPool.builder().rolls(ConstantLootNumberProvider.create(1));
 
                 for (Map.Entry<String, Float> disc : discs.entrySet()) {
                     String item = disc.getKey();
                     if (item.startsWith("#")) {
-                        poolBuilder.withEntry(TagEntry.builder(TagKey.of(Registry.ITEM_KEY, Utils.ID(item.substring(1)))).build());
+                        poolBuilder.with(TagEntry.builder(TagKey.of(Registry.ITEM_KEY, Utils.ID(item.substring(1)))).build());
                     } else {
-                        poolBuilder.withEntry(ItemEntry.builder(ItemRegistry.get(item)).build());
+                        poolBuilder.with(ItemEntry.builder(ItemRegistry.get(item)).build());
                     }
-                    poolBuilder.withCondition(RandomChanceLootCondition.builder(disc.getValue() / 100.0F).build());
+                    poolBuilder.conditionally(RandomChanceLootCondition.builder(disc.getValue() / 100.0F).build());
                 }
-                fabricLootSupplierBuilder.withPool(poolBuilder.build());
+                fabricLootSupplierBuilder.pool(poolBuilder.build());
             }
 
         });

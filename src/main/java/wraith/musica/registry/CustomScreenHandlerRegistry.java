@@ -1,19 +1,19 @@
 package wraith.musica.registry;
 
-import net.fabricmc.fabric.api.screenhandler.v1.ScreenHandlerRegistry;
 import net.minecraft.screen.ScreenHandler;
 import net.minecraft.screen.ScreenHandlerType;
+import net.minecraft.util.registry.Registry;
 import wraith.musica.Utils;
 import wraith.musica.screen.SongMixerScreenHandler;
 
 public class CustomScreenHandlerRegistry {
 
-    private CustomScreenHandlerRegistry(){}
-
     public static ScreenHandlerType<? extends ScreenHandler> SONG_MIXER_SCREEN;
 
+    private CustomScreenHandlerRegistry() {}
+
     public static void register() {
-        SONG_MIXER_SCREEN = ScreenHandlerRegistry.registerSimple(Utils.ID("song_mixer"), SongMixerScreenHandler::new);
+        SONG_MIXER_SCREEN = Registry.register(Registry.SCREEN_HANDLER, Utils.ID("song_mixer"), new ScreenHandlerType<>(SongMixerScreenHandler::new));
     }
 
 }

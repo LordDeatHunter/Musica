@@ -64,7 +64,7 @@ public abstract class AbstractBlockMixin {
         if (disc.startsWith("#")) {
             var tagItems = Registry.ITEM.getEntryList(TagKey.of(Registry.ITEM_KEY, Utils.ID(disc.substring(1))));
             if (tagItems.isEmpty()) return;
-            var randomItem = tagItems.get().getRandom(Utils.RANDOM);
+            var randomItem = tagItems.get().getRandom(world.random);
             if (randomItem.isEmpty()) return;
             item = randomItem.get().value();
         } else if (ItemRegistry.contains(disc)) {

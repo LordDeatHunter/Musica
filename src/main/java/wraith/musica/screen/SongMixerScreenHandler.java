@@ -27,15 +27,13 @@ import java.util.List;
 
 public class SongMixerScreenHandler extends ScreenHandler {
 
-    private final ScreenHandlerContext context;
-    private final Property selectedRecipe;
     static List<Item> availableDiscs = null;
-
+    public final Inventory input;
     final Slot inputSlot;
     final Slot outputSlot;
     final Slot dyeSlot;
-
-    public final Inventory input;
+    private final ScreenHandlerContext context;
+    private final Property selectedRecipe;
     private final CraftingResultInventory output;
     private Runnable contentsChangedListener;
     private long lastTakeTime;

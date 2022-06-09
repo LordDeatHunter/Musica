@@ -20,7 +20,7 @@ public class SongMixerDisplay implements Display {
     @Override
     public @NotNull List<EntryIngredient> getInputEntries() {
         return Arrays.asList(EntryIngredients.ofItems(Collections.singletonList(ItemRegistry.get("blank_disc"))),
-                EntryIngredients.ofIngredient(Ingredient.fromTag(TagKey.of(Registry.ITEM_KEY, new Identifier("c:dyes")))));
+            EntryIngredients.ofIngredient(Ingredient.fromTag(TagKey.of(Registry.ITEM_KEY, new Identifier("c:dyes")))));
     }
 
     @Override

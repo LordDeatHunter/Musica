@@ -11,7 +11,6 @@ import net.minecraft.screen.SimpleNamedScreenHandlerFactory;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.DirectionProperty;
 import net.minecraft.text.Text;
-import net.minecraft.text.TranslatableText;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
 import net.minecraft.util.hit.BlockHitResult;
@@ -23,8 +22,8 @@ import wraith.musica.screen.SongMixerScreenHandler;
 
 public class SongMixerBlock extends Block {
 
-    private static final Text TITLE = new TranslatableText("container." + Musica.MOD_ID + ".song_mixer");
     public static final DirectionProperty FACING = HorizontalFacingBlock.FACING;
+    private static final Text TITLE = Text.translatable("container." + Musica.MOD_ID + ".song_mixer");
 
     public SongMixerBlock(Settings settings) {
         super(settings);

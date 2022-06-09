@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "musica:item/music_disc_john_denver_take_me_home_country_roads"
+  }
+}
