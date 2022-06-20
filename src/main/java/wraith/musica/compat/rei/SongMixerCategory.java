@@ -54,7 +54,7 @@ public class SongMixerCategory implements DisplayCategory<SongMixerDisplay> {
 
         widgets.addAll(slots);
         widgets.add(Widgets.createResultSlotBackground(new Point(origin.x + 90, y)));
-        widgets.add(Widgets.createSlot(new Point(origin.x + 90, y)).entries(recipeDisplay.getOutputEntries().get(0)).markOutput());
+        widgets.add(Widgets.createSlot(new Point(origin.x + 90, y)).entries(recipeDisplay.getOutputEntries().get(0)).disableBackground().markOutput());
 
         widgets.add(Widgets.createArrow(new Point(origin.x + 55, y)));
 
