@@ -24,7 +24,16 @@ bin/
 .classpath
 .project
 
+# macos
+
+*.DS_Store
+
+# maven
+
+target/
+
 # fabric
 
 run/
 datagen/assets/
+/remappedSrc/
